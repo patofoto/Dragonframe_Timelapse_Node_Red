@@ -1,0 +1,2104 @@
+[
+    {
+        "id": "20ac8dd407885f5d",
+        "type": "tab",
+        "label": "Dragonframe Intervalometer",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6d23e3bac83c08bd",
+        "type": "tab",
+        "label": "Chris",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "88408228dc320ae0",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9bb44f6703637248",
+        "type": "group",
+        "z": "20ac8dd407885f5d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8f763fcfa9a2d554",
+            "4a5a8d6cd7ad3256",
+            "98544f4b87b2b56e",
+            "9da7a0f2cdc1cc5d",
+            "319d9f93d4b86cb3",
+            "ca9db2b297167bc6",
+            "64f9203603db7908"
+        ],
+        "x": 29,
+        "y": 319,
+        "w": 757,
+        "h": 232
+    },
+    {
+        "id": "0bb745afc23d0509",
+        "type": "group",
+        "z": "20ac8dd407885f5d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "6cb3cffde7b508fa",
+            "46d78d863bf40c19",
+            "e04c5893018bb8f9",
+            "803ffb81a3fe0d25",
+            "f155cd0a6b510828",
+            "1783358b9ae93b5b",
+            "2dc4d3acb2e2cdf6",
+            "eb4444322a75b3c1",
+            "681a21428075b6f9",
+            "9177261c8c25d93d"
+        ],
+        "x": 29,
+        "y": 64,
+        "w": 752,
+        "h": 232
+    },
+    {
+        "id": "e86b7e85ec7e628e",
+        "type": "group",
+        "z": "20ac8dd407885f5d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "1f80a68806d157b6",
+            "fb159ba299d590e7",
+            "dc4fb9cd4aca1e50",
+            "5efad5f13ccddc1d",
+            "d1e27294d49c58e8"
+        ],
+        "x": 859,
+        "y": 199,
+        "w": 432,
+        "h": 172
+    },
+    {
+        "id": "f8bf27854bd1b8d1",
+        "type": "group",
+        "z": "20ac8dd407885f5d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "229f8ed371cf3c1e",
+            "869fa2a8fa523984",
+            "d2d9a905d0204ceb",
+            "a03789066075224a"
+        ],
+        "x": 44,
+        "y": 1159,
+        "w": 712,
+        "h": 127
+    },
+    {
+        "id": "6f2ee2563c258dce",
+        "type": "position-config",
+        "name": "",
+        "isValide": "true",
+        "longitude": "0",
+        "latitude": "0",
+        "angleType": "deg",
+        "timeZoneOffset": "99",
+        "timeZoneDST": "0",
+        "stateTimeFormat": "3",
+        "stateDateFormat": "12",
+        "contextStore": ""
+    },
+    {
+        "id": "f52ae91beb2ca245",
+        "type": "telegram bot",
+        "botname": "@patofoto_bot",
+        "usernames": "patosuarez",
+        "chatids": "1951007350",
+        "baseapiurl": "",
+        "updatemode": "none",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": true
+    },
+    {
+        "id": "8f763fcfa9a2d554",
+        "type": "time-inject",
+        "z": "20ac8dd407885f5d",
+        "d": true,
+        "g": "9bb44f6703637248",
+        "name": "Intervalometer",
+        "nameInt": "global.startTime - global.endTime[Mon-Fri] =... ↻",
+        "positionConfig": "6f2ee2563c258dce",
+        "props": [
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "{ \"command\" : \"shoot\", \"frames\" : 1 }",
+                "vt": "str",
+                "o": "",
+                "oT": "none",
+                "oM": "60000",
+                "f": 0,
+                "fS": 0,
+                "fT": "UNIX timestamp (ms)",
+                "fI": "0",
+                "next": true,
+                "days": "*",
+                "months": "*",
+                "onlyOddDays": false,
+                "onlyEvenDays": false,
+                "onlyOddWeeks": false,
+                "onlyEvenWeeks": false
+            }
+        ],
+        "injectTypeSelect": "interval-time",
+        "intervalCount": "interval",
+        "intervalCountType": "global",
+        "intervalCountMultiplier": 60000,
+        "time": "startTime",
+        "timeType": "global",
+        "offset": 0,
+        "offsetType": "none",
+        "offsetMultiplier": 60000,
+        "timeEnd": "endTime",
+        "timeEndType": "global",
+        "timeEndOffset": 0,
+        "timeEndOffsetType": "none",
+        "timeEndOffsetMultiplier": 60000,
+        "timeDays": "1,2,3,4,5",
+        "timeOnlyOddDays": false,
+        "timeOnlyEvenDays": false,
+        "timeOnlyOddWeeks": false,
+        "timeOnlyEvenWeeks": false,
+        "timeMonths": "*",
+        "timedatestart": "",
+        "timedateend": "",
+        "property": "",
+        "propertyType": "none",
+        "propertyCompare": "true",
+        "propertyThreshold": "",
+        "propertyThresholdType": "num",
+        "timeAlt": "",
+        "timeAltType": "entered",
+        "timeAltDays": "*",
+        "timeAltOnlyOddDays": false,
+        "timeAltOnlyEvenDays": false,
+        "timeAltOnlyOddWeeks": false,
+        "timeAltOnlyEvenWeeks": false,
+        "timeAltMonths": "*",
+        "timeAltOffset": 0,
+        "timeAltOffsetType": "none",
+        "timeAltOffsetMultiplier": 60000,
+        "once": false,
+        "onceDelay": 0.1,
+        "recalcTime": 2,
+        "x": 145,
+        "y": 510,
+        "wires": [
+            [
+                "98544f4b87b2b56e",
+                "ca9db2b297167bc6"
+            ]
+        ]
+    },
+    {
+        "id": "1f80a68806d157b6",
+        "type": "comment",
+        "z": "20ac8dd407885f5d",
+        "g": "e86b7e85ec7e628e",
+        "name": "Dragonframe sends \"Hello\"handshake every 20 sec",
+        "info": "",
+        "x": 1075,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "fb159ba299d590e7",
+        "type": "comment",
+        "z": "20ac8dd407885f5d",
+        "g": "e86b7e85ec7e628e",
+        "name": "frameComplete",
+        "info": "event: \"frameComplete\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nimageFileName: \"\"\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
+        "x": 965,
+        "y": 285,
+        "wires": []
+    },
+    {
+        "id": "dc4fb9cd4aca1e50",
+        "type": "comment",
+        "z": "20ac8dd407885f5d",
+        "g": "e86b7e85ec7e628e",
+        "name": "Capture State",
+        "info": "event: \"captureState\"\nreadyToCapture: false\nstate: \"READY\"\n\n\nevent: \"captureState\"\nreadyToCapture: false\nstate: \"SHOOTING\"\n\n\nevent: \"captureState\"\nreadyToCapture: true\nstate: \"READY\"",
+        "x": 1135,
+        "y": 285,
+        "wires": []
+    },
+    {
+        "id": "5efad5f13ccddc1d",
+        "type": "comment",
+        "z": "20ac8dd407885f5d",
+        "g": "e86b7e85ec7e628e",
+        "name": "Shoot",
+        "info": "event: \"shoot\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
+        "x": 1055,
+        "y": 330,
+        "wires": []
+    },
+    {
+        "id": "d1e27294d49c58e8",
+        "type": "comment",
+        "z": "20ac8dd407885f5d",
+        "g": "e86b7e85ec7e628e",
+        "name": "Events",
+        "info": "hello\n    maxVersion: 1\n    minVersion: 1\n\ncaptureState\n    readyToCapture: true|false\n    \ncaptureComplete\n    exposure: 1   \n    imageFileName: \"xxxxx\"\n    \nframeComplete\n    exposure: 1\n\nposition\n    exposure: 1",
+        "x": 935,
+        "y": 330,
+        "wires": []
+    },
+    {
+        "id": "777c711320926b28",
+        "type": "udp in",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "iface": "",
+        "port": "8888",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 120,
+        "y": 795,
+        "wires": [
+            [
+                "f796e60ca7ad161d",
+                "384db60c452cd757"
+            ]
+        ]
+    },
+    {
+        "id": "291068297d309ff4",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 945,
+        "wires": []
+    },
+    {
+        "id": "f796e60ca7ad161d",
+        "type": "timeout",
+        "z": "20ac8dd407885f5d",
+        "d": true,
+        "name": "Lost Communication",
+        "outtopic": "dragonframe",
+        "outsafe": "1",
+        "outwarning": "Warning",
+        "outunsafe": "0",
+        "warning": "5",
+        "timer": "60",
+        "repeat": false,
+        "again": true,
+        "x": 370,
+        "y": 975,
+        "wires": [
+            [
+                "aa69fab8dd6d1c40"
+            ]
+        ]
+    },
+    {
+        "id": "aa69fab8dd6d1c40",
+        "type": "switch",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 545,
+        "y": 975,
+        "wires": [
+            [
+                "291068297d309ff4"
+            ],
+            [
+                "8e2ec8c8916bdf24"
+            ]
+        ]
+    },
+    {
+        "id": "8e2ec8c8916bdf24",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "name": "Disconnected Message",
+        "func": "msg.payload = {\n    content: \"Dragonframe Test Disconnected!\",\n    type: \"message\",\n    chatId: 1951007350\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1085,
+        "y": 1020,
+        "wires": [
+            [
+                "06b7e743d486e5ec"
+            ]
+        ]
+    },
+    {
+        "id": "06b7e743d486e5ec",
+        "type": "telegram sender",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "bot": "f52ae91beb2ca245",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1595,
+        "y": 915,
+        "wires": [
+            [
+                "83558a2d4dd1ec39"
+            ]
+        ]
+    },
+    {
+        "id": "83558a2d4dd1ec39",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "name": "Message to Telegram",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1795,
+        "y": 915,
+        "wires": []
+    },
+    {
+        "id": "e9f5c42e1f3e50a4",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "name": "Error Message Test",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 810,
+        "y": 1065,
+        "wires": [
+            [
+                "8e2ec8c8916bdf24"
+            ]
+        ]
+    },
+    {
+        "id": "7766a80f579491d0",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 725,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "384db60c452cd757",
+        "type": "json",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 320,
+        "y": 690,
+        "wires": [
+            [
+                "08559261273fd7dd",
+                "94507ce7ac3a5464",
+                "6b718d3e9b8d1c73",
+                "f6404371790ba258",
+                "b86d8b418a6b12f8"
+            ]
+        ]
+    },
+    {
+        "id": "08559261273fd7dd",
+        "type": "switch",
+        "z": "20ac8dd407885f5d",
+        "name": "captureState",
+        "property": "payload.event",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "captureState",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 535,
+        "y": 660,
+        "wires": [
+            [
+                "7766a80f579491d0"
+            ]
+        ]
+    },
+    {
+        "id": "94507ce7ac3a5464",
+        "type": "switch",
+        "z": "20ac8dd407885f5d",
+        "name": "captureComplete",
+        "property": "payload.event",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "captureComplete",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 555,
+        "y": 705,
+        "wires": [
+            [
+                "1299a236e72220b3"
+            ]
+        ]
+    },
+    {
+        "id": "6b718d3e9b8d1c73",
+        "type": "switch",
+        "z": "20ac8dd407885f5d",
+        "name": "frameComplete",
+        "property": "payload.event",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "frameComplete",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 545,
+        "y": 750,
+        "wires": [
+            [
+                "4406adeb35e5e2e7",
+                "1995307a6b379738"
+            ]
+        ]
+    },
+    {
+        "id": "f6404371790ba258",
+        "type": "switch",
+        "z": "20ac8dd407885f5d",
+        "name": "hello",
+        "property": "payload.event",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "hello",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 515,
+        "y": 615,
+        "wires": [
+            [
+                "a523b5d502056812"
+            ]
+        ]
+    },
+    {
+        "id": "b86d8b418a6b12f8",
+        "type": "switch",
+        "z": "20ac8dd407885f5d",
+        "name": "position",
+        "property": "payload.event",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "position",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 525,
+        "y": 870,
+        "wires": [
+            [
+                "406cc4d760a0a25a"
+            ]
+        ]
+    },
+    {
+        "id": "1299a236e72220b3",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 725,
+        "y": 705,
+        "wires": []
+    },
+    {
+        "id": "406cc4d760a0a25a",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "a523b5d502056812",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "name": "Handshake",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{ \"command\" : \"hello\", \"version\" : 1.0 }",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 745,
+        "y": 615,
+        "wires": [
+            [
+                "250d8277323b0835",
+                "5b9f30ef3294e253"
+            ]
+        ]
+    },
+    {
+        "id": "8c50a50d865f61ce",
+        "type": "udp out",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "addr": "127.0.0.1",
+        "iface": "",
+        "port": "",
+        "outport": "2222",
+        "base64": false,
+        "multicast": "false",
+        "x": 1235,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4a5a8d6cd7ad3256",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "g": "9bb44f6703637248",
+        "name": "Manual Trigger",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{ \"command\" : \"shoot\", \"frames\" : 1 }",
+        "payloadType": "str",
+        "x": 155,
+        "y": 465,
+        "wires": [
+            [
+                "98544f4b87b2b56e",
+                "ca9db2b297167bc6"
+            ]
+        ]
+    },
+    {
+        "id": "6a8302e07e51c516",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.frame",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1035,
+        "y": 750,
+        "wires": []
+    },
+    {
+        "id": "98544f4b87b2b56e",
+        "type": "trigger",
+        "z": "20ac8dd407885f5d",
+        "g": "9bb44f6703637248",
+        "name": "",
+        "op1": "Shooting",
+        "op2": "Shooting Stopped",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "30",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 445,
+        "y": 390,
+        "wires": [
+            [
+                "9da7a0f2cdc1cc5d"
+            ],
+            [
+                "319d9f93d4b86cb3"
+            ]
+        ]
+    },
+    {
+        "id": "9da7a0f2cdc1cc5d",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "9bb44f6703637248",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "319d9f93d4b86cb3",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "9bb44f6703637248",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "6cb3cffde7b508fa",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "Interval in Minutes",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 165,
+        "y": 165,
+        "wires": [
+            [
+                "e04c5893018bb8f9"
+            ]
+        ]
+    },
+    {
+        "id": "46d78d863bf40c19",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "Display Interval",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 635,
+        "y": 165,
+        "wires": []
+    },
+    {
+        "id": "e04c5893018bb8f9",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "interval Variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "interval",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 365,
+        "y": 165,
+        "wires": [
+            [
+                "46d78d863bf40c19"
+            ]
+        ]
+    },
+    {
+        "id": "5b9f30ef3294e253",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "dfport",
+                "pt": "global",
+                "to": "port",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 995,
+        "y": 615,
+        "wires": [
+            [
+                "8c50a50d865f61ce"
+            ]
+        ]
+    },
+    {
+        "id": "250d8277323b0835",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 965,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "ca9db2b297167bc6",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "9bb44f6703637248",
+        "name": "set dfport variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "port",
+                "pt": "msg",
+                "to": "dfport",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 465,
+        "y": 480,
+        "wires": [
+            [
+                "8c50a50d865f61ce"
+            ]
+        ]
+    },
+    {
+        "id": "4406adeb35e5e2e7",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "name": "set currentFrame variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "currentFrame",
+                "pt": "global",
+                "to": "payload.frame",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 785,
+        "y": 750,
+        "wires": [
+            [
+                "6a8302e07e51c516"
+            ]
+        ]
+    },
+    {
+        "id": "1995307a6b379738",
+        "type": "within-time-switch",
+        "z": "20ac8dd407885f5d",
+        "name": "Day Limits",
+        "nameInt": "",
+        "positionConfig": "6f2ee2563c258dce",
+        "startTime": "startTime",
+        "startTimeType": "global",
+        "startOffset": 0,
+        "startOffsetType": "none",
+        "startOffsetMultiplier": 60000,
+        "endTime": "endTime",
+        "endTimeType": "global",
+        "endOffset": "15",
+        "endOffsetType": "num",
+        "endOffsetMultiplier": 1000,
+        "timeRestrictions": 0,
+        "timeRestrictionsType": "none",
+        "timeDays": "1,2,3,4,5",
+        "timeOnlyOddDays": false,
+        "timeOnlyEvenDays": false,
+        "timeOnlyOddWeeks": false,
+        "timeOnlyEvenWeeks": false,
+        "timeMonths": "*",
+        "timedatestart": "",
+        "timedateend": "",
+        "propertyStart": "",
+        "propertyStartType": "none",
+        "propertyStartCompare": "true",
+        "propertyStartThreshold": "",
+        "propertyStartThresholdType": "num",
+        "startTimeAlt": "",
+        "startTimeAltType": "none",
+        "startOffsetAlt": 0,
+        "startOffsetAltType": "none",
+        "startOffsetAltMultiplier": 60000,
+        "propertyEnd": "",
+        "propertyEndType": "none",
+        "propertyEndCompare": "true",
+        "propertyEndThreshold": "",
+        "propertyEndThresholdType": "num",
+        "endTimeAlt": "",
+        "endTimeAltType": "none",
+        "endOffsetAlt": 0,
+        "endOffsetAltType": "none",
+        "endOffsetAltMultiplier": 60000,
+        "withinTimeValue": "",
+        "withinTimeValueType": "msgInput",
+        "outOfTimeValue": "",
+        "outOfTimeValueType": "msgInput",
+        "tsCompare": "0",
+        "x": 745,
+        "y": 795,
+        "wires": [
+            [
+                "ad668695f02ae062",
+                "12408f35f6cee229"
+            ],
+            [
+                "983cf1e200a53081",
+                "4dd1bbe994c3b52f"
+            ]
+        ]
+    },
+    {
+        "id": "803ffb81a3fe0d25",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "Start Time",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "6:00",
+        "payloadType": "str",
+        "x": 145,
+        "y": 210,
+        "wires": [
+            [
+                "f155cd0a6b510828"
+            ]
+        ]
+    },
+    {
+        "id": "f155cd0a6b510828",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "startTime Variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "startTime",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 375,
+        "y": 210,
+        "wires": [
+            [
+                "1783358b9ae93b5b"
+            ]
+        ]
+    },
+    {
+        "id": "1783358b9ae93b5b",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "Display Start Time",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 645,
+        "y": 210,
+        "wires": []
+    },
+    {
+        "id": "2dc4d3acb2e2cdf6",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "End Time",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "17:00",
+        "payloadType": "str",
+        "x": 135,
+        "y": 255,
+        "wires": [
+            [
+                "eb4444322a75b3c1"
+            ]
+        ]
+    },
+    {
+        "id": "eb4444322a75b3c1",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "endTime Variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "endTime",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 375,
+        "y": 255,
+        "wires": [
+            [
+                "681a21428075b6f9"
+            ]
+        ]
+    },
+    {
+        "id": "681a21428075b6f9",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "Display End Time",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 645,
+        "y": 255,
+        "wires": []
+    },
+    {
+        "id": "96d34eae343acaac",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "name": "Current Frame",
+        "func": "msg.payload = {\n    content: global.get(\"currentFrame\"),\n    type: \"message\",\n    chatId: 1951007350,\n\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1370,
+        "y": 795,
+        "wires": [
+            [
+                "06b7e743d486e5ec"
+            ]
+        ]
+    },
+    {
+        "id": "983cf1e200a53081",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "name": "Current Frame",
+        "func": "msg.payload = {\n    content: global.get(\"currentFrame\"),\n    type: \"message\",\n    chatId: 1951007350,\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 965,
+        "y": 930,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9177261c8c25d93d",
+        "type": "comment",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "Intervalometer Setup",
+        "info": "",
+        "x": 175,
+        "y": 105,
+        "wires": []
+    },
+    {
+        "id": "64f9203603db7908",
+        "type": "comment",
+        "z": "20ac8dd407885f5d",
+        "g": "9bb44f6703637248",
+        "name": "Intervalometer",
+        "info": "",
+        "x": 145,
+        "y": 375,
+        "wires": []
+    },
+    {
+        "id": "229f8ed371cf3c1e",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "f8bf27854bd1b8d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 1245,
+        "wires": [
+            [
+                "d2d9a905d0204ceb"
+            ]
+        ]
+    },
+    {
+        "id": "869fa2a8fa523984",
+        "type": "time-inject",
+        "z": "20ac8dd407885f5d",
+        "g": "f8bf27854bd1b8d1",
+        "name": "",
+        "nameInt": "timestamp ↻30s",
+        "positionConfig": "6f2ee2563c258dce",
+        "props": [
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "",
+                "vt": "date",
+                "o": "",
+                "oT": "none",
+                "oM": "60000",
+                "f": 0,
+                "fS": 0,
+                "fT": "UNIX timestamp (ms)",
+                "fI": "0",
+                "next": true,
+                "days": "*",
+                "months": "*",
+                "onlyOddDays": false,
+                "onlyEvenDays": false,
+                "onlyOddWeeks": false,
+                "onlyEvenWeeks": false
+            }
+        ],
+        "injectTypeSelect": "interval",
+        "intervalCount": "30",
+        "intervalCountType": "num",
+        "intervalCountMultiplier": 1000,
+        "time": "",
+        "timeType": "entered",
+        "offset": 0,
+        "offsetType": "none",
+        "offsetMultiplier": 60000,
+        "timeEnd": "",
+        "timeEndType": "entered",
+        "timeEndOffset": 0,
+        "timeEndOffsetType": "none",
+        "timeEndOffsetMultiplier": 60000,
+        "timeDays": "*",
+        "timeOnlyOddDays": false,
+        "timeOnlyEvenDays": false,
+        "timeOnlyOddWeeks": false,
+        "timeOnlyEvenWeeks": false,
+        "timeMonths": "*",
+        "timedatestart": "",
+        "timedateend": "",
+        "property": "",
+        "propertyType": "none",
+        "propertyCompare": "true",
+        "propertyThreshold": "",
+        "propertyThresholdType": "num",
+        "timeAlt": "",
+        "timeAltType": "entered",
+        "timeAltDays": "*",
+        "timeAltOnlyOddDays": false,
+        "timeAltOnlyEvenDays": false,
+        "timeAltOnlyOddWeeks": false,
+        "timeAltOnlyEvenWeeks": false,
+        "timeAltMonths": "*",
+        "timeAltOffset": 0,
+        "timeAltOffsetType": "none",
+        "timeAltOffsetMultiplier": 60000,
+        "once": false,
+        "onceDelay": 0.1,
+        "recalcTime": 2,
+        "x": 170,
+        "y": 1245,
+        "wires": [
+            [
+                "229f8ed371cf3c1e"
+            ]
+        ]
+    },
+    {
+        "id": "d2d9a905d0204ceb",
+        "type": "udp out",
+        "z": "20ac8dd407885f5d",
+        "d": true,
+        "g": "f8bf27854bd1b8d1",
+        "name": "",
+        "addr": "74.108.21.213",
+        "iface": "",
+        "port": "65516",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 620,
+        "y": 1245,
+        "wires": []
+    },
+    {
+        "id": "a03789066075224a",
+        "type": "comment",
+        "z": "20ac8dd407885f5d",
+        "g": "f8bf27854bd1b8d1",
+        "name": "Still Alive Message",
+        "info": "",
+        "x": 180,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "ad668695f02ae062",
+        "type": "trigger",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "op1": "currentFrame",
+        "op2": "0",
+        "op1type": "global",
+        "op2type": "str",
+        "duration": "0",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "reset",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1175,
+        "y": 795,
+        "wires": [
+            [
+                "96d34eae343acaac"
+            ]
+        ]
+    },
+    {
+        "id": "4dd1bbe994c3b52f",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "name": "Reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "reset",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 935,
+        "y": 855,
+        "wires": [
+            [
+                "ad668695f02ae062"
+            ]
+        ]
+    },
+    {
+        "id": "12408f35f6cee229",
+        "type": "counter",
+        "z": "20ac8dd407885f5d",
+        "inc": 1,
+        "name": "",
+        "x": 1155,
+        "y": 855,
+        "wires": [
+            [
+                "6edae490f780c504"
+            ]
+        ]
+    },
+    {
+        "id": "6edae490f780c504",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1345,
+        "y": 855,
+        "wires": []
+    },
+    {
+        "id": "59e726330cc1c550",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "props": [
+            {
+                "p": "reset",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 1130,
+        "y": 960,
+        "wires": [
+            [
+                "12408f35f6cee229"
+            ]
+        ]
+    },
+    {
+        "id": "529053e0a6356213",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 715,
+        "y": 855,
+        "wires": [
+            [
+                "4dd1bbe994c3b52f"
+            ]
+        ]
+    },
+    {
+        "id": "87291b88235eac1e",
+        "type": "udp out",
+        "z": "6d23e3bac83c08bd",
+        "name": "",
+        "addr": "127.0.0.1",
+        "iface": "",
+        "port": "8888",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 345,
+        "y": 225,
+        "wires": []
+    },
+    {
+        "id": "084e2de1ed3b685d",
+        "type": "inject",
+        "z": "6d23e3bac83c08bd",
+        "name": "DF SIM",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "{\"event\":\"hello\",\"maxVersion\":1,\"minVersion\":1}",
+        "payloadType": "str",
+        "x": 145,
+        "y": 225,
+        "wires": [
+            [
+                "87291b88235eac1e"
+            ]
+        ]
+    },
+    {
+        "id": "61c622d37b94da19",
+        "type": "debug",
+        "z": "6d23e3bac83c08bd",
+        "d": true,
+        "name": "LISTENER",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 585,
+        "y": 325,
+        "wires": []
+    },
+    {
+        "id": "934441e48e23ecae",
+        "type": "udp in",
+        "z": "6d23e3bac83c08bd",
+        "name": "listener",
+        "iface": "",
+        "port": "8888",
+        "multicast": "false",
+        "group": "",
+        "datatype": "buffer",
+        "x": 125,
+        "y": 425,
+        "wires": [
+            [
+                "096c9e3698130fe6",
+                "ffc08b89a45ea080",
+                "e51babf5180a1825"
+            ]
+        ]
+    },
+    {
+        "id": "36c2607dc18cea4f",
+        "type": "debug",
+        "z": "6d23e3bac83c08bd",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "port",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 575,
+        "y": 365,
+        "wires": []
+    },
+    {
+        "id": "b297640e65783fb8",
+        "type": "udp out",
+        "z": "6d23e3bac83c08bd",
+        "name": "",
+        "addr": "127.0.0.1",
+        "iface": "",
+        "port": "",
+        "outport": "2222",
+        "base64": false,
+        "multicast": "false",
+        "x": 1095,
+        "y": 525,
+        "wires": []
+    },
+    {
+        "id": "096c9e3698130fe6",
+        "type": "switch",
+        "z": "6d23e3bac83c08bd",
+        "name": "Hello",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "\"event\":\"hello\"",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 325,
+        "y": 425,
+        "wires": [
+            [
+                "61c622d37b94da19",
+                "36c2607dc18cea4f",
+                "60991e82dee695b8"
+            ]
+        ]
+    },
+    {
+        "id": "60991e82dee695b8",
+        "type": "change",
+        "z": "6d23e3bac83c08bd",
+        "name": "Handshake",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{ \"command\" : \"hello\", \"version\" : 1.0 }",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 585,
+        "y": 425,
+        "wires": [
+            [
+                "5565b530e87af592"
+            ]
+        ]
+    },
+    {
+        "id": "ffc08b89a45ea080",
+        "type": "debug",
+        "z": "6d23e3bac83c08bd",
+        "name": "LISTENER0",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 345,
+        "y": 325,
+        "wires": []
+    },
+    {
+        "id": "96038de3f2ac48b4",
+        "type": "inject",
+        "z": "6d23e3bac83c08bd",
+        "name": "Shoot",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "20",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{ \"command\" : \"shoot\", \"frames\" : 1 }",
+        "payloadType": "str",
+        "x": 605,
+        "y": 665,
+        "wires": [
+            [
+                "d220fdc082bf124c"
+            ]
+        ]
+    },
+    {
+        "id": "1d9c07247b9cdcd3",
+        "type": "debug",
+        "z": "6d23e3bac83c08bd",
+        "name": "Shoot",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1045,
+        "y": 745,
+        "wires": []
+    },
+    {
+        "id": "5565b530e87af592",
+        "type": "function",
+        "z": "6d23e3bac83c08bd",
+        "name": "",
+        "func": "var dfport = msg.port;\nglobal.set(\"dfport\",dfport);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 835,
+        "y": 425,
+        "wires": [
+            [
+                "b297640e65783fb8"
+            ]
+        ]
+    },
+    {
+        "id": "d220fdc082bf124c",
+        "type": "function",
+        "z": "6d23e3bac83c08bd",
+        "name": "",
+        "func": "msg.port = global.get(\"dfport\");\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 835,
+        "y": 665,
+        "wires": [
+            [
+                "1d9c07247b9cdcd3",
+                "b297640e65783fb8"
+            ]
+        ]
+    },
+    {
+        "id": "e51babf5180a1825",
+        "type": "switch",
+        "z": "6d23e3bac83c08bd",
+        "name": "readyToCapture",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "\"readyToCapture\":true",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 355,
+        "y": 525,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b301843f20c4ce07",
+        "type": "udp in",
+        "z": "88408228dc320ae0",
+        "name": "",
+        "iface": "",
+        "port": "65515",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 315,
+        "y": 435,
+        "wires": [
+            [
+                "78c63b34a00b2e28"
+            ]
+        ]
+    },
+    {
+        "id": "bbb276af8f0a7c94",
+        "type": "debug",
+        "z": "88408228dc320ae0",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1165,
+        "y": 225,
+        "wires": []
+    },
+    {
+        "id": "163b71758cf97570",
+        "type": "timeout",
+        "z": "88408228dc320ae0",
+        "name": "Pantry Timeout",
+        "outtopic": "",
+        "outsafe": "Pantry Camera OK",
+        "outwarning": "Warning",
+        "outunsafe": "Pantry Camera Offline",
+        "warning": "5",
+        "timer": "60",
+        "repeat": false,
+        "again": true,
+        "x": 665,
+        "y": 255,
+        "wires": [
+            [
+                "6ef4f3a63e24bf79"
+            ]
+        ]
+    },
+    {
+        "id": "78c63b34a00b2e28",
+        "type": "timeout",
+        "z": "88408228dc320ae0",
+        "name": "Trade Floor Timeout",
+        "outtopic": "",
+        "outsafe": "Trade Floor Camera OK",
+        "outwarning": "Warning",
+        "outunsafe": "Trade Floor Camera Offline",
+        "warning": "5",
+        "timer": "60",
+        "repeat": false,
+        "again": false,
+        "x": 685,
+        "y": 435,
+        "wires": [
+            [
+                "e1cdd63632f74ffb"
+            ]
+        ]
+    },
+    {
+        "id": "6ef4f3a63e24bf79",
+        "type": "switch",
+        "z": "88408228dc320ae0",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "OK",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "Offline",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 830,
+        "y": 255,
+        "wires": [
+            [
+                "3ebcc462be2463ab"
+            ],
+            [
+                "940bfb77a281ea09"
+            ]
+        ]
+    },
+    {
+        "id": "3ebcc462be2463ab",
+        "type": "change",
+        "z": "88408228dc320ae0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Pantry Camera Online",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 995,
+        "y": 225,
+        "wires": [
+            [
+                "bbb276af8f0a7c94"
+            ]
+        ]
+    },
+    {
+        "id": "850b91a1b241d386",
+        "type": "debug",
+        "z": "88408228dc320ae0",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1195,
+        "y": 405,
+        "wires": []
+    },
+    {
+        "id": "e1cdd63632f74ffb",
+        "type": "switch",
+        "z": "88408228dc320ae0",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "OK",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "Offline",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 860,
+        "y": 435,
+        "wires": [
+            [
+                "eb4f08ca786ed499"
+            ],
+            [
+                "b48649fe95c93916"
+            ]
+        ]
+    },
+    {
+        "id": "eb4f08ca786ed499",
+        "type": "change",
+        "z": "88408228dc320ae0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Trade Floor Camera Online",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1025,
+        "y": 405,
+        "wires": [
+            [
+                "850b91a1b241d386"
+            ]
+        ]
+    },
+    {
+        "id": "4d044d5401ab5e5a",
+        "type": "telegram sender",
+        "z": "88408228dc320ae0",
+        "name": "",
+        "bot": "f52ae91beb2ca245",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1520,
+        "y": 390,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "940bfb77a281ea09",
+        "type": "function",
+        "z": "88408228dc320ae0",
+        "name": "",
+        "func": "msg.payload = {\n    content: \"Pantry Computer Offline!\",\n    type: \"message\",\n    chatId: 1951007350\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 300,
+        "wires": [
+            [
+                "4d044d5401ab5e5a"
+            ]
+        ]
+    },
+    {
+        "id": "b48649fe95c93916",
+        "type": "function",
+        "z": "88408228dc320ae0",
+        "name": "",
+        "func": "msg.payload = {\n    content: \"Trade Floor Computer Offline!\",\n    type: \"message\",\n    chatId: 1951007350\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 480,
+        "wires": [
+            [
+                "4d044d5401ab5e5a"
+            ]
+        ]
+    },
+    {
+        "id": "d8c109e7abfa9c0b",
+        "type": "udp in",
+        "z": "88408228dc320ae0",
+        "name": "",
+        "iface": "",
+        "port": "65516",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 315,
+        "y": 255,
+        "wires": [
+            [
+                "163b71758cf97570"
+            ]
+        ]
+    }
+]
