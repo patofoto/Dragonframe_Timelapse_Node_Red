@@ -2,7 +2,12 @@
     "name": "Dragonframe_Intervalometer",
     "description": "Control Dragonframe intervalometer feature via JSON",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "ttb-node-red-counter": "0.1.0",
+        "node-red-contrib-timeout": "1.1.5",
+        "node-red-contrib-telegrambot": "11.0.0",
+        "node-red-contrib-sun-position": "2.0.6"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows.json",
