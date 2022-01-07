@@ -2,7 +2,7 @@
     {
         "id": "20ac8dd407885f5d",
         "type": "tab",
-        "label": "Dragonframe_Intervalometer",
+        "label": "Dragonframe_Int",
         "disabled": false,
         "info": "",
         "env": []
@@ -29,8 +29,8 @@
             "ca9db2b297167bc6",
             "64f9203603db7908"
         ],
-        "x": 29,
-        "y": 319,
+        "x": 59,
+        "y": 389,
         "w": 757,
         "h": 232
     },
@@ -59,8 +59,8 @@
             "681a21428075b6f9",
             "9177261c8c25d93d"
         ],
-        "x": 29,
-        "y": 64,
+        "x": 59,
+        "y": 139,
         "w": 752,
         "h": 232
     },
@@ -84,8 +84,8 @@
             "5efad5f13ccddc1d",
             "d1e27294d49c58e8"
         ],
-        "x": 859,
-        "y": 199,
+        "x": 834,
+        "y": 139,
         "w": 432,
         "h": 172
     },
@@ -108,10 +108,61 @@
             "d2d9a905d0204ceb",
             "a03789066075224a"
         ],
-        "x": 44,
-        "y": 1114,
+        "x": 59,
+        "y": 1184,
         "w": 712,
         "h": 127
+    },
+    {
+        "id": "fc95a5364964861e",
+        "type": "group",
+        "z": "20ac8dd407885f5d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "777c711320926b28",
+            "291068297d309ff4",
+            "f796e60ca7ad161d",
+            "aa69fab8dd6d1c40",
+            "8e2ec8c8916bdf24",
+            "06b7e743d486e5ec",
+            "83558a2d4dd1ec39",
+            "e9f5c42e1f3e50a4",
+            "7766a80f579491d0",
+            "384db60c452cd757",
+            "08559261273fd7dd",
+            "94507ce7ac3a5464",
+            "6b718d3e9b8d1c73",
+            "f6404371790ba258",
+            "b86d8b418a6b12f8",
+            "1299a236e72220b3",
+            "406cc4d760a0a25a",
+            "a523b5d502056812",
+            "6a8302e07e51c516",
+            "5b9f30ef3294e253",
+            "250d8277323b0835",
+            "4406adeb35e5e2e7",
+            "1995307a6b379738",
+            "96d34eae343acaac",
+            "983cf1e200a53081",
+            "ad668695f02ae062",
+            "4dd1bbe994c3b52f",
+            "12408f35f6cee229",
+            "6edae490f780c504",
+            "59e726330cc1c550",
+            "529053e0a6356213"
+        ],
+        "x": 59,
+        "y": 644,
+        "w": 1932,
+        "h": 532
     },
     {
         "id": "6f2ee2563c258dce",
@@ -150,6 +201,122 @@
         "useselfsignedcertificate": false,
         "sslterminated": false,
         "verboselogging": true
+    },
+    {
+        "id": "e846904aaac972ed",
+        "type": "ui_tab",
+        "name": "Interval Settings",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0456ce322a9514fa",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "db30bac0feb29828",
+        "type": "ui_group",
+        "name": "Intervalometer",
+        "tab": "e846904aaac972ed",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "8f763fcfa9a2d554",
@@ -223,8 +390,8 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 145,
-        "y": 510,
+        "x": 175,
+        "y": 580,
         "wires": [
             [
                 "98544f4b87b2b56e",
@@ -239,8 +406,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "Dragonframe sends \"Hello\"handshake every 20 sec",
         "info": "",
-        "x": 1075,
-        "y": 240,
+        "x": 1050,
+        "y": 180,
         "wires": []
     },
     {
@@ -250,8 +417,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "frameComplete",
         "info": "event: \"frameComplete\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nimageFileName: \"\"\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 965,
-        "y": 285,
+        "x": 940,
+        "y": 225,
         "wires": []
     },
     {
@@ -261,8 +428,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "Capture State",
         "info": "event: \"captureState\"\nreadyToCapture: false\nstate: \"READY\"\n\n\nevent: \"captureState\"\nreadyToCapture: false\nstate: \"SHOOTING\"\n\n\nevent: \"captureState\"\nreadyToCapture: true\nstate: \"READY\"",
-        "x": 1135,
-        "y": 285,
+        "x": 1110,
+        "y": 225,
         "wires": []
     },
     {
@@ -272,8 +439,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "Shoot",
         "info": "event: \"shoot\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 1055,
-        "y": 330,
+        "x": 1030,
+        "y": 270,
         "wires": []
     },
     {
@@ -283,14 +450,15 @@
         "g": "e86b7e85ec7e628e",
         "name": "Events",
         "info": "hello\n    maxVersion: 1\n    minVersion: 1\n\ncaptureState\n    readyToCapture: true|false\n    \ncaptureComplete\n    exposure: 1   \n    imageFileName: \"xxxxx\"\n    \nframeComplete\n    exposure: 1\n\nposition\n    exposure: 1",
-        "x": 935,
-        "y": 330,
+        "x": 910,
+        "y": 270,
         "wires": []
     },
     {
         "id": "777c711320926b28",
         "type": "udp in",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "iface": "",
         "port": "8888",
@@ -298,8 +466,8 @@
         "multicast": "false",
         "group": "",
         "datatype": "utf8",
-        "x": 120,
-        "y": 795,
+        "x": 145,
+        "y": 865,
         "wires": [
             [
                 "f796e60ca7ad161d",
@@ -311,6 +479,7 @@
         "id": "291068297d309ff4",
         "type": "debug",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -320,8 +489,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 700,
-        "y": 945,
+        "x": 725,
+        "y": 1015,
         "wires": []
     },
     {
@@ -329,7 +498,8 @@
         "type": "timeout",
         "z": "20ac8dd407885f5d",
         "d": true,
-        "name": "Lost Communication",
+        "g": "fc95a5364964861e",
+        "name": "Lost Dragonframe Comm",
         "outtopic": "dragonframe",
         "outsafe": "1",
         "outwarning": "Warning",
@@ -338,8 +508,8 @@
         "timer": "60",
         "repeat": false,
         "again": true,
-        "x": 370,
-        "y": 975,
+        "x": 375,
+        "y": 1050,
         "wires": [
             [
                 "aa69fab8dd6d1c40"
@@ -350,6 +520,7 @@
         "id": "aa69fab8dd6d1c40",
         "type": "switch",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -368,8 +539,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 545,
-        "y": 975,
+        "x": 575,
+        "y": 1050,
         "wires": [
             [
                 "291068297d309ff4"
@@ -383,6 +554,7 @@
         "id": "8e2ec8c8916bdf24",
         "type": "function",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "Disconnected Message",
         "func": "msg.payload = {\n    content: \"Dragonframe Test Disconnected!\",\n    type: \"message\",\n    chatId: 1951007350\n};\nreturn msg;",
         "outputs": 1,
@@ -390,8 +562,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1085,
-        "y": 1020,
+        "x": 1110,
+        "y": 1090,
         "wires": [
             [
                 "06b7e743d486e5ec"
@@ -402,12 +574,13 @@
         "id": "06b7e743d486e5ec",
         "type": "telegram sender",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "bot": "f52ae91beb2ca245",
         "haserroroutput": false,
         "outputs": 1,
-        "x": 1620,
-        "y": 940,
+        "x": 1645,
+        "y": 1010,
         "wires": [
             [
                 "83558a2d4dd1ec39"
@@ -418,6 +591,7 @@
         "id": "83558a2d4dd1ec39",
         "type": "debug",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "Message to Telegram",
         "active": false,
         "tosidebar": true,
@@ -427,14 +601,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1820,
-        "y": 940,
+        "x": 1845,
+        "y": 1010,
         "wires": []
     },
     {
         "id": "e9f5c42e1f3e50a4",
         "type": "inject",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "Error Message Test",
         "props": [
             {
@@ -447,8 +622,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 810,
-        "y": 1065,
+        "x": 835,
+        "y": 1135,
         "wires": [
             [
                 "8e2ec8c8916bdf24"
@@ -459,6 +634,7 @@
         "id": "7766a80f579491d0",
         "type": "debug",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -468,20 +644,21 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 725,
-        "y": 660,
+        "x": 750,
+        "y": 730,
         "wires": []
     },
     {
         "id": "384db60c452cd757",
         "type": "json",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 320,
-        "y": 690,
+        "x": 345,
+        "y": 760,
         "wires": [
             [
                 "08559261273fd7dd",
@@ -496,6 +673,7 @@
         "id": "08559261273fd7dd",
         "type": "switch",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "captureState",
         "property": "payload.event",
         "propertyType": "msg",
@@ -509,8 +687,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 535,
-        "y": 660,
+        "x": 560,
+        "y": 730,
         "wires": [
             [
                 "7766a80f579491d0"
@@ -521,6 +699,7 @@
         "id": "94507ce7ac3a5464",
         "type": "switch",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "captureComplete",
         "property": "payload.event",
         "propertyType": "msg",
@@ -534,8 +713,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 555,
-        "y": 705,
+        "x": 580,
+        "y": 775,
         "wires": [
             [
                 "1299a236e72220b3"
@@ -546,6 +725,7 @@
         "id": "6b718d3e9b8d1c73",
         "type": "switch",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "frameComplete",
         "property": "payload.event",
         "propertyType": "msg",
@@ -559,8 +739,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 545,
-        "y": 750,
+        "x": 570,
+        "y": 820,
         "wires": [
             [
                 "4406adeb35e5e2e7",
@@ -572,6 +752,7 @@
         "id": "f6404371790ba258",
         "type": "switch",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "hello",
         "property": "payload.event",
         "propertyType": "msg",
@@ -585,8 +766,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 515,
-        "y": 615,
+        "x": 540,
+        "y": 685,
         "wires": [
             [
                 "a523b5d502056812"
@@ -597,6 +778,7 @@
         "id": "b86d8b418a6b12f8",
         "type": "switch",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "position",
         "property": "payload.event",
         "propertyType": "msg",
@@ -610,8 +792,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 525,
-        "y": 870,
+        "x": 545,
+        "y": 910,
         "wires": [
             [
                 "406cc4d760a0a25a"
@@ -622,6 +804,7 @@
         "id": "1299a236e72220b3",
         "type": "debug",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -631,14 +814,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 725,
-        "y": 705,
+        "x": 750,
+        "y": 775,
         "wires": []
     },
     {
         "id": "406cc4d760a0a25a",
         "type": "debug",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -648,14 +832,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
-        "y": 900,
+        "x": 755,
+        "y": 910,
         "wires": []
     },
     {
         "id": "a523b5d502056812",
         "type": "change",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "Handshake",
         "rules": [
             {
@@ -671,8 +856,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 745,
-        "y": 615,
+        "x": 770,
+        "y": 685,
         "wires": [
             [
                 "250d8277323b0835",
@@ -691,8 +876,8 @@
         "outport": "2222",
         "base64": false,
         "multicast": "false",
-        "x": 1235,
-        "y": 480,
+        "x": 1180,
+        "y": 540,
         "wires": []
     },
     {
@@ -713,8 +898,8 @@
         "topic": "",
         "payload": "{ \"command\" : \"shoot\", \"frames\" : 1 }",
         "payloadType": "str",
-        "x": 155,
-        "y": 465,
+        "x": 185,
+        "y": 535,
         "wires": [
             [
                 "98544f4b87b2b56e",
@@ -726,6 +911,7 @@
         "id": "6a8302e07e51c516",
         "type": "debug",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -735,8 +921,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1035,
-        "y": 750,
+        "x": 1060,
+        "y": 820,
         "wires": []
     },
     {
@@ -757,8 +943,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 2,
-        "x": 445,
-        "y": 390,
+        "x": 475,
+        "y": 460,
         "wires": [
             [
                 "9da7a0f2cdc1cc5d"
@@ -781,8 +967,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 670,
-        "y": 360,
+        "x": 700,
+        "y": 430,
         "wires": []
     },
     {
@@ -798,8 +984,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 670,
-        "y": 420,
+        "x": 700,
+        "y": 490,
         "wires": []
     },
     {
@@ -818,10 +1004,10 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "1",
+        "payload": "5",
         "payloadType": "num",
-        "x": 165,
-        "y": 165,
+        "x": 195,
+        "y": 240,
         "wires": [
             [
                 "e04c5893018bb8f9"
@@ -842,8 +1028,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 635,
-        "y": 165,
+        "x": 665,
+        "y": 240,
         "wires": []
     },
     {
@@ -866,8 +1052,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 365,
-        "y": 165,
+        "x": 395,
+        "y": 240,
         "wires": [
             [
                 "46d78d863bf40c19"
@@ -878,6 +1064,7 @@
         "id": "5b9f30ef3294e253",
         "type": "change",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "rules": [
             {
@@ -893,8 +1080,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 995,
-        "y": 615,
+        "x": 1020,
+        "y": 685,
         "wires": [
             [
                 "8c50a50d865f61ce"
@@ -905,6 +1092,7 @@
         "id": "250d8277323b0835",
         "type": "debug",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -914,8 +1102,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 965,
-        "y": 660,
+        "x": 990,
+        "y": 730,
         "wires": []
     },
     {
@@ -938,8 +1126,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 465,
-        "y": 480,
+        "x": 495,
+        "y": 550,
         "wires": [
             [
                 "8c50a50d865f61ce"
@@ -950,6 +1138,7 @@
         "id": "4406adeb35e5e2e7",
         "type": "change",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "set currentFrame variable",
         "rules": [
             {
@@ -965,8 +1154,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 785,
-        "y": 750,
+        "x": 810,
+        "y": 820,
         "wires": [
             [
                 "6a8302e07e51c516"
@@ -977,6 +1166,7 @@
         "id": "1995307a6b379738",
         "type": "within-time-switch",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "Day Limits",
         "nameInt": "",
         "positionConfig": "6f2ee2563c258dce",
@@ -1025,8 +1215,8 @@
         "outOfTimeValue": "",
         "outOfTimeValueType": "msgInput",
         "tsCompare": "0",
-        "x": 745,
-        "y": 795,
+        "x": 770,
+        "y": 865,
         "wires": [
             [
                 "ad668695f02ae062",
@@ -1056,8 +1246,8 @@
         "topic": "",
         "payload": "6:00",
         "payloadType": "str",
-        "x": 145,
-        "y": 210,
+        "x": 175,
+        "y": 285,
         "wires": [
             [
                 "f155cd0a6b510828"
@@ -1084,8 +1274,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 375,
-        "y": 210,
+        "x": 405,
+        "y": 285,
         "wires": [
             [
                 "1783358b9ae93b5b"
@@ -1106,8 +1296,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 645,
-        "y": 210,
+        "x": 675,
+        "y": 285,
         "wires": []
     },
     {
@@ -1128,8 +1318,8 @@
         "topic": "",
         "payload": "17:00",
         "payloadType": "str",
-        "x": 135,
-        "y": 255,
+        "x": 165,
+        "y": 330,
         "wires": [
             [
                 "eb4444322a75b3c1"
@@ -1156,8 +1346,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 375,
-        "y": 255,
+        "x": 405,
+        "y": 330,
         "wires": [
             [
                 "681a21428075b6f9"
@@ -1178,14 +1368,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 645,
-        "y": 255,
+        "x": 675,
+        "y": 330,
         "wires": []
     },
     {
         "id": "96d34eae343acaac",
         "type": "function",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "Current Frame",
         "func": "msg.payload = {\n    content: global.get(\"currentFrame\"),\n    type: \"message\",\n    chatId: 1951007350,\n\n};\nreturn msg;",
         "outputs": 1,
@@ -1193,8 +1384,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1370,
-        "y": 795,
+        "x": 1385,
+        "y": 870,
         "wires": [
             [
                 "06b7e743d486e5ec"
@@ -1205,6 +1396,7 @@
         "id": "983cf1e200a53081",
         "type": "function",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "Current Frame",
         "func": "msg.payload = {\n    content: global.get(\"currentFrame\"),\n    type: \"message\",\n    chatId: 1951007350,\n};\nreturn msg;",
         "outputs": 1,
@@ -1212,8 +1404,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 965,
-        "y": 930,
+        "x": 990,
+        "y": 1000,
         "wires": [
             []
         ]
@@ -1225,8 +1417,8 @@
         "g": "0bb745afc23d0509",
         "name": "Intervalometer Setup",
         "info": "",
-        "x": 175,
-        "y": 105,
+        "x": 205,
+        "y": 180,
         "wires": []
     },
     {
@@ -1236,8 +1428,8 @@
         "g": "9bb44f6703637248",
         "name": "Intervalometer",
         "info": "",
-        "x": 145,
-        "y": 375,
+        "x": 175,
+        "y": 445,
         "wires": []
     },
     {
@@ -1260,8 +1452,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 380,
-        "y": 1200,
+        "x": 395,
+        "y": 1270,
         "wires": [
             [
                 "d2d9a905d0204ceb"
@@ -1339,8 +1531,8 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 170,
-        "y": 1200,
+        "x": 185,
+        "y": 1270,
         "wires": [
             [
                 "229f8ed371cf3c1e"
@@ -1361,8 +1553,8 @@
         "outport": "",
         "base64": false,
         "multicast": "false",
-        "x": 620,
-        "y": 1200,
+        "x": 635,
+        "y": 1270,
         "wires": []
     },
     {
@@ -1372,14 +1564,15 @@
         "g": "f8bf27854bd1b8d1",
         "name": "Still Alive Message",
         "info": "",
-        "x": 180,
-        "y": 1155,
+        "x": 195,
+        "y": 1225,
         "wires": []
     },
     {
         "id": "ad668695f02ae062",
         "type": "trigger",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "op1": "currentFrame",
         "op2": "0",
@@ -1393,8 +1586,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 1175,
-        "y": 795,
+        "x": 1205,
+        "y": 870,
         "wires": [
             [
                 "96d34eae343acaac"
@@ -1405,6 +1598,7 @@
         "id": "4dd1bbe994c3b52f",
         "type": "change",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "Reset",
         "rules": [
             {
@@ -1420,8 +1614,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 935,
-        "y": 855,
+        "x": 975,
+        "y": 910,
         "wires": [
             [
                 "ad668695f02ae062"
@@ -1432,10 +1626,11 @@
         "id": "12408f35f6cee229",
         "type": "counter",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "inc": 1,
         "name": "",
-        "x": 1155,
-        "y": 855,
+        "x": 1185,
+        "y": 910,
         "wires": [
             [
                 "6edae490f780c504"
@@ -1446,6 +1641,7 @@
         "id": "6edae490f780c504",
         "type": "debug",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -1454,14 +1650,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1345,
-        "y": 855,
+        "x": 1375,
+        "y": 910,
         "wires": []
     },
     {
         "id": "59e726330cc1c550",
         "type": "inject",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "props": [
             {
@@ -1475,8 +1672,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1130,
-        "y": 960,
+        "x": 1155,
+        "y": 1030,
         "wires": [
             [
                 "12408f35f6cee229"
@@ -1487,6 +1684,7 @@
         "id": "529053e0a6356213",
         "type": "inject",
         "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
         "name": "",
         "props": [
             {
@@ -1504,8 +1702,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 715,
-        "y": 855,
+        "x": 725,
+        "y": 970,
         "wires": [
             [
                 "4dd1bbe994c3b52f"
