@@ -562,7 +562,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "Disconnected Message",
-        "func": "msg.payload = {\n    content: \"Dragonframe Test Disconnected!\",\n    type: \"message\",\n    chatId: 1951007350\n};\nreturn msg;",
+        "func": "msg.payload = {\n    content:`${global.get('camName')} is offline`,\n    type: \"message\",\n    chatId: 1951007350\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
