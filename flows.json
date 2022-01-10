@@ -29,10 +29,10 @@
             "ca9db2b297167bc6",
             "64f9203603db7908"
         ],
-        "x": 59,
-        "y": 389,
+        "x": 34,
+        "y": 367.3333333333333,
         "w": 757,
-        "h": 232
+        "h": 231.99999999999994
     },
     {
         "id": "0bb745afc23d0509",
@@ -62,10 +62,10 @@
             "736dd74c72d2a204",
             "96425f00a551e968"
         ],
-        "x": 54,
-        "y": 99,
+        "x": 34,
+        "y": 59,
         "w": 752,
-        "h": 242
+        "h": 282
     },
     {
         "id": "e86b7e85ec7e628e",
@@ -87,8 +87,8 @@
             "5efad5f13ccddc1d",
             "d1e27294d49c58e8"
         ],
-        "x": 834,
-        "y": 139,
+        "x": 1114,
+        "y": 219,
         "w": 432,
         "h": 172
     },
@@ -111,7 +111,7 @@
             "d2d9a905d0204ceb",
             "a03789066075224a"
         ],
-        "x": 59,
+        "x": 34,
         "y": 1184,
         "w": 712,
         "h": 127
@@ -163,12 +163,13 @@
             "529053e0a6356213",
             "c485baf2dbc34784",
             "df5e6c8e46500187",
-            "5254eed4c4e2f098"
+            "5254eed4c4e2f098",
+            "132379b687fd1d01"
         ],
         "x": 34,
-        "y": 639,
+        "y": 625.6666666666666,
         "w": 1952,
-        "h": 532
+        "h": 531.9999999999999
     },
     {
         "id": "6f2ee2563c258dce",
@@ -396,8 +397,8 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 175,
-        "y": 580,
+        "x": 150,
+        "y": 558.3333333333333,
         "wires": [
             [
                 "98544f4b87b2b56e",
@@ -412,8 +413,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "Dragonframe sends \"Hello\"handshake every 20 sec",
         "info": "",
-        "x": 1050,
-        "y": 180,
+        "x": 1330,
+        "y": 260,
         "wires": []
     },
     {
@@ -423,8 +424,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "frameComplete",
         "info": "event: \"frameComplete\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nimageFileName: \"\"\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 940,
-        "y": 225,
+        "x": 1220,
+        "y": 305,
         "wires": []
     },
     {
@@ -434,8 +435,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "Capture State",
         "info": "event: \"captureState\"\nreadyToCapture: false\nstate: \"READY\"\n\n\nevent: \"captureState\"\nreadyToCapture: false\nstate: \"SHOOTING\"\n\n\nevent: \"captureState\"\nreadyToCapture: true\nstate: \"READY\"",
-        "x": 1110,
-        "y": 225,
+        "x": 1390,
+        "y": 305,
         "wires": []
     },
     {
@@ -445,8 +446,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "Shoot",
         "info": "event: \"shoot\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 1030,
-        "y": 270,
+        "x": 1310,
+        "y": 350,
         "wires": []
     },
     {
@@ -456,8 +457,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "Events",
         "info": "hello\n    maxVersion: 1\n    minVersion: 1\n\ncaptureState\n    readyToCapture: true|false\n    \ncaptureComplete\n    exposure: 1   \n    imageFileName: \"xxxxx\"\n    \nframeComplete\n    exposure: 1\n\nposition\n    exposure: 1",
-        "x": 910,
-        "y": 270,
+        "x": 1190,
+        "y": 350,
         "wires": []
     },
     {
@@ -473,7 +474,7 @@
         "group": "",
         "datatype": "utf8",
         "x": 120,
-        "y": 860,
+        "y": 846.6666666666666,
         "wires": [
             [
                 "f796e60ca7ad161d",
@@ -495,8 +496,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 700,
-        "y": 1010,
+        "x": 750,
+        "y": 1000,
         "wires": []
     },
     {
@@ -505,7 +506,7 @@
         "z": "20ac8dd407885f5d",
         "d": true,
         "g": "fc95a5364964861e",
-        "name": "Lost Dragonframe Comm",
+        "name": "Lost Dragonframe Comm Timer",
         "outtopic": "dragonframe",
         "outsafe": "1",
         "outwarning": "Warning",
@@ -515,7 +516,7 @@
         "repeat": false,
         "again": true,
         "x": 350,
-        "y": 1045,
+        "y": 1040,
         "wires": [
             [
                 "aa69fab8dd6d1c40"
@@ -545,8 +546,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 550,
-        "y": 1045,
+        "x": 570,
+        "y": 1040,
         "wires": [
             [
                 "291068297d309ff4"
@@ -569,7 +570,7 @@
         "finalize": "",
         "libs": [],
         "x": 1125,
-        "y": 1075,
+        "y": 1061.6666666666665,
         "wires": [
             [
                 "06b7e743d486e5ec"
@@ -586,7 +587,7 @@
         "haserroroutput": false,
         "outputs": 1,
         "x": 1620,
-        "y": 1005,
+        "y": 991.6666666666666,
         "wires": [
             [
                 "83558a2d4dd1ec39"
@@ -599,7 +600,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "Message to Telegram",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -608,7 +609,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1840,
-        "y": 1000,
+        "y": 986.6666666666666,
         "wires": []
     },
     {
@@ -629,7 +630,7 @@
         "topic": "",
         "payloadType": "date",
         "x": 810,
-        "y": 1130,
+        "y": 1116.6666666666665,
         "wires": [
             [
                 "8e2ec8c8916bdf24"
@@ -651,7 +652,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 725,
-        "y": 725,
+        "y": 711.6666666666666,
         "wires": []
     },
     {
@@ -664,7 +665,7 @@
         "action": "",
         "pretty": false,
         "x": 320,
-        "y": 755,
+        "y": 741.6666666666666,
         "wires": [
             [
                 "08559261273fd7dd",
@@ -694,7 +695,7 @@
         "repair": false,
         "outputs": 1,
         "x": 535,
-        "y": 725,
+        "y": 711.6666666666666,
         "wires": [
             [
                 "7766a80f579491d0"
@@ -720,7 +721,7 @@
         "repair": false,
         "outputs": 1,
         "x": 555,
-        "y": 770,
+        "y": 756.6666666666666,
         "wires": [
             [
                 "1299a236e72220b3"
@@ -746,7 +747,7 @@
         "repair": false,
         "outputs": 1,
         "x": 545,
-        "y": 815,
+        "y": 801.6666666666666,
         "wires": [
             [
                 "4406adeb35e5e2e7",
@@ -773,7 +774,7 @@
         "repair": false,
         "outputs": 1,
         "x": 515,
-        "y": 680,
+        "y": 666.6666666666666,
         "wires": [
             [
                 "a523b5d502056812"
@@ -799,7 +800,7 @@
         "repair": false,
         "outputs": 1,
         "x": 520,
-        "y": 905,
+        "y": 891.6666666666666,
         "wires": [
             [
                 "406cc4d760a0a25a"
@@ -821,7 +822,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 725,
-        "y": 770,
+        "y": 756.6666666666666,
         "wires": []
     },
     {
@@ -839,7 +840,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 730,
-        "y": 905,
+        "y": 891.6666666666666,
         "wires": []
     },
     {
@@ -863,7 +864,7 @@
         "to": "",
         "reg": false,
         "x": 745,
-        "y": 680,
+        "y": 666.6666666666666,
         "wires": [
             [
                 "250d8277323b0835",
@@ -882,8 +883,8 @@
         "outport": "2222",
         "base64": false,
         "multicast": "false",
-        "x": 1180,
-        "y": 540,
+        "x": 1860,
+        "y": 520,
         "wires": []
     },
     {
@@ -904,8 +905,8 @@
         "topic": "",
         "payload": "{ \"command\" : \"shoot\", \"frames\" : 1 }",
         "payloadType": "str",
-        "x": 185,
-        "y": 535,
+        "x": 160,
+        "y": 513.3333333333333,
         "wires": [
             [
                 "98544f4b87b2b56e",
@@ -928,7 +929,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1035,
-        "y": 815,
+        "y": 801.6666666666666,
         "wires": []
     },
     {
@@ -949,8 +950,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 2,
-        "x": 475,
-        "y": 460,
+        "x": 450,
+        "y": 438.3333333333333,
         "wires": [
             [
                 "9da7a0f2cdc1cc5d"
@@ -973,8 +974,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 700,
-        "y": 430,
+        "x": 675,
+        "y": 408.3333333333333,
         "wires": []
     },
     {
@@ -990,8 +991,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 700,
-        "y": 490,
+        "x": 675,
+        "y": 468.3333333333333,
         "wires": []
     },
     {
@@ -1012,7 +1013,7 @@
         "topic": "",
         "payload": "5",
         "payloadType": "num",
-        "x": 190,
+        "x": 170,
         "y": 220,
         "wires": [
             [
@@ -1034,7 +1035,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 660,
+        "x": 640,
         "y": 220,
         "wires": []
     },
@@ -1058,7 +1059,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 390,
+        "x": 370,
         "y": 220,
         "wires": [
             [
@@ -1087,7 +1088,7 @@
         "to": "",
         "reg": false,
         "x": 995,
-        "y": 680,
+        "y": 666.6666666666666,
         "wires": [
             [
                 "8c50a50d865f61ce"
@@ -1109,7 +1110,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 965,
-        "y": 725,
+        "y": 711.6666666666666,
         "wires": []
     },
     {
@@ -1132,8 +1133,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 495,
-        "y": 550,
+        "x": 470,
+        "y": 528.3333333333333,
         "wires": [
             [
                 "8c50a50d865f61ce"
@@ -1161,7 +1162,7 @@
         "to": "",
         "reg": false,
         "x": 785,
-        "y": 815,
+        "y": 801.6666666666666,
         "wires": [
             [
                 "6a8302e07e51c516"
@@ -1222,7 +1223,7 @@
         "outOfTimeValueType": "msgInput",
         "tsCompare": "0",
         "x": 745,
-        "y": 860,
+        "y": 846.6666666666666,
         "wires": [
             [
                 "ad668695f02ae062",
@@ -1252,7 +1253,7 @@
         "topic": "",
         "payload": "6:00",
         "payloadType": "str",
-        "x": 170,
+        "x": 150,
         "y": 260,
         "wires": [
             [
@@ -1280,7 +1281,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 400,
+        "x": 380,
         "y": 260,
         "wires": [
             [
@@ -1302,7 +1303,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 670,
+        "x": 650,
         "y": 260,
         "wires": []
     },
@@ -1324,7 +1325,7 @@
         "topic": "",
         "payload": "17:00",
         "payloadType": "str",
-        "x": 160,
+        "x": 140,
         "y": 300,
         "wires": [
             [
@@ -1352,7 +1353,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 400,
+        "x": 380,
         "y": 300,
         "wires": [
             [
@@ -1374,7 +1375,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 670,
+        "x": 650,
         "y": 300,
         "wires": []
     },
@@ -1391,7 +1392,7 @@
         "finalize": "",
         "libs": [],
         "x": 1410,
-        "y": 865,
+        "y": 851.6666666666666,
         "wires": [
             [
                 "06b7e743d486e5ec"
@@ -1411,7 +1412,7 @@
         "finalize": "",
         "libs": [],
         "x": 975,
-        "y": 975,
+        "y": 961.6666666666666,
         "wires": [
             []
         ]
@@ -1423,8 +1424,8 @@
         "g": "0bb745afc23d0509",
         "name": "Intervalometer Setup",
         "info": "",
-        "x": 200,
-        "y": 140,
+        "x": 180,
+        "y": 100,
         "wires": []
     },
     {
@@ -1434,8 +1435,8 @@
         "g": "9bb44f6703637248",
         "name": "Intervalometer",
         "info": "",
-        "x": 175,
-        "y": 445,
+        "x": 150,
+        "y": 423.3333333333333,
         "wires": []
     },
     {
@@ -1458,7 +1459,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 395,
+        "x": 370,
         "y": 1270,
         "wires": [
             [
@@ -1537,7 +1538,7 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 185,
+        "x": 160,
         "y": 1270,
         "wires": [
             [
@@ -1559,7 +1560,7 @@
         "outport": "",
         "base64": false,
         "multicast": "false",
-        "x": 635,
+        "x": 610,
         "y": 1270,
         "wires": []
     },
@@ -1568,9 +1569,9 @@
         "type": "comment",
         "z": "20ac8dd407885f5d",
         "g": "f8bf27854bd1b8d1",
-        "name": "Still Alive Message",
+        "name": "Still Alive Message Heartbeat",
         "info": "",
-        "x": 195,
+        "x": 200,
         "y": 1225,
         "wires": []
     },
@@ -1593,7 +1594,7 @@
         "topic": "topic",
         "outputs": 1,
         "x": 1180,
-        "y": 865,
+        "y": 851.6666666666666,
         "wires": [
             [
                 "96d34eae343acaac"
@@ -1621,7 +1622,7 @@
         "to": "",
         "reg": false,
         "x": 945,
-        "y": 915,
+        "y": 901.6666666666666,
         "wires": [
             [
                 "ad668695f02ae062"
@@ -1656,7 +1657,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1590,
+        "x": 1810,
         "y": 920,
         "wires": []
     },
@@ -1679,7 +1680,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 1130,
-        "y": 1025,
+        "y": 1011.6666666666666,
         "wires": [
             [
                 "12408f35f6cee229"
@@ -1704,7 +1705,7 @@
         "topic": "",
         "payloadType": "date",
         "x": 700,
-        "y": 965,
+        "y": 951.6666666666666,
         "wires": [
             [
                 "4dd1bbe994c3b52f"
@@ -1729,7 +1730,7 @@
         "topic": "",
         "payload": "Test_Camera",
         "payloadType": "str",
-        "x": 180,
+        "x": 160,
         "y": 180,
         "wires": [
             [
@@ -1757,7 +1758,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 400,
+        "x": 380,
         "y": 180,
         "wires": [
             [
@@ -1778,7 +1779,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 660,
+        "x": 640,
         "y": 180,
         "wires": []
     },
@@ -1828,7 +1829,7 @@
         "removeregexcommand": false,
         "outputs": 1,
         "x": 1220,
-        "y": 760,
+        "y": 746.6666666666666,
         "wires": [
             [
                 "96d34eae343acaac",
@@ -1851,7 +1852,18 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1400,
-        "y": 760,
+        "y": 746.6666666666666,
+        "wires": []
+    },
+    {
+        "id": "132379b687fd1d01",
+        "type": "comment",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Communication from camera",
+        "info": "",
+        "x": 180,
+        "y": 680,
         "wires": []
     }
 ]
