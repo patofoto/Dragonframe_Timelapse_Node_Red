@@ -57,12 +57,15 @@
             "2dc4d3acb2e2cdf6",
             "eb4444322a75b3c1",
             "681a21428075b6f9",
-            "9177261c8c25d93d"
+            "9177261c8c25d93d",
+            "85573d2294dd4173",
+            "736dd74c72d2a204",
+            "96425f00a551e968"
         ],
-        "x": 59,
-        "y": 139,
+        "x": 54,
+        "y": 99,
         "w": 752,
-        "h": 232
+        "h": 242
     },
     {
         "id": "e86b7e85ec7e628e",
@@ -157,11 +160,14 @@
             "12408f35f6cee229",
             "6edae490f780c504",
             "59e726330cc1c550",
-            "529053e0a6356213"
+            "529053e0a6356213",
+            "c485baf2dbc34784",
+            "df5e6c8e46500187",
+            "5254eed4c4e2f098"
         ],
-        "x": 59,
-        "y": 644,
-        "w": 1932,
+        "x": 34,
+        "y": 639,
+        "w": 1952,
         "h": 532
     },
     {
@@ -185,7 +191,7 @@
         "usernames": "patosuarez",
         "chatids": "1951007350",
         "baseapiurl": "",
-        "updatemode": "none",
+        "updatemode": "polling",
         "pollinterval": "300",
         "usesocks": false,
         "sockshost": "",
@@ -466,8 +472,8 @@
         "multicast": "false",
         "group": "",
         "datatype": "utf8",
-        "x": 145,
-        "y": 865,
+        "x": 120,
+        "y": 860,
         "wires": [
             [
                 "f796e60ca7ad161d",
@@ -489,8 +495,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 725,
-        "y": 1015,
+        "x": 700,
+        "y": 1010,
         "wires": []
     },
     {
@@ -508,8 +514,8 @@
         "timer": "60",
         "repeat": false,
         "again": true,
-        "x": 375,
-        "y": 1050,
+        "x": 350,
+        "y": 1045,
         "wires": [
             [
                 "aa69fab8dd6d1c40"
@@ -539,8 +545,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 575,
-        "y": 1050,
+        "x": 550,
+        "y": 1045,
         "wires": [
             [
                 "291068297d309ff4"
@@ -562,8 +568,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1110,
-        "y": 1090,
+        "x": 1125,
+        "y": 1075,
         "wires": [
             [
                 "06b7e743d486e5ec"
@@ -579,8 +585,8 @@
         "bot": "f52ae91beb2ca245",
         "haserroroutput": false,
         "outputs": 1,
-        "x": 1645,
-        "y": 1010,
+        "x": 1620,
+        "y": 1005,
         "wires": [
             [
                 "83558a2d4dd1ec39"
@@ -593,16 +599,16 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "Message to Telegram",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload.content.text",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1845,
-        "y": 1010,
+        "x": 1840,
+        "y": 1000,
         "wires": []
     },
     {
@@ -622,8 +628,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 835,
-        "y": 1135,
+        "x": 810,
+        "y": 1130,
         "wires": [
             [
                 "8e2ec8c8916bdf24"
@@ -644,8 +650,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 750,
-        "y": 730,
+        "x": 725,
+        "y": 725,
         "wires": []
     },
     {
@@ -657,8 +663,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 345,
-        "y": 760,
+        "x": 320,
+        "y": 755,
         "wires": [
             [
                 "08559261273fd7dd",
@@ -687,8 +693,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 560,
-        "y": 730,
+        "x": 535,
+        "y": 725,
         "wires": [
             [
                 "7766a80f579491d0"
@@ -713,8 +719,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 580,
-        "y": 775,
+        "x": 555,
+        "y": 770,
         "wires": [
             [
                 "1299a236e72220b3"
@@ -739,8 +745,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 570,
-        "y": 820,
+        "x": 545,
+        "y": 815,
         "wires": [
             [
                 "4406adeb35e5e2e7",
@@ -766,8 +772,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 540,
-        "y": 685,
+        "x": 515,
+        "y": 680,
         "wires": [
             [
                 "a523b5d502056812"
@@ -792,8 +798,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 545,
-        "y": 910,
+        "x": 520,
+        "y": 905,
         "wires": [
             [
                 "406cc4d760a0a25a"
@@ -814,8 +820,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 750,
-        "y": 775,
+        "x": 725,
+        "y": 770,
         "wires": []
     },
     {
@@ -832,8 +838,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 755,
-        "y": 910,
+        "x": 730,
+        "y": 905,
         "wires": []
     },
     {
@@ -856,8 +862,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 770,
-        "y": 685,
+        "x": 745,
+        "y": 680,
         "wires": [
             [
                 "250d8277323b0835",
@@ -921,8 +927,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1060,
-        "y": 820,
+        "x": 1035,
+        "y": 815,
         "wires": []
     },
     {
@@ -1006,8 +1012,8 @@
         "topic": "",
         "payload": "5",
         "payloadType": "num",
-        "x": 195,
-        "y": 240,
+        "x": 190,
+        "y": 220,
         "wires": [
             [
                 "e04c5893018bb8f9"
@@ -1028,8 +1034,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 665,
-        "y": 240,
+        "x": 660,
+        "y": 220,
         "wires": []
     },
     {
@@ -1052,8 +1058,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 395,
-        "y": 240,
+        "x": 390,
+        "y": 220,
         "wires": [
             [
                 "46d78d863bf40c19"
@@ -1080,8 +1086,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1020,
-        "y": 685,
+        "x": 995,
+        "y": 680,
         "wires": [
             [
                 "8c50a50d865f61ce"
@@ -1102,8 +1108,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 990,
-        "y": 730,
+        "x": 965,
+        "y": 725,
         "wires": []
     },
     {
@@ -1154,8 +1160,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
-        "y": 820,
+        "x": 785,
+        "y": 815,
         "wires": [
             [
                 "6a8302e07e51c516"
@@ -1215,8 +1221,8 @@
         "outOfTimeValue": "",
         "outOfTimeValueType": "msgInput",
         "tsCompare": "0",
-        "x": 770,
-        "y": 865,
+        "x": 745,
+        "y": 860,
         "wires": [
             [
                 "ad668695f02ae062",
@@ -1246,8 +1252,8 @@
         "topic": "",
         "payload": "6:00",
         "payloadType": "str",
-        "x": 175,
-        "y": 285,
+        "x": 170,
+        "y": 260,
         "wires": [
             [
                 "f155cd0a6b510828"
@@ -1274,8 +1280,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 405,
-        "y": 285,
+        "x": 400,
+        "y": 260,
         "wires": [
             [
                 "1783358b9ae93b5b"
@@ -1296,8 +1302,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 675,
-        "y": 285,
+        "x": 670,
+        "y": 260,
         "wires": []
     },
     {
@@ -1318,8 +1324,8 @@
         "topic": "",
         "payload": "17:00",
         "payloadType": "str",
-        "x": 165,
-        "y": 330,
+        "x": 160,
+        "y": 300,
         "wires": [
             [
                 "eb4444322a75b3c1"
@@ -1346,8 +1352,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 405,
-        "y": 330,
+        "x": 400,
+        "y": 300,
         "wires": [
             [
                 "681a21428075b6f9"
@@ -1368,8 +1374,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 675,
-        "y": 330,
+        "x": 670,
+        "y": 300,
         "wires": []
     },
     {
@@ -1377,15 +1383,15 @@
         "type": "function",
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
-        "name": "Current Frame",
-        "func": "msg.payload = {\n    content: global.get(\"currentFrame\"),\n    type: \"message\",\n    chatId: 1951007350,\n\n};\nreturn msg;",
+        "name": "Format message for Telegram",
+        "func": "msg.payload = {\n    content: `Frame ${global.get('dailyCounter')} of total frames ${global.get('currentFrame')} from ${global.get('camName')}`,\n    //camera: global.get('camName'),\n    type: \"message\",\n    chatId: 1951007350,\n\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1385,
-        "y": 870,
+        "x": 1410,
+        "y": 865,
         "wires": [
             [
                 "06b7e743d486e5ec"
@@ -1404,8 +1410,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 1000,
+        "x": 975,
+        "y": 975,
         "wires": [
             []
         ]
@@ -1417,8 +1423,8 @@
         "g": "0bb745afc23d0509",
         "name": "Intervalometer Setup",
         "info": "",
-        "x": 205,
-        "y": 180,
+        "x": 200,
+        "y": 140,
         "wires": []
     },
     {
@@ -1574,9 +1580,9 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "",
-        "op1": "currentFrame",
+        "op1": "",
         "op2": "0",
-        "op1type": "global",
+        "op1type": "date",
         "op2type": "str",
         "duration": "0",
         "extend": false,
@@ -1586,8 +1592,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 1205,
-        "y": 870,
+        "x": 1180,
+        "y": 865,
         "wires": [
             [
                 "96d34eae343acaac"
@@ -1614,8 +1620,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 975,
-        "y": 910,
+        "x": 945,
+        "y": 915,
         "wires": [
             [
                 "ad668695f02ae062"
@@ -1629,11 +1635,11 @@
         "g": "fc95a5364964861e",
         "inc": 1,
         "name": "",
-        "x": 1185,
-        "y": 910,
+        "x": 1160,
+        "y": 920,
         "wires": [
             [
-                "6edae490f780c504"
+                "c485baf2dbc34784"
             ]
         ]
     },
@@ -1643,15 +1649,15 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1375,
-        "y": 910,
+        "x": 1590,
+        "y": 920,
         "wires": []
     },
     {
@@ -1672,8 +1678,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1155,
-        "y": 1030,
+        "x": 1130,
+        "y": 1025,
         "wires": [
             [
                 "12408f35f6cee229"
@@ -1689,10 +1695,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
             }
         ],
         "repeat": "",
@@ -1700,14 +1702,156 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
         "payloadType": "date",
-        "x": 725,
-        "y": 970,
+        "x": 700,
+        "y": 965,
         "wires": [
             [
                 "4dd1bbe994c3b52f"
             ]
         ]
+    },
+    {
+        "id": "85573d2294dd4173",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "Camera Name",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Test_Camera",
+        "payloadType": "str",
+        "x": 180,
+        "y": 180,
+        "wires": [
+            [
+                "736dd74c72d2a204"
+            ]
+        ]
+    },
+    {
+        "id": "736dd74c72d2a204",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "camName Variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "camName",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "96425f00a551e968"
+            ]
+        ]
+    },
+    {
+        "id": "96425f00a551e968",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "c485baf2dbc34784",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Daily Counter Variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "dailyCounter",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1380,
+        "y": 920,
+        "wires": [
+            [
+                "6edae490f780c504"
+            ]
+        ]
+    },
+    {
+        "id": "df5e6c8e46500187",
+        "type": "telegram command",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "",
+        "command": "/current",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "f52ae91beb2ca245",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 1220,
+        "y": 760,
+        "wires": [
+            [
+                "96d34eae343acaac",
+                "5254eed4c4e2f098"
+            ]
+        ]
+    },
+    {
+        "id": "5254eed4c4e2f098",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1400,
+        "y": 760,
+        "wires": []
     }
 ]
