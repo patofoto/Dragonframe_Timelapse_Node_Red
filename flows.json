@@ -96,16 +96,13 @@
         "nodes": [
             "8f763fcfa9a2d554",
             "4a5a8d6cd7ad3256",
-            "98544f4b87b2b56e",
-            "9da7a0f2cdc1cc5d",
-            "319d9f93d4b86cb3",
             "ca9db2b297167bc6",
             "64f9203603db7908"
         ],
         "x": 34,
-        "y": 359,
-        "w": 852,
-        "h": 222
+        "y": 382.3333333333333,
+        "w": 512,
+        "h": 178.66666666666669
     },
     {
         "id": "0bb745afc23d0509",
@@ -186,7 +183,6 @@
             "8e2ec8c8916bdf24",
             "06b7e743d486e5ec",
             "83558a2d4dd1ec39",
-            "e9f5c42e1f3e50a4",
             "7766a80f579491d0",
             "1299a236e72220b3",
             "406cc4d760a0a25a",
@@ -200,7 +196,6 @@
             "12408f35f6cee229",
             "6edae490f780c504",
             "c485baf2dbc34784",
-            "df5e6c8e46500187",
             "132379b687fd1d01",
             "fd41d6ae3f2edbdf",
             "d5010ddcf1962b6b",
@@ -211,7 +206,7 @@
         "x": 34,
         "y": 599,
         "w": 2092,
-        "h": 582
+        "h": 542
     },
     {
         "id": "f8bf27854bd1b8d1",
@@ -234,7 +229,7 @@
             "40bef9287aebf1b0",
             "3c8e30648efc73b8"
         ],
-        "x": 1214,
+        "x": 1114,
         "y": 299,
         "w": 702,
         "h": 282
@@ -286,7 +281,7 @@
         "type": "telegram bot",
         "botname": "@patofoto_bot",
         "usernames": "patosuarez",
-        "chatids": "1951007350",
+        "chatids": "",
         "baseapiurl": "",
         "updatemode": "none",
         "pollinterval": "300",
@@ -444,6 +439,7 @@
         "id": "8f763fcfa9a2d554",
         "type": "time-inject",
         "z": "20ac8dd407885f5d",
+        "d": true,
         "g": "9bb44f6703637248",
         "name": "Intervalometer",
         "nameInt": "global.startTime - global.endTime[Mon-Fri] =... ↻",
@@ -515,7 +511,6 @@
         "y": 480,
         "wires": [
             [
-                "98544f4b87b2b56e",
                 "ca9db2b297167bc6"
             ]
         ]
@@ -610,7 +605,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1100,
+        "x": 1460,
         "y": 1060,
         "wires": []
     },
@@ -659,7 +654,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 670,
+        "x": 1190,
         "y": 1080,
         "wires": [
             [
@@ -682,7 +677,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1090,
+        "x": 1450,
         "y": 1100,
         "wires": [
             [
@@ -724,31 +719,6 @@
         "x": 1980,
         "y": 1020,
         "wires": []
-    },
-    {
-        "id": "e9f5c42e1f3e50a4",
-        "type": "inject",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Error Message Test",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 710,
-        "y": 1140,
-        "wires": [
-            [
-                "8e2ec8c8916bdf24"
-            ]
-        ]
     },
     {
         "id": "7766a80f579491d0",
@@ -808,7 +778,6 @@
         "id": "4a5a8d6cd7ad3256",
         "type": "inject",
         "z": "20ac8dd407885f5d",
-        "d": true,
         "g": "9bb44f6703637248",
         "name": "Manual Trigger",
         "props": [
@@ -824,10 +793,9 @@
         "payload": "{ \"command\" : \"shoot\", \"frames\" : 1 }",
         "payloadType": "str",
         "x": 160,
-        "y": 540,
+        "y": 520,
         "wires": [
             [
-                "98544f4b87b2b56e",
                 "ca9db2b297167bc6"
             ]
         ]
@@ -848,69 +816,6 @@
         "statusType": "auto",
         "x": 1020,
         "y": 800,
-        "wires": []
-    },
-    {
-        "id": "98544f4b87b2b56e",
-        "type": "trigger",
-        "z": "20ac8dd407885f5d",
-        "g": "9bb44f6703637248",
-        "name": "Intervalometer Alive Trigger",
-        "op1": "Shooting OK",
-        "op2": "Shooting Stopped",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "30",
-        "extend": true,
-        "overrideDelay": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 2,
-        "x": 500,
-        "y": 420,
-        "wires": [
-            [
-                "9da7a0f2cdc1cc5d"
-            ],
-            [
-                "319d9f93d4b86cb3"
-            ]
-        ]
-    },
-    {
-        "id": "9da7a0f2cdc1cc5d",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "9bb44f6703637248",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 770,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "319d9f93d4b86cb3",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "9bb44f6703637248",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 770,
-        "y": 440,
         "wires": []
     },
     {
@@ -977,7 +882,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 370,
+        "x": 380,
         "y": 220,
         "wires": [
             [
@@ -990,7 +895,7 @@
         "type": "change",
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
-        "name": "use dfPort variable",
+        "name": "set dfPort variable",
         "rules": [
             {
                 "t": "set",
@@ -1036,7 +941,7 @@
         "type": "change",
         "z": "20ac8dd407885f5d",
         "g": "9bb44f6703637248",
-        "name": "set dfport variable",
+        "name": "use dfport variable",
         "rules": [
             {
                 "t": "set",
@@ -1051,8 +956,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 528.3333333333333,
+        "x": 430,
+        "y": 500,
         "wires": [
             [
                 "8c50a50d865f61ce"
@@ -1133,7 +1038,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 380,
+        "x": 390,
         "y": 260,
         "wires": [
             [
@@ -1205,7 +1110,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 380,
+        "x": 390,
         "y": 300,
         "wires": [
             [
@@ -1237,7 +1142,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "Format message for Telegram",
-        "func": "msg.payload = {\n    content: `Started. Shot frame ${global.get('dailyCounter')} of total frames ${global.get('currentFrame')} from ${global.get('camName')}`,\n    type: \"message\",\n    chatId: 1951007350,\n\n};\nreturn msg;",
+        "func": "msg.payload = {\n    content: `Shot frame ${global.get('dailyCounter')} of total frames ${global.get('currentFrame')} from ${global.get('camName')}`,\n    type: \"message\",\n    chatId: 1951007350,\n\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1291,7 +1196,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 1160,
+        "x": 1020,
         "y": 860,
         "wires": [
             [
@@ -1319,7 +1224,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 950,
+        "x": 810,
         "y": 940,
         "wires": [
             [
@@ -1335,7 +1240,7 @@
         "g": "fc95a5364964861e",
         "inc": 1,
         "name": "",
-        "x": 1140,
+        "x": 1000,
         "y": 920,
         "wires": [
             [
@@ -1407,7 +1312,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 380,
+        "x": 390,
         "y": 180,
         "wires": [
             [
@@ -1457,31 +1362,6 @@
         "wires": [
             [
                 "6edae490f780c504"
-            ]
-        ]
-    },
-    {
-        "id": "df5e6c8e46500187",
-        "type": "telegram command",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "",
-        "command": "/current",
-        "description": "",
-        "registercommand": false,
-        "language": "",
-        "scope": "default",
-        "bot": "f52ae91beb2ca245",
-        "strict": false,
-        "hasresponse": false,
-        "useregex": false,
-        "removeregexcommand": false,
-        "outputs": 1,
-        "x": 1210,
-        "y": 800,
-        "wires": [
-            [
-                "96d34eae343acaac"
             ]
         ]
     },
@@ -1538,7 +1418,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "",
-        "func": "msg.payload = {\n    command: msg.payload.event,\n    //version: Number.parseFloat(msg.payload.maxVersion),\n};\nreturn msg;",
+        "func": "msg.payload = {\n    command: msg.payload.event,\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1561,7 +1441,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1030,
+        "x": 1010,
         "y": 640,
         "wires": [
             [
@@ -1641,7 +1521,7 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 1340,
+        "x": 1240,
         "y": 540,
         "wires": [
             [
@@ -1663,7 +1543,7 @@
         "outport": "",
         "base64": false,
         "multicast": "false",
-        "x": 1780,
+        "x": 1680,
         "y": 540,
         "wires": []
     },
@@ -1674,7 +1554,7 @@
         "g": "f8bf27854bd1b8d1",
         "name": "Still Alive Message Heartbeat",
         "info": "",
-        "x": 1380,
+        "x": 1280,
         "y": 500,
         "wires": []
     },
@@ -1690,7 +1570,7 @@
         "outport": "2222",
         "base64": false,
         "multicast": "false",
-        "x": 1340,
+        "x": 1240,
         "y": 380,
         "wires": []
     },
@@ -1701,7 +1581,7 @@
         "g": "f8bf27854bd1b8d1",
         "name": "Communication to Dragonframe",
         "info": "",
-        "x": 1390,
+        "x": 1290,
         "y": 340,
         "wires": []
     },
@@ -1717,7 +1597,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1540,
+        "x": 1440,
         "y": 540,
         "wires": [
             [
@@ -1973,7 +1853,7 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 770,
+        "x": 370,
         "y": 980,
         "wires": [
             [
