@@ -222,19 +222,18 @@
             "4406adeb35e5e2e7",
             "1995307a6b379738",
             "96d34eae343acaac",
-            "983cf1e200a53081",
             "ad668695f02ae062",
             "4dd1bbe994c3b52f",
             "12408f35f6cee229",
             "6edae490f780c504",
-            "59e726330cc1c550",
             "529053e0a6356213",
             "c485baf2dbc34784",
             "df5e6c8e46500187",
             "132379b687fd1d01",
             "fd41d6ae3f2edbdf",
             "d5010ddcf1962b6b",
-            "a54d238e37f49a60"
+            "a54d238e37f49a60",
+            "95ee1fb88fe6c9a5"
         ],
         "x": 34,
         "y": 619,
@@ -284,8 +283,8 @@
         "type": "ui_tab",
         "name": "Interval Settings",
         "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
+        "disabled": true,
+        "hidden": true
     },
     {
         "id": "0456ce322a9514fa",
@@ -534,7 +533,6 @@
         "id": "8f763fcfa9a2d554",
         "type": "time-inject",
         "z": "20ac8dd407885f5d",
-        "d": true,
         "g": "9bb44f6703637248",
         "name": "Intervalometer",
         "nameInt": "global.startTime - global.endTime[Mon-Fri] =... ↻",
@@ -791,7 +789,7 @@
         "haserroroutput": false,
         "outputs": 1,
         "x": 1760,
-        "y": 1020,
+        "y": 1040,
         "wires": [
             [
                 "83558a2d4dd1ec39"
@@ -813,7 +811,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1980,
-        "y": 1020,
+        "y": 1040,
         "wires": []
     },
     {
@@ -915,6 +913,7 @@
         "id": "4a5a8d6cd7ad3256",
         "type": "inject",
         "z": "20ac8dd407885f5d",
+        "d": true,
         "g": "9bb44f6703637248",
         "name": "Manual Trigger",
         "props": [
@@ -1035,7 +1034,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "5",
+        "payload": "1",
         "payloadType": "num",
         "x": 170,
         "y": 220,
@@ -1208,9 +1207,9 @@
         "startOffsetMultiplier": 60000,
         "endTime": "endTime",
         "endTimeType": "global",
-        "endOffset": "15",
+        "endOffset": "-1",
         "endOffsetType": "num",
-        "endOffsetMultiplier": 1000,
+        "endOffsetMultiplier": "60000",
         "timeRestrictions": 0,
         "timeRestrictionsType": "none",
         "timeDays": "1,2,3,4,5",
@@ -1244,7 +1243,7 @@
         "withinTimeValue": "",
         "withinTimeValueType": "msgInput",
         "outOfTimeValue": "",
-        "outOfTimeValueType": "msgInput",
+        "outOfTimeValueType": "date",
         "tsCompare": "0",
         "x": 750,
         "y": 860,
@@ -1254,8 +1253,8 @@
                 "12408f35f6cee229"
             ],
             [
-                "983cf1e200a53081",
-                "4dd1bbe994c3b52f"
+                "4dd1bbe994c3b52f",
+                "95ee1fb88fe6c9a5"
             ]
         ]
     },
@@ -1275,7 +1274,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "6:00",
+        "payload": "13:27",
         "payloadType": "str",
         "x": 150,
         "y": 260,
@@ -1347,7 +1346,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "17:00",
+        "payload": "13:40",
         "payloadType": "str",
         "x": 140,
         "y": 300,
@@ -1409,7 +1408,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "Format message for Telegram",
-        "func": "msg.payload = {\n    content: `Frame ${global.get('dailyCounter')} of total frames ${global.get('currentFrame')} from ${global.get('camName')}`,\n    //camera: global.get('camName'),\n    type: \"message\",\n    chatId: 1951007350,\n\n};\nreturn msg;",
+        "func": "msg.payload = {\n    content: `Started. Shot frame ${global.get('dailyCounter')} of total frames ${global.get('currentFrame')} from ${global.get('camName')}`,\n    type: \"message\",\n    chatId: 1951007350,\n\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1421,24 +1420,6 @@
             [
                 "06b7e743d486e5ec"
             ]
-        ]
-    },
-    {
-        "id": "983cf1e200a53081",
-        "type": "function",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Current Frame",
-        "func": "msg.payload = {\n    content: global.get(\"currentFrame\"),\n    type: \"message\",\n    chatId: 1951007350,\n};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 960,
-        "y": 980,
-        "wires": [
-            []
         ]
     },
     {
@@ -1589,8 +1570,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 1180,
-        "y": 885,
+        "x": 1160,
+        "y": 880,
         "wires": [
             [
                 "96d34eae343acaac"
@@ -1617,11 +1598,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
-        "y": 920,
+        "x": 950,
+        "y": 960,
         "wires": [
             [
-                "ad668695f02ae062"
+                "ad668695f02ae062",
+                "12408f35f6cee229"
             ]
         ]
     },
@@ -1632,8 +1614,8 @@
         "g": "fc95a5364964861e",
         "inc": 1,
         "name": "",
-        "x": 1220,
-        "y": 960,
+        "x": 1140,
+        "y": 940,
         "wires": [
             [
                 "c485baf2dbc34784"
@@ -1646,7 +1628,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "Daily Counter",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1655,44 +1637,23 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1960,
-        "y": 960,
+        "y": 940,
         "wires": []
-    },
-    {
-        "id": "59e726330cc1c550",
-        "type": "inject",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Reset day framecounter",
-        "props": [
-            {
-                "p": "reset",
-                "v": "",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 1260,
-        "y": 1040,
-        "wires": [
-            [
-                "12408f35f6cee229"
-            ]
-        ]
     },
     {
         "id": "529053e0a6356213",
         "type": "inject",
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
-        "name": "Reset block first message of day",
+        "name": "Reset block after first message of day",
         "props": [
             {
                 "p": "payload"
+            },
+            {
+                "p": "reset",
+                "v": "",
+                "vt": "date"
             }
         ],
         "repeat": "",
@@ -1701,7 +1662,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 670,
+        "x": 650,
         "y": 980,
         "wires": [
             [
@@ -1725,7 +1686,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Test_Camera",
+        "payload": "Test Camera",
         "payloadType": "str",
         "x": 160,
         "y": 180,
@@ -1801,7 +1762,7 @@
         "to": "",
         "reg": false,
         "x": 1440,
-        "y": 960,
+        "y": 940,
         "wires": [
             [
                 "6edae490f780c504"
@@ -1825,8 +1786,8 @@
         "useregex": false,
         "removeregexcommand": false,
         "outputs": 1,
-        "x": 1220,
-        "y": 780,
+        "x": 1210,
+        "y": 820,
         "wires": [
             [
                 "96d34eae343acaac"
@@ -1885,7 +1846,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "",
-        "func": "msg.payload = {\n    command: msg.payload.event,\n    version: Number.parseFloat(msg.payload.maxVersion),\n};\nreturn msg;",
+        "func": "msg.payload = {\n    command: msg.payload.event,\n    //version: Number.parseFloat(msg.payload.maxVersion),\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1945,6 +1906,26 @@
         "wires": [
             [
                 "d2d9a905d0204ceb"
+            ]
+        ]
+    },
+    {
+        "id": "95ee1fb88fe6c9a5",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Format message for Telegram",
+        "func": "msg.payload = {\n    content: `Ended. Shot ${global.get('dailyCounter')} frames today of total ${global.get('currentFrame')} frames on ${global.get('camName')}`,\n    type: \"message\",\n    chatId: 1951007350,\n\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 1000,
+        "wires": [
+            [
+                "06b7e743d486e5ec"
             ]
         ]
     }
