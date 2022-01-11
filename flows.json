@@ -194,7 +194,6 @@
             "5b9f30ef3294e253",
             "250d8277323b0835",
             "4406adeb35e5e2e7",
-            "1995307a6b379738",
             "96d34eae343acaac",
             "ad668695f02ae062",
             "4dd1bbe994c3b52f",
@@ -1089,71 +1088,6 @@
         ]
     },
     {
-        "id": "1995307a6b379738",
-        "type": "within-time-switch",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Day Limits",
-        "nameInt": "",
-        "positionConfig": "6f2ee2563c258dce",
-        "startTime": "startTime",
-        "startTimeType": "global",
-        "startOffset": 0,
-        "startOffsetType": "none",
-        "startOffsetMultiplier": 60000,
-        "endTime": "endTime",
-        "endTimeType": "global",
-        "endOffset": "",
-        "endOffsetType": "none",
-        "endOffsetMultiplier": 60000,
-        "timeRestrictions": 0,
-        "timeRestrictionsType": "none",
-        "timeDays": "1,2,3,4,5",
-        "timeOnlyOddDays": false,
-        "timeOnlyEvenDays": false,
-        "timeOnlyOddWeeks": false,
-        "timeOnlyEvenWeeks": false,
-        "timeMonths": "*",
-        "timedatestart": "",
-        "timedateend": "",
-        "propertyStart": "",
-        "propertyStartType": "none",
-        "propertyStartCompare": "true",
-        "propertyStartThreshold": "",
-        "propertyStartThresholdType": "num",
-        "startTimeAlt": "",
-        "startTimeAltType": "none",
-        "startOffsetAlt": 0,
-        "startOffsetAltType": "none",
-        "startOffsetAltMultiplier": 60000,
-        "propertyEnd": "",
-        "propertyEndType": "none",
-        "propertyEndCompare": "true",
-        "propertyEndThreshold": "",
-        "propertyEndThresholdType": "num",
-        "endTimeAlt": "",
-        "endTimeAltType": "none",
-        "endOffsetAlt": 0,
-        "endOffsetAltType": "none",
-        "endOffsetAltMultiplier": 60000,
-        "withinTimeValue": "",
-        "withinTimeValueType": "msgInput",
-        "outOfTimeValue": "",
-        "outOfTimeValueType": "date",
-        "tsCompare": "0",
-        "x": 750,
-        "y": 840,
-        "wires": [
-            [
-                "ad668695f02ae062",
-                "12408f35f6cee229"
-            ],
-            [
-                "4dd1bbe994c3b52f"
-            ]
-        ]
-    },
-    {
         "id": "803ffb81a3fe0d25",
         "type": "inject",
         "z": "20ac8dd407885f5d",
@@ -1583,7 +1517,8 @@
             ],
             [
                 "4406adeb35e5e2e7",
-                "1995307a6b379738"
+                "ad668695f02ae062",
+                "12408f35f6cee229"
             ],
             [
                 "406cc4d760a0a25a"
@@ -2038,11 +1973,12 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 1170,
+        "x": 770,
         "y": 980,
         "wires": [
             [
-                "ac735291685f7021"
+                "ac735291685f7021",
+                "4dd1bbe994c3b52f"
             ]
         ]
     },
