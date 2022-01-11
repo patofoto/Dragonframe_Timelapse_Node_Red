@@ -160,8 +160,8 @@
             "5efad5f13ccddc1d",
             "d1e27294d49c58e8"
         ],
-        "x": 834,
-        "y": 139,
+        "x": 34,
+        "y": 1199,
         "w": 432,
         "h": 172
     },
@@ -200,17 +200,17 @@
             "4dd1bbe994c3b52f",
             "12408f35f6cee229",
             "6edae490f780c504",
-            "529053e0a6356213",
             "c485baf2dbc34784",
             "df5e6c8e46500187",
             "132379b687fd1d01",
             "fd41d6ae3f2edbdf",
             "d5010ddcf1962b6b",
             "a54d238e37f49a60",
-            "95ee1fb88fe6c9a5"
+            "ac735291685f7021",
+            "dad9def59723f79b"
         ],
         "x": 34,
-        "y": 619,
+        "y": 599,
         "w": 2092,
         "h": 582
     },
@@ -235,10 +235,38 @@
             "40bef9287aebf1b0",
             "3c8e30648efc73b8"
         ],
-        "x": 1274,
-        "y": 319,
+        "x": 1214,
+        "y": 299,
         "w": 702,
         "h": 282
+    },
+    {
+        "id": "728af4eea16d05c3",
+        "type": "group",
+        "z": "20ac8dd407885f5d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8b46c3288f3c192f",
+            "4bd131d11e5656df",
+            "7343288e0a5c8760",
+            "ed4deacfc469ea0f",
+            "eb40f576e817ee93",
+            "2be5d300b13c3936",
+            "6fa3553b068fe207",
+            "f9c38b354e8f4287"
+        ],
+        "x": 814,
+        "y": 59,
+        "w": 872,
+        "h": 182
     },
     {
         "id": "6f2ee2563c258dce",
@@ -261,7 +289,7 @@
         "usernames": "patosuarez",
         "chatids": "1951007350",
         "baseapiurl": "",
-        "updatemode": "polling",
+        "updatemode": "none",
         "pollinterval": "300",
         "usesocks": false,
         "sockshost": "",
@@ -500,8 +528,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "Dragonframe sends \"Hello\"handshake every 20 sec",
         "info": "",
-        "x": 1050,
-        "y": 180,
+        "x": 250,
+        "y": 1240,
         "wires": []
     },
     {
@@ -511,8 +539,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "frameComplete",
         "info": "event: \"frameComplete\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nimageFileName: \"\"\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 940,
-        "y": 225,
+        "x": 140,
+        "y": 1285,
         "wires": []
     },
     {
@@ -522,8 +550,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "Capture State",
         "info": "event: \"captureState\"\nreadyToCapture: false\nstate: \"READY\"\n\n\nevent: \"captureState\"\nreadyToCapture: false\nstate: \"SHOOTING\"\n\n\nevent: \"captureState\"\nreadyToCapture: true\nstate: \"READY\"",
-        "x": 1110,
-        "y": 225,
+        "x": 310,
+        "y": 1285,
         "wires": []
     },
     {
@@ -533,8 +561,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "Shoot",
         "info": "event: \"shoot\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 1030,
-        "y": 270,
+        "x": 230,
+        "y": 1330,
         "wires": []
     },
     {
@@ -544,8 +572,8 @@
         "g": "e86b7e85ec7e628e",
         "name": "Events",
         "info": "hello\n    maxVersion: 1\n    minVersion: 1\n\ncaptureState\n    readyToCapture: true|false\n    \ncaptureComplete\n    exposure: 1   \n    imageFileName: \"xxxxx\"\n    \nframeComplete\n    exposure: 1\n\nposition\n    exposure: 1",
-        "x": 910,
-        "y": 270,
+        "x": 110,
+        "y": 1330,
         "wires": []
     },
     {
@@ -561,7 +589,7 @@
         "group": "",
         "datatype": "utf8",
         "x": 120,
-        "y": 940,
+        "y": 920,
         "wires": [
             [
                 "f796e60ca7ad161d",
@@ -583,8 +611,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 960,
-        "y": 1040,
+        "x": 1100,
+        "y": 1060,
         "wires": []
     },
     {
@@ -655,8 +683,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1150,
-        "y": 1120,
+        "x": 1090,
+        "y": 1100,
         "wires": [
             [
                 "06b7e743d486e5ec"
@@ -673,7 +701,7 @@
         "haserroroutput": false,
         "outputs": 1,
         "x": 1760,
-        "y": 1040,
+        "y": 1020,
         "wires": [
             [
                 "83558a2d4dd1ec39"
@@ -695,7 +723,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1980,
-        "y": 1040,
+        "y": 1020,
         "wires": []
     },
     {
@@ -716,7 +744,7 @@
         "topic": "",
         "payloadType": "date",
         "x": 710,
-        "y": 1160,
+        "y": 1140,
         "wires": [
             [
                 "8e2ec8c8916bdf24"
@@ -738,7 +766,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 750,
-        "y": 740,
+        "y": 720,
         "wires": []
     },
     {
@@ -756,7 +784,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 770,
-        "y": 780,
+        "y": 760,
         "wires": []
     },
     {
@@ -774,7 +802,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 740,
-        "y": 920,
+        "y": 900,
         "wires": []
     },
     {
@@ -820,7 +848,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1020,
-        "y": 820,
+        "y": 800,
         "wires": []
     },
     {
@@ -902,7 +930,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "1",
+        "payload": "5",
         "payloadType": "num",
         "x": 170,
         "y": 220,
@@ -979,7 +1007,7 @@
         "to": "",
         "reg": false,
         "x": 770,
-        "y": 700,
+        "y": 680,
         "wires": [
             [
                 "8c50a50d865f61ce"
@@ -1001,7 +1029,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1190,
-        "y": 660,
+        "y": 640,
         "wires": []
     },
     {
@@ -1053,7 +1081,7 @@
         "to": "",
         "reg": false,
         "x": 790,
-        "y": 820,
+        "y": 800,
         "wires": [
             [
                 "6a8302e07e51c516"
@@ -1075,9 +1103,9 @@
         "startOffsetMultiplier": 60000,
         "endTime": "endTime",
         "endTimeType": "global",
-        "endOffset": "-1",
-        "endOffsetType": "num",
-        "endOffsetMultiplier": "60000",
+        "endOffset": "",
+        "endOffsetType": "none",
+        "endOffsetMultiplier": 60000,
         "timeRestrictions": 0,
         "timeRestrictionsType": "none",
         "timeDays": "1,2,3,4,5",
@@ -1114,15 +1142,14 @@
         "outOfTimeValueType": "date",
         "tsCompare": "0",
         "x": 750,
-        "y": 860,
+        "y": 840,
         "wires": [
             [
                 "ad668695f02ae062",
                 "12408f35f6cee229"
             ],
             [
-                "4dd1bbe994c3b52f",
-                "95ee1fb88fe6c9a5"
+                "4dd1bbe994c3b52f"
             ]
         ]
     },
@@ -1142,7 +1169,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "13:27",
+        "payload": "6:00",
         "payloadType": "str",
         "x": 150,
         "y": 260,
@@ -1214,7 +1241,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "13:40",
+        "payload": "17:00",
         "payloadType": "str",
         "x": 140,
         "y": 300,
@@ -1283,7 +1310,7 @@
         "finalize": "",
         "libs": [],
         "x": 1470,
-        "y": 880,
+        "y": 860,
         "wires": [
             [
                 "06b7e743d486e5ec"
@@ -1331,7 +1358,7 @@
         "topic": "topic",
         "outputs": 1,
         "x": 1160,
-        "y": 880,
+        "y": 860,
         "wires": [
             [
                 "96d34eae343acaac"
@@ -1359,7 +1386,7 @@
         "to": "",
         "reg": false,
         "x": 950,
-        "y": 960,
+        "y": 940,
         "wires": [
             [
                 "ad668695f02ae062",
@@ -1375,7 +1402,7 @@
         "inc": 1,
         "name": "",
         "x": 1140,
-        "y": 940,
+        "y": 920,
         "wires": [
             [
                 "c485baf2dbc34784"
@@ -1388,7 +1415,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "Daily Counter",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1397,38 +1424,8 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1960,
-        "y": 940,
+        "y": 920,
         "wires": []
-    },
-    {
-        "id": "529053e0a6356213",
-        "type": "inject",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Reset block after first message of day",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "reset",
-                "v": "",
-                "vt": "date"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 650,
-        "y": 980,
-        "wires": [
-            [
-                "4dd1bbe994c3b52f"
-            ]
-        ]
     },
     {
         "id": "85573d2294dd4173",
@@ -1522,7 +1519,7 @@
         "to": "",
         "reg": false,
         "x": 1440,
-        "y": 940,
+        "y": 920,
         "wires": [
             [
                 "6edae490f780c504"
@@ -1547,7 +1544,7 @@
         "removeregexcommand": false,
         "outputs": 1,
         "x": 1210,
-        "y": 820,
+        "y": 800,
         "wires": [
             [
                 "96d34eae343acaac"
@@ -1562,7 +1559,7 @@
         "name": "Communication from camera",
         "info": "",
         "x": 180,
-        "y": 713.3333333333334,
+        "y": 693.3333333333334,
         "wires": []
     },
     {
@@ -1572,7 +1569,7 @@
         "g": "fc95a5364964861e",
         "name": "",
         "x": 400,
-        "y": 800,
+        "y": 780,
         "wires": [
             [
                 "d5010ddcf1962b6b",
@@ -1613,7 +1610,7 @@
         "finalize": "",
         "libs": [],
         "x": 740,
-        "y": 660,
+        "y": 640,
         "wires": [
             [
                 "a54d238e37f49a60"
@@ -1630,31 +1627,11 @@
         "action": "",
         "pretty": false,
         "x": 1030,
-        "y": 660,
+        "y": 640,
         "wires": [
             [
                 "250d8277323b0835",
                 "8c50a50d865f61ce"
-            ]
-        ]
-    },
-    {
-        "id": "95ee1fb88fe6c9a5",
-        "type": "function",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Format message for Telegram",
-        "func": "msg.payload = {\n    content: `Ended. Shot ${global.get('dailyCounter')} frames today of total ${global.get('currentFrame')} frames on ${global.get('camName')}`,\n    type: \"message\",\n    chatId: 1951007350,\n\n};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1290,
-        "y": 1000,
-        "wires": [
-            [
-                "06b7e743d486e5ec"
             ]
         ]
     },
@@ -1729,8 +1706,8 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 1400,
-        "y": 560,
+        "x": 1340,
+        "y": 540,
         "wires": [
             [
                 "3c8e30648efc73b8"
@@ -1751,8 +1728,8 @@
         "outport": "",
         "base64": false,
         "multicast": "false",
-        "x": 1840,
-        "y": 560,
+        "x": 1780,
+        "y": 540,
         "wires": []
     },
     {
@@ -1762,8 +1739,8 @@
         "g": "f8bf27854bd1b8d1",
         "name": "Still Alive Message Heartbeat",
         "info": "",
-        "x": 1440,
-        "y": 520,
+        "x": 1380,
+        "y": 500,
         "wires": []
     },
     {
@@ -1778,8 +1755,8 @@
         "outport": "2222",
         "base64": false,
         "multicast": "false",
-        "x": 1400,
-        "y": 400,
+        "x": 1340,
+        "y": 380,
         "wires": []
     },
     {
@@ -1789,8 +1766,8 @@
         "g": "f8bf27854bd1b8d1",
         "name": "Communication to Dragonframe",
         "info": "",
-        "x": 1450,
-        "y": 360,
+        "x": 1390,
+        "y": 340,
         "wires": []
     },
     {
@@ -1805,12 +1782,279 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1600,
-        "y": 560,
+        "x": 1540,
+        "y": 540,
         "wires": [
             [
                 "d2d9a905d0204ceb"
             ]
         ]
+    },
+    {
+        "id": "8b46c3288f3c192f",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "Shooting Hours",
+        "func": "let numStartTime = parseInt(global.get('startTime'), 10);\nlet numEndTime = parseInt(global.get('endTime'), 10);\n\nmsg.payload = shootHours = numEndTime - numStartTime;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 160,
+        "wires": [
+            [
+                "ed4deacfc469ea0f"
+            ]
+        ]
+    },
+    {
+        "id": "4bd131d11e5656df",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "7343288e0a5c8760",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 920,
+        "y": 180,
+        "wires": [
+            [
+                "8b46c3288f3c192f",
+                "eb40f576e817ee93"
+            ]
+        ]
+    },
+    {
+        "id": "ed4deacfc469ea0f",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "set shootHours variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "shootHours",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1350,
+        "y": 160,
+        "wires": [
+            [
+                "4bd131d11e5656df"
+            ]
+        ]
+    },
+    {
+        "id": "eb40f576e817ee93",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "Frames a day",
+        "func": "let framesHour = 60/global.get('interval');\n\nmsg.payload = global.get('shootHours')*framesHour;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 200,
+        "wires": [
+            [
+                "2be5d300b13c3936"
+            ]
+        ]
+    },
+    {
+        "id": "2be5d300b13c3936",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "set framesDay variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "framesDay",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1340,
+        "y": 200,
+        "wires": [
+            [
+                "6fa3553b068fe207"
+            ]
+        ]
+    },
+    {
+        "id": "6fa3553b068fe207",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "ac735291685f7021",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Last Frame Message",
+        "func": "let expectedFrames = global.get('framesDay');\nlet shotFrames = global.get('dailyCounter');\nif (expectedFrames===shotFrames){\n    msg.payload = {\n    content:'All frames shot today',\n    type: \"message\",\n    chatId: 1951007350,\n};\n} else {\n    msg.payload = {\n    content:'Frame count not as expected',\n    type: \"message\",\n    chatId: 1951007350,\n};\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1440,
+        "y": 980,
+        "wires": [
+            [
+                "06b7e743d486e5ec"
+            ]
+        ]
+    },
+    {
+        "id": "dad9def59723f79b",
+        "type": "time-inject",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "End of day trigger",
+        "nameInt": "⏲ global.endTime↷[Mon-Fri] = timestamp",
+        "positionConfig": "6f2ee2563c258dce",
+        "props": [
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "",
+                "vt": "date",
+                "o": "",
+                "oT": "none",
+                "oM": "60000",
+                "f": 0,
+                "fS": 0,
+                "fT": "UNIX timestamp (ms)",
+                "fI": "0",
+                "next": true,
+                "days": "*",
+                "months": "*",
+                "onlyOddDays": false,
+                "onlyEvenDays": false,
+                "onlyOddWeeks": false,
+                "onlyEvenWeeks": false
+            }
+        ],
+        "injectTypeSelect": "time",
+        "intervalCount": 1,
+        "intervalCountType": "num",
+        "intervalCountMultiplier": 60000,
+        "time": "endTime",
+        "timeType": "global",
+        "offset": "5",
+        "offsetType": "num",
+        "offsetMultiplier": 1000,
+        "timeEnd": "",
+        "timeEndType": "entered",
+        "timeEndOffset": 0,
+        "timeEndOffsetType": "none",
+        "timeEndOffsetMultiplier": 60000,
+        "timeDays": "1,2,3,4,5",
+        "timeOnlyOddDays": false,
+        "timeOnlyEvenDays": false,
+        "timeOnlyOddWeeks": false,
+        "timeOnlyEvenWeeks": false,
+        "timeMonths": "*",
+        "timedatestart": "",
+        "timedateend": "",
+        "property": "",
+        "propertyType": "none",
+        "propertyCompare": "true",
+        "propertyThreshold": "",
+        "propertyThresholdType": "num",
+        "timeAlt": "",
+        "timeAltType": "entered",
+        "timeAltDays": "*",
+        "timeAltOnlyOddDays": false,
+        "timeAltOnlyEvenDays": false,
+        "timeAltOnlyOddWeeks": false,
+        "timeAltOnlyEvenWeeks": false,
+        "timeAltMonths": "*",
+        "timeAltOffset": 0,
+        "timeAltOffsetType": "none",
+        "timeAltOffsetMultiplier": 60000,
+        "once": false,
+        "onceDelay": 0.1,
+        "recalcTime": 2,
+        "x": 1170,
+        "y": 980,
+        "wires": [
+            [
+                "ac735291685f7021"
+            ]
+        ]
+    },
+    {
+        "id": "f9c38b354e8f4287",
+        "type": "comment",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "Calculations",
+        "info": "",
+        "x": 930,
+        "y": 100,
+        "wires": []
     }
 ]
