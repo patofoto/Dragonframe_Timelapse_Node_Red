@@ -1594,7 +1594,7 @@
         "z": "20ac8dd407885f5d",
         "g": "728af4eea16d05c3",
         "name": "Frames a day",
-        "func": "let framesHour = 60/global.get('interval');\n\nmsg.payload = global.get('shootHours')*framesHour;\nreturn msg;",
+        "func": "let framesHour = parseInt(60/global.get('interval'), 10);\n\nmsg.payload = global.get('shootHours')*framesHour;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
