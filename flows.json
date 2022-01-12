@@ -1,5 +1,13 @@
 [
     {
+        "id": "b1ca81c2f04dcad4",
+        "type": "tab",
+        "label": "Set Up",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "20ac8dd407885f5d",
         "type": "tab",
         "label": "Dragonframe_Int",
@@ -113,22 +121,22 @@
             "fill": "#ffffff"
         },
         "nodes": [
-            "6cb3cffde7b508fa",
             "46d78d863bf40c19",
             "e04c5893018bb8f9",
-            "803ffb81a3fe0d25",
             "f155cd0a6b510828",
             "1783358b9ae93b5b",
-            "2dc4d3acb2e2cdf6",
             "eb4444322a75b3c1",
             "681a21428075b6f9",
-            "85573d2294dd4173",
             "736dd74c72d2a204",
-            "96425f00a551e968"
+            "96425f00a551e968",
+            "0e4f9f21c44e4155",
+            "191c1d8ffa34bbe6",
+            "3bcbb20cdf28833c",
+            "4c14d19363082c7c"
         ],
-        "x": 34,
+        "x": 54,
         "y": 39,
-        "w": 752,
+        "w": 572,
         "h": 202
     },
     {
@@ -194,9 +202,9 @@
             "6fa3553b068fe207",
             "ac0e05234a14655c",
             "4871b344d6671ecf",
-            "8d461f06a6cb1bb5",
             "eef13addb5939a98",
-            "1468539339414676"
+            "1468539339414676",
+            "c1ceaa231f70e595"
         ],
         "x": 814,
         "y": 39,
@@ -236,12 +244,16 @@
         "nodes": [
             "869fa2a8fa523984",
             "d2d9a905d0204ceb",
-            "3c8e30648efc73b8"
+            "3c8e30648efc73b8",
+            "c7f6fc6f04bbb3dc",
+            "f63b16679781980b",
+            "ccbf032c757d06c1",
+            "f6ea6508b7328b90"
         ],
         "x": 34,
         "y": 979,
-        "w": 702,
-        "h": 82
+        "w": 592,
+        "h": 162
     },
     {
         "id": "e86b7e85ec7e628e",
@@ -265,6 +277,76 @@
         "y": 979,
         "w": 432,
         "h": 172
+    },
+    {
+        "id": "bdd30934fab20f76",
+        "type": "group",
+        "z": "b1ca81c2f04dcad4",
+        "name": "Intervalometer",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "09a28c394e1ad440",
+            "d9d7ea72c7e079dc",
+            "5fc4f5f87de38afb",
+            "6f64efcdc791e39c",
+            "beccddc992f6cfbd",
+            "be24dd8189481830",
+            "412bc206bcf4755c",
+            "566508d582d9ca7e"
+        ],
+        "x": 74,
+        "y": 59,
+        "w": 362,
+        "h": 202
+    },
+    {
+        "id": "d9f935c786fedbad",
+        "type": "group",
+        "z": "b1ca81c2f04dcad4",
+        "name": "Calculations",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "9a22c9ce666839c3",
+            "1bc7f71706ceea1d"
+        ],
+        "x": 74,
+        "y": 279,
+        "w": 362,
+        "h": 82
+    },
+    {
+        "id": "eb1500eb239e6526",
+        "type": "group",
+        "z": "b1ca81c2f04dcad4",
+        "name": "Alive Listener Configuration",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "8f6e305b656ef1d1",
+            "59d2852f08fdfa93",
+            "ad028c28323036ac",
+            "2caed68993d32ffe",
+            "a910c3cc4f077abc",
+            "4ad8d78a941ac3fb"
+        ],
+        "x": 474,
+        "y": 59,
+        "w": 522,
+        "h": 122
     },
     {
         "id": "6f2ee2563c258dce",
@@ -440,6 +522,342 @@
         ]
     },
     {
+        "id": "09a28c394e1ad440",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "g": "bdd30934fab20f76",
+        "name": "Interval in Minutes",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "be24dd8189481830"
+            ]
+        ]
+    },
+    {
+        "id": "d9d7ea72c7e079dc",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "g": "bdd30934fab20f76",
+        "name": "Camera Name",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Test Camera",
+        "payloadType": "str",
+        "x": 200,
+        "y": 100,
+        "wires": [
+            [
+                "beccddc992f6cfbd"
+            ]
+        ]
+    },
+    {
+        "id": "5fc4f5f87de38afb",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "g": "bdd30934fab20f76",
+        "name": "Start Time",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "6:00",
+        "payloadType": "str",
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "412bc206bcf4755c"
+            ]
+        ]
+    },
+    {
+        "id": "6f64efcdc791e39c",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "g": "bdd30934fab20f76",
+        "name": "End Time",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "17:00",
+        "payloadType": "str",
+        "x": 180,
+        "y": 220,
+        "wires": [
+            [
+                "566508d582d9ca7e"
+            ]
+        ]
+    },
+    {
+        "id": "9a22c9ce666839c3",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "g": "d9f935c786fedbad",
+        "name": "File Size in Mb",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "28",
+        "payloadType": "num",
+        "x": 200,
+        "y": 320,
+        "wires": [
+            [
+                "1bc7f71706ceea1d"
+            ]
+        ]
+    },
+    {
+        "id": "beccddc992f6cfbd",
+        "type": "link out",
+        "z": "b1ca81c2f04dcad4",
+        "g": "bdd30934fab20f76",
+        "name": "Camera Name",
+        "mode": "link",
+        "links": [
+            "0e4f9f21c44e4155"
+        ],
+        "x": 395,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "be24dd8189481830",
+        "type": "link out",
+        "z": "b1ca81c2f04dcad4",
+        "g": "bdd30934fab20f76",
+        "name": "Interval",
+        "mode": "link",
+        "links": [
+            "191c1d8ffa34bbe6"
+        ],
+        "x": 395,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "412bc206bcf4755c",
+        "type": "link out",
+        "z": "b1ca81c2f04dcad4",
+        "g": "bdd30934fab20f76",
+        "name": "Start Time",
+        "mode": "link",
+        "links": [
+            "3bcbb20cdf28833c"
+        ],
+        "x": 395,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "566508d582d9ca7e",
+        "type": "link out",
+        "z": "b1ca81c2f04dcad4",
+        "g": "bdd30934fab20f76",
+        "name": "End Time",
+        "mode": "link",
+        "links": [
+            "4c14d19363082c7c"
+        ],
+        "x": 395,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1bc7f71706ceea1d",
+        "type": "link out",
+        "z": "b1ca81c2f04dcad4",
+        "g": "d9f935c786fedbad",
+        "name": "File Size",
+        "mode": "link",
+        "links": [
+            "c1ceaa231f70e595"
+        ],
+        "x": 395,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "8f6e305b656ef1d1",
+        "type": "change",
+        "z": "b1ca81c2f04dcad4",
+        "g": "eb1500eb239e6526",
+        "name": "set alivePort variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "alivePort",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 100,
+        "wires": [
+            [
+                "ad028c28323036ac"
+            ]
+        ]
+    },
+    {
+        "id": "59d2852f08fdfa93",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "g": "eb1500eb239e6526",
+        "name": "Alive Comm Port",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "65515",
+        "payloadType": "num",
+        "x": 610,
+        "y": 100,
+        "wires": [
+            [
+                "8f6e305b656ef1d1"
+            ]
+        ]
+    },
+    {
+        "id": "ad028c28323036ac",
+        "type": "link out",
+        "z": "b1ca81c2f04dcad4",
+        "g": "eb1500eb239e6526",
+        "name": "Alive Port",
+        "mode": "link",
+        "links": [
+            "c7f6fc6f04bbb3dc"
+        ],
+        "x": 955,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2caed68993d32ffe",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "g": "eb1500eb239e6526",
+        "name": "Listener IP",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "74.108.21.213",
+        "payloadType": "str",
+        "x": 580,
+        "y": 140,
+        "wires": [
+            [
+                "a910c3cc4f077abc"
+            ]
+        ]
+    },
+    {
+        "id": "a910c3cc4f077abc",
+        "type": "change",
+        "z": "b1ca81c2f04dcad4",
+        "g": "eb1500eb239e6526",
+        "name": "set ipListen variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ipListen",
+                "pt": "global",
+                "to": "payload",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 140,
+        "wires": [
+            [
+                "4ad8d78a941ac3fb"
+            ]
+        ]
+    },
+    {
+        "id": "4ad8d78a941ac3fb",
+        "type": "link out",
+        "z": "b1ca81c2f04dcad4",
+        "g": "eb1500eb239e6526",
+        "name": "IP Listener",
+        "mode": "link",
+        "links": [
+            "ccbf032c757d06c1"
+        ],
+        "x": 955,
+        "y": 140,
+        "wires": []
+    },
+    {
         "id": "8f763fcfa9a2d554",
         "type": "time-inject",
         "z": "20ac8dd407885f5d",
@@ -523,14 +941,14 @@
         "type": "udp in",
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
-        "name": "",
+        "name": "from Dragonframe",
         "iface": "",
         "port": "8888",
         "ipv": "udp4",
         "multicast": "false",
         "group": "",
         "datatype": "utf8",
-        "x": 120,
+        "x": 150,
         "y": 740,
         "wires": [
             [
@@ -571,7 +989,7 @@
         "timer": "60",
         "repeat": false,
         "again": true,
-        "x": 410,
+        "x": 430,
         "y": 900,
         "wires": [
             [
@@ -767,32 +1185,6 @@
         "wires": []
     },
     {
-        "id": "6cb3cffde7b508fa",
-        "type": "inject",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "Interval in Minutes",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "5",
-        "payloadType": "num",
-        "x": 170,
-        "y": 120,
-        "wires": [
-            [
-                "e04c5893018bb8f9"
-            ]
-        ]
-    },
-    {
         "id": "46d78d863bf40c19",
         "type": "debug",
         "z": "20ac8dd407885f5d",
@@ -806,7 +1198,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 640,
+        "x": 480,
         "y": 120,
         "wires": []
     },
@@ -830,7 +1222,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 380,
+        "x": 220,
         "y": 120,
         "wires": [
             [
@@ -941,32 +1333,6 @@
         ]
     },
     {
-        "id": "803ffb81a3fe0d25",
-        "type": "inject",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "Start Time",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "6:00",
-        "payloadType": "str",
-        "x": 150,
-        "y": 160,
-        "wires": [
-            [
-                "f155cd0a6b510828"
-            ]
-        ]
-    },
-    {
         "id": "f155cd0a6b510828",
         "type": "change",
         "z": "20ac8dd407885f5d",
@@ -986,7 +1352,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 390,
+        "x": 230,
         "y": 160,
         "wires": [
             [
@@ -1008,35 +1374,9 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 650,
+        "x": 490,
         "y": 160,
         "wires": []
-    },
-    {
-        "id": "2dc4d3acb2e2cdf6",
-        "type": "inject",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "End Time",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "17:00",
-        "payloadType": "str",
-        "x": 140,
-        "y": 200,
-        "wires": [
-            [
-                "eb4444322a75b3c1"
-            ]
-        ]
     },
     {
         "id": "eb4444322a75b3c1",
@@ -1058,7 +1398,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 390,
+        "x": 230,
         "y": 200,
         "wires": [
             [
@@ -1080,7 +1420,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 650,
+        "x": 490,
         "y": 200,
         "wires": []
     },
@@ -1193,32 +1533,6 @@
         "wires": []
     },
     {
-        "id": "85573d2294dd4173",
-        "type": "inject",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "Camera Name",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Test Camera",
-        "payloadType": "str",
-        "x": 160,
-        "y": 80,
-        "wires": [
-            [
-                "736dd74c72d2a204"
-            ]
-        ]
-    },
-    {
         "id": "736dd74c72d2a204",
         "type": "change",
         "z": "20ac8dd407885f5d",
@@ -1238,7 +1552,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 390,
+        "x": 230,
         "y": 80,
         "wires": [
             [
@@ -1259,7 +1573,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 640,
+        "x": 470,
         "y": 80,
         "wires": []
     },
@@ -1297,7 +1611,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "",
-        "x": 400,
+        "x": 420,
         "y": 600,
         "wires": [
             [
@@ -1454,15 +1768,15 @@
         "d": true,
         "g": "66d748d8b763e343",
         "name": "",
-        "addr": "74.108.21.213",
+        "addr": "",
         "iface": "",
-        "port": "65516",
+        "port": "",
         "ipv": "udp4",
         "outport": "",
         "base64": false,
         "multicast": "false",
-        "x": 600,
-        "y": 1020,
+        "x": 550,
+        "y": 1060,
         "wires": []
     },
     {
@@ -1470,7 +1784,7 @@
         "type": "udp out",
         "z": "20ac8dd407885f5d",
         "g": "d3f4fc37da147de0",
-        "name": "",
+        "name": "to Dragonframe",
         "addr": "127.0.0.1",
         "iface": "",
         "port": "",
@@ -1751,7 +2065,7 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 370,
+        "x": 390,
         "y": 800,
         "wires": [
             [
@@ -1854,32 +2168,6 @@
         "wires": []
     },
     {
-        "id": "8d461f06a6cb1bb5",
-        "type": "inject",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "File Size in Mb",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "28",
-        "payloadType": "num",
-        "x": 940,
-        "y": 200,
-        "wires": [
-            [
-                "eef13addb5939a98"
-            ]
-        ]
-    },
-    {
         "id": "eef13addb5939a98",
         "type": "change",
         "z": "20ac8dd407885f5d",
@@ -1924,5 +2212,180 @@
         "x": 1560,
         "y": 200,
         "wires": []
+    },
+    {
+        "id": "0e4f9f21c44e4155",
+        "type": "link in",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "Camera Name",
+        "links": [
+            "beccddc992f6cfbd"
+        ],
+        "x": 95,
+        "y": 80,
+        "wires": [
+            [
+                "736dd74c72d2a204"
+            ]
+        ]
+    },
+    {
+        "id": "191c1d8ffa34bbe6",
+        "type": "link in",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "Interval",
+        "links": [
+            "be24dd8189481830"
+        ],
+        "x": 95,
+        "y": 120,
+        "wires": [
+            [
+                "e04c5893018bb8f9"
+            ]
+        ]
+    },
+    {
+        "id": "3bcbb20cdf28833c",
+        "type": "link in",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "Start Time",
+        "links": [
+            "412bc206bcf4755c"
+        ],
+        "x": 95,
+        "y": 160,
+        "wires": [
+            [
+                "f155cd0a6b510828"
+            ]
+        ]
+    },
+    {
+        "id": "4c14d19363082c7c",
+        "type": "link in",
+        "z": "20ac8dd407885f5d",
+        "g": "0bb745afc23d0509",
+        "name": "End Time",
+        "links": [
+            "566508d582d9ca7e"
+        ],
+        "x": 95,
+        "y": 200,
+        "wires": [
+            [
+                "eb4444322a75b3c1"
+            ]
+        ]
+    },
+    {
+        "id": "c1ceaa231f70e595",
+        "type": "link in",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "File Size",
+        "links": [
+            "1bc7f71706ceea1d"
+        ],
+        "x": 955,
+        "y": 200,
+        "wires": [
+            [
+                "eef13addb5939a98"
+            ]
+        ]
+    },
+    {
+        "id": "c7f6fc6f04bbb3dc",
+        "type": "link in",
+        "z": "20ac8dd407885f5d",
+        "g": "66d748d8b763e343",
+        "name": "Alive Port",
+        "links": [
+            "ad028c28323036ac"
+        ],
+        "x": 215,
+        "y": 1060,
+        "wires": [
+            [
+                "f63b16679781980b"
+            ]
+        ]
+    },
+    {
+        "id": "f63b16679781980b",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "66d748d8b763e343",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "port",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 1060,
+        "wires": [
+            [
+                "d2d9a905d0204ceb"
+            ]
+        ]
+    },
+    {
+        "id": "ccbf032c757d06c1",
+        "type": "link in",
+        "z": "20ac8dd407885f5d",
+        "g": "66d748d8b763e343",
+        "name": "",
+        "links": [
+            "4ad8d78a941ac3fb"
+        ],
+        "x": 215,
+        "y": 1100,
+        "wires": [
+            [
+                "f6ea6508b7328b90"
+            ]
+        ]
+    },
+    {
+        "id": "f6ea6508b7328b90",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "66d748d8b763e343",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ip",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 1100,
+        "wires": [
+            [
+                "d2d9a905d0204ceb"
+            ]
+        ]
     }
 ]
