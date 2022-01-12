@@ -191,12 +191,17 @@
             "ed4deacfc469ea0f",
             "eb40f576e817ee93",
             "2be5d300b13c3936",
-            "6fa3553b068fe207"
+            "6fa3553b068fe207",
+            "ac0e05234a14655c",
+            "4871b344d6671ecf",
+            "8d461f06a6cb1bb5",
+            "eef13addb5939a98",
+            "1468539339414676"
         ],
         "x": 814,
         "y": 39,
-        "w": 872,
-        "h": 122
+        "w": 892,
+        "h": 202
     },
     {
         "id": "d3f4fc37da147de0",
@@ -212,8 +217,8 @@
         "nodes": [
             "8c50a50d865f61ce"
         ],
-        "x": 1114,
-        "y": 219,
+        "x": 1034,
+        "y": 279,
         "w": 212,
         "h": 82
     },
@@ -1472,8 +1477,8 @@
         "outport": "2222",
         "base64": false,
         "multicast": "false",
-        "x": 1220,
-        "y": 260,
+        "x": 1140,
+        "y": 320,
         "wires": []
     },
     {
@@ -1521,8 +1526,8 @@
         "type": "debug",
         "z": "20ac8dd407885f5d",
         "g": "728af4eea16d05c3",
-        "name": "",
-        "active": true,
+        "name": "Hours a day",
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1552,11 +1557,12 @@
         "topic": "",
         "payloadType": "date",
         "x": 920,
-        "y": 100,
+        "y": 120,
         "wires": [
             [
                 "8b46c3288f3c192f",
-                "eb40f576e817ee93"
+                "eb40f576e817ee93",
+                "ac0e05234a14655c"
             ]
         ]
     },
@@ -1641,15 +1647,16 @@
         "type": "debug",
         "z": "20ac8dd407885f5d",
         "g": "728af4eea16d05c3",
-        "name": "",
-        "active": true,
+        "name": "Frames per day",
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1570,
+        "x": 1580,
         "y": 120,
         "wires": []
     },
@@ -1806,6 +1813,116 @@
         "info": "hello\n    maxVersion: 1\n    minVersion: 1\n\ncaptureState\n    readyToCapture: true|false\n    \ncaptureComplete\n    exposure: 1   \n    imageFileName: \"xxxxx\"\n    \nframeComplete\n    exposure: 1\n\nposition\n    exposure: 1",
         "x": 830,
         "y": 1110,
+        "wires": []
+    },
+    {
+        "id": "ac0e05234a14655c",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "Data Calculations",
+        "func": "let interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = 5; // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet cameras = 2; //number of cameras\n\nlet dailyFrames = (dailyHours*60)/interval;\nlet monthlyFrames = (dailyFrames*weekDays)*4\n\nlet dailyDownload = (dailyFrames*frameSize)/1024; //Size in Gb\nlet weeklyDownload = (dailyFrames*weekDays)*frameSize/1024; //Size in Gb\nlet monthlyDownload = (monthlyFrames*frameSize)/1024; //Size in Gb\n\nmsg.payload = {\n\n    DailyFrames: dailyFrames,\n    MonthlyFrames: monthlyFrames,\n    DailyDownload_Gb: parseFloat(dailyDownload.toFixed(1)),\n    WeeklyDownload_Gb: parseFloat(weeklyDownload.toFixed(1)),\n    MonthlyDownload_Gb: parseFloat(monthlyDownload.toFixed(1)),\n\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 160,
+        "wires": [
+            [
+                "4871b344d6671ecf"
+            ]
+        ]
+    },
+    {
+        "id": "4871b344d6671ecf",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "Calculations",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8d461f06a6cb1bb5",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "File Size in Mb",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "28",
+        "payloadType": "num",
+        "x": 940,
+        "y": 200,
+        "wires": [
+            [
+                "eef13addb5939a98"
+            ]
+        ]
+    },
+    {
+        "id": "eef13addb5939a98",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "set fileSize variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fileSize",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1330,
+        "y": 200,
+        "wires": [
+            [
+                "1468539339414676"
+            ]
+        ]
+    },
+    {
+        "id": "1468539339414676",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "File Size",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1560,
+        "y": 200,
         "wires": []
     }
 ]
