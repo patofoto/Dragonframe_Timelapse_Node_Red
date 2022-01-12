@@ -134,7 +134,7 @@
             "3bcbb20cdf28833c",
             "4c14d19363082c7c"
         ],
-        "x": 54,
+        "x": 34,
         "y": 39,
         "w": 572,
         "h": 202
@@ -206,7 +206,7 @@
             "1468539339414676",
             "c1ceaa231f70e595"
         ],
-        "x": 814,
+        "x": 634,
         "y": 39,
         "w": 892,
         "h": 202
@@ -225,7 +225,7 @@
         "nodes": [
             "8c50a50d865f61ce"
         ],
-        "x": 1034,
+        "x": 1094,
         "y": 279,
         "w": 212,
         "h": 82
@@ -273,7 +273,7 @@
             "5efad5f13ccddc1d",
             "d1e27294d49c58e8"
         ],
-        "x": 754,
+        "x": 654,
         "y": 979,
         "w": 432,
         "h": 172
@@ -319,8 +319,8 @@
             "9a22c9ce666839c3",
             "1bc7f71706ceea1d"
         ],
-        "x": 74,
-        "y": 279,
+        "x": 474,
+        "y": 199,
         "w": 362,
         "h": 82
     },
@@ -643,8 +643,8 @@
         "topic": "",
         "payload": "28",
         "payloadType": "num",
-        "x": 200,
-        "y": 320,
+        "x": 600,
+        "y": 240,
         "wires": [
             [
                 "1bc7f71706ceea1d"
@@ -717,8 +717,8 @@
         "links": [
             "c1ceaa231f70e595"
         ],
-        "x": 395,
-        "y": 320,
+        "x": 795,
+        "y": 240,
         "wires": []
     },
     {
@@ -1074,7 +1074,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "Message to Telegram",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1198,7 +1198,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 480,
+        "x": 460,
         "y": 120,
         "wires": []
     },
@@ -1222,7 +1222,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 220,
+        "x": 200,
         "y": 120,
         "wires": [
             [
@@ -1352,7 +1352,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 230,
+        "x": 210,
         "y": 160,
         "wires": [
             [
@@ -1374,7 +1374,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 490,
+        "x": 470,
         "y": 160,
         "wires": []
     },
@@ -1398,7 +1398,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 230,
+        "x": 210,
         "y": 200,
         "wires": [
             [
@@ -1420,7 +1420,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 490,
+        "x": 470,
         "y": 200,
         "wires": []
     },
@@ -1552,7 +1552,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 230,
+        "x": 210,
         "y": 80,
         "wires": [
             [
@@ -1573,7 +1573,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 470,
+        "x": 450,
         "y": 80,
         "wires": []
     },
@@ -1791,7 +1791,7 @@
         "outport": "2222",
         "base64": false,
         "multicast": "false",
-        "x": 1140,
+        "x": 1200,
         "y": 320,
         "wires": []
     },
@@ -1827,7 +1827,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1120,
+        "x": 940,
         "y": 80,
         "wires": [
             [
@@ -1849,7 +1849,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1570,
+        "x": 1390,
         "y": 80,
         "wires": []
     },
@@ -1870,7 +1870,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 920,
+        "x": 740,
         "y": 120,
         "wires": [
             [
@@ -1900,7 +1900,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1350,
+        "x": 1170,
         "y": 80,
         "wires": [
             [
@@ -1920,7 +1920,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1120,
+        "x": 940,
         "y": 120,
         "wires": [
             [
@@ -1948,7 +1948,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1340,
+        "x": 1160,
         "y": 120,
         "wires": [
             [
@@ -1970,7 +1970,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1580,
+        "x": 1400,
         "y": 120,
         "wires": []
     },
@@ -2081,7 +2081,7 @@
         "g": "e86b7e85ec7e628e",
         "name": "Dragonframe sends \"Hello\"handshake every 20 sec",
         "info": "",
-        "x": 970,
+        "x": 870,
         "y": 1020,
         "wires": []
     },
@@ -2092,7 +2092,7 @@
         "g": "e86b7e85ec7e628e",
         "name": "frameComplete",
         "info": "event: \"frameComplete\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nimageFileName: \"\"\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 860,
+        "x": 760,
         "y": 1065,
         "wires": []
     },
@@ -2103,7 +2103,7 @@
         "g": "e86b7e85ec7e628e",
         "name": "Capture State",
         "info": "event: \"captureState\"\nreadyToCapture: false\nstate: \"READY\"\n\n\nevent: \"captureState\"\nreadyToCapture: false\nstate: \"SHOOTING\"\n\n\nevent: \"captureState\"\nreadyToCapture: true\nstate: \"READY\"",
-        "x": 1030,
+        "x": 930,
         "y": 1065,
         "wires": []
     },
@@ -2114,7 +2114,7 @@
         "g": "e86b7e85ec7e628e",
         "name": "Shoot",
         "info": "event: \"shoot\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 950,
+        "x": 850,
         "y": 1110,
         "wires": []
     },
@@ -2125,7 +2125,7 @@
         "g": "e86b7e85ec7e628e",
         "name": "Events",
         "info": "hello\n    maxVersion: 1\n    minVersion: 1\n\ncaptureState\n    readyToCapture: true|false\n    \ncaptureComplete\n    exposure: 1   \n    imageFileName: \"xxxxx\"\n    \nframeComplete\n    exposure: 1\n\nposition\n    exposure: 1",
-        "x": 830,
+        "x": 730,
         "y": 1110,
         "wires": []
     },
@@ -2141,7 +2141,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
+        "x": 950,
         "y": 160,
         "wires": [
             [
@@ -2163,7 +2163,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1570,
+        "x": 1390,
         "y": 160,
         "wires": []
     },
@@ -2187,7 +2187,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1330,
+        "x": 1150,
         "y": 200,
         "wires": [
             [
@@ -2201,7 +2201,7 @@
         "z": "20ac8dd407885f5d",
         "g": "728af4eea16d05c3",
         "name": "File Size",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2209,7 +2209,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1560,
+        "x": 1380,
         "y": 200,
         "wires": []
     },
@@ -2222,7 +2222,7 @@
         "links": [
             "beccddc992f6cfbd"
         ],
-        "x": 95,
+        "x": 75,
         "y": 80,
         "wires": [
             [
@@ -2239,7 +2239,7 @@
         "links": [
             "be24dd8189481830"
         ],
-        "x": 95,
+        "x": 75,
         "y": 120,
         "wires": [
             [
@@ -2256,7 +2256,7 @@
         "links": [
             "412bc206bcf4755c"
         ],
-        "x": 95,
+        "x": 75,
         "y": 160,
         "wires": [
             [
@@ -2273,7 +2273,7 @@
         "links": [
             "566508d582d9ca7e"
         ],
-        "x": 95,
+        "x": 75,
         "y": 200,
         "wires": [
             [
@@ -2290,7 +2290,7 @@
         "links": [
             "1bc7f71706ceea1d"
         ],
-        "x": 955,
+        "x": 775,
         "y": 200,
         "wires": [
             [
