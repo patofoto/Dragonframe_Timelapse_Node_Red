@@ -858,6 +858,151 @@
         "wires": []
     },
     {
+        "id": "f465b58ced62aa08",
+        "type": "function",
+        "z": "b1ca81c2f04dcad4",
+        "name": "JSON Data",
+        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = 5; // 1-7\nlet cameras = 2; //number of cameras\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter') //current daily frame shot\n\n\n\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(1)\n}\n\nmsg.payload = JSON.stringify(data);\n\nreturn msg;\n\n\n//DailyDownload_Gb: parseFloat(dailyDownload.toFixed(1))",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 400,
+        "wires": [
+            [
+                "a7a7e873ba3f26aa"
+            ]
+        ]
+    },
+    {
+        "id": "d1741ab30cc1ed79",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 400,
+        "wires": [
+            [
+                "f465b58ced62aa08"
+            ]
+        ]
+    },
+    {
+        "id": "ce7d54d2d3ddbd6d",
+        "type": "debug",
+        "z": "b1ca81c2f04dcad4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "a7a7e873ba3f26aa",
+        "type": "file",
+        "z": "b1ca81c2f04dcad4",
+        "name": "",
+        "filename": "dragonframe_nodered_data.json",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 620,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1fcd3b55c321da25",
+        "type": "file in",
+        "z": "b1ca81c2f04dcad4",
+        "name": "",
+        "filename": "dragonframe_nodered_data.json",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 420,
+        "y": 440,
+        "wires": [
+            [
+                "3d699c0e9cf3ba43"
+            ]
+        ]
+    },
+    {
+        "id": "3d699c0e9cf3ba43",
+        "type": "json",
+        "z": "b1ca81c2f04dcad4",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 630,
+        "y": 440,
+        "wires": [
+            [
+                "ce7d54d2d3ddbd6d"
+            ]
+        ]
+    },
+    {
+        "id": "9a153fed4834e1b5",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 440,
+        "wires": [
+            [
+                "1fcd3b55c321da25"
+            ]
+        ]
+    },
+    {
         "id": "8f763fcfa9a2d554",
         "type": "time-inject",
         "z": "20ac8dd407885f5d",
@@ -1506,7 +1651,7 @@
         "g": "fc95a5364964861e",
         "inc": 1,
         "name": "",
-        "x": 1000,
+        "x": 1040,
         "y": 740,
         "wires": [
             [
@@ -2065,7 +2210,7 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 390,
+        "x": 430,
         "y": 800,
         "wires": [
             [
