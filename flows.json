@@ -174,7 +174,8 @@
             "d5010ddcf1962b6b",
             "a54d238e37f49a60",
             "ac735291685f7021",
-            "dad9def59723f79b"
+            "dad9def59723f79b",
+            "603cd39c5c9e7e12"
         ],
         "x": 34,
         "y": 419,
@@ -862,7 +863,7 @@
         "type": "function",
         "z": "b1ca81c2f04dcad4",
         "name": "JSON Data",
-        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = 5; // 1-7\nlet cameras = 2; //number of cameras\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter') //current daily frame shot\n\n\n\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(1)\n}\n\nmsg.payload = JSON.stringify(data);\n\nreturn msg;\n\n\n//DailyDownload_Gb: parseFloat(dailyDownload.toFixed(1))",
+        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = 5; // 1-7\nlet cameras = 2; //number of cameras\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter') //current daily frame shot\n\n\n\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2)\n}\n\nmsg.payload = JSON.stringify(data);\n\nreturn msg;\n\n\n//DailyDownload_Gb: parseFloat(dailyDownload.toFixed(1))",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -873,35 +874,6 @@
         "wires": [
             [
                 "a7a7e873ba3f26aa"
-            ]
-        ]
-    },
-    {
-        "id": "d1741ab30cc1ed79",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 200,
-        "y": 400,
-        "wires": [
-            [
-                "f465b58ced62aa08"
             ]
         ]
     },
@@ -918,7 +890,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
+        "x": 1030,
         "y": 440,
         "wires": []
     },
@@ -927,12 +899,12 @@
         "type": "file",
         "z": "b1ca81c2f04dcad4",
         "name": "",
-        "filename": "dragonframe_nodered_data.json",
+        "filename": "/Users/pato/Dropbox/test_camera_dragonframe_nodered_data.json",
         "appendNewline": true,
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 620,
+        "x": 730,
         "y": 400,
         "wires": [
             []
@@ -943,13 +915,13 @@
         "type": "file in",
         "z": "b1ca81c2f04dcad4",
         "name": "",
-        "filename": "dragonframe_nodered_data.json",
+        "filename": "/Users/pato/Dropbox/test_camera_dragonframe_nodered_data.json",
         "format": "utf8",
         "chunk": false,
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 420,
+        "x": 530,
         "y": 440,
         "wires": [
             [
@@ -965,7 +937,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 630,
+        "x": 870,
         "y": 440,
         "wires": [
             [
@@ -999,6 +971,22 @@
         "wires": [
             [
                 "1fcd3b55c321da25"
+            ]
+        ]
+    },
+    {
+        "id": "413f398f8b246afd",
+        "type": "link in",
+        "z": "b1ca81c2f04dcad4",
+        "name": "",
+        "links": [
+            "603cd39c5c9e7e12"
+        ],
+        "x": 235,
+        "y": 400,
+        "wires": [
+            [
+                "f465b58ced62aa08"
             ]
         ]
     },
@@ -1473,7 +1461,8 @@
         "y": 620,
         "wires": [
             [
-                "6a8302e07e51c516"
+                "6a8302e07e51c516",
+                "603cd39c5c9e7e12"
             ]
         ]
     },
@@ -2532,5 +2521,19 @@
                 "d2d9a905d0204ceb"
             ]
         ]
+    },
+    {
+        "id": "603cd39c5c9e7e12",
+        "type": "link out",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Frame Shot",
+        "mode": "link",
+        "links": [
+            "413f398f8b246afd"
+        ],
+        "x": 965,
+        "y": 580,
+        "wires": []
     }
 ]
