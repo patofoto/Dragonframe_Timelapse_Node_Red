@@ -803,12 +803,12 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "74.108.21.213",
         "payloadType": "str",
-        "x": 580,
+        "x": 590,
         "y": 140,
         "wires": [
             [
@@ -2000,11 +2000,11 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 740,
+        "x": 750,
         "y": 120,
         "wires": [
             [
