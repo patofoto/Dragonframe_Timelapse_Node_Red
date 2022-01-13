@@ -102,7 +102,8 @@
         "nodes": [
             "8f763fcfa9a2d554",
             "4a5a8d6cd7ad3256",
-            "ca9db2b297167bc6"
+            "ca9db2b297167bc6",
+            "95162f2031c7c733"
         ],
         "x": 34,
         "y": 259,
@@ -167,7 +168,6 @@
             "96d34eae343acaac",
             "ad668695f02ae062",
             "4dd1bbe994c3b52f",
-            "12408f35f6cee229",
             "6edae490f780c504",
             "c485baf2dbc34784",
             "fd41d6ae3f2edbdf",
@@ -175,7 +175,10 @@
             "a54d238e37f49a60",
             "ac735291685f7021",
             "dad9def59723f79b",
-            "603cd39c5c9e7e12"
+            "603cd39c5c9e7e12",
+            "68e544609342c4b8",
+            "f5f26648fe24ff3b",
+            "8d53700361a8d8ba"
         ],
         "x": 34,
         "y": 419,
@@ -205,12 +208,15 @@
             "4871b344d6671ecf",
             "eef13addb5939a98",
             "1468539339414676",
-            "c1ceaa231f70e595"
+            "c1ceaa231f70e595",
+            "14736c5d8fc2fce6",
+            "583a423cd7a9e971",
+            "918751fa42cebd85"
         ],
         "x": 634,
         "y": 39,
         "w": 892,
-        "h": 202
+        "h": 242
     },
     {
         "id": "d3f4fc37da147de0",
@@ -226,8 +232,8 @@
         "nodes": [
             "8c50a50d865f61ce"
         ],
-        "x": 1094,
-        "y": 279,
+        "x": 1054,
+        "y": 299,
         "w": 212,
         "h": 82
     },
@@ -294,12 +300,14 @@
             "beccddc992f6cfbd",
             "be24dd8189481830",
             "412bc206bcf4755c",
-            "566508d582d9ca7e"
+            "566508d582d9ca7e",
+            "4fd8572e540f0b6d",
+            "09ae81d09c077154"
         ],
         "x": 74,
         "y": 59,
         "w": 362,
-        "h": 202
+        "h": 242
     },
     {
         "id": "d9f935c786fedbad",
@@ -342,6 +350,39 @@
         "y": 59,
         "w": 472,
         "h": 122
+    },
+    {
+        "id": "753a188897bcf967",
+        "type": "group",
+        "z": "b1ca81c2f04dcad4",
+        "name": "Testing",
+        "style": {
+            "fill": "#ffbfbf",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "f465b58ced62aa08",
+            "ce7d54d2d3ddbd6d",
+            "a7a7e873ba3f26aa",
+            "1fcd3b55c321da25",
+            "3d699c0e9cf3ba43",
+            "9a153fed4834e1b5",
+            "413f398f8b246afd",
+            "20d1b381141749a0",
+            "62a79b1eeecdbfcf",
+            "01c9118824ba88a2",
+            "07106db4ed1173e3",
+            "a963fb8864cd1195",
+            "49e622801dcaf994",
+            "f95df886c5437ac1",
+            "af7d36f41bdd02bb"
+        ],
+        "x": 74,
+        "y": 359,
+        "w": 822,
+        "h": 262
     },
     {
         "id": "6f2ee2563c258dce",
@@ -625,7 +666,7 @@
         "type": "inject",
         "z": "b1ca81c2f04dcad4",
         "g": "d9f935c786fedbad",
-        "name": "File Size in Mb",
+        "name": "File Size per frame in Mb",
         "props": [
             {
                 "p": "payload"
@@ -636,9 +677,9 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "28",
+        "payload": "6.2",
         "payloadType": "num",
-        "x": 600,
+        "x": 630,
         "y": 240,
         "wires": [
             [
@@ -737,7 +778,7 @@
         "to": "",
         "reg": false,
         "x": 820,
-        "y": 100,
+        "y": 140,
         "wires": [
             []
         ]
@@ -761,7 +802,7 @@
         "payload": "65515",
         "payloadType": "num",
         "x": 610,
-        "y": 100,
+        "y": 140,
         "wires": [
             [
                 "8f6e305b656ef1d1"
@@ -787,7 +828,7 @@
         "payload": "74.108.21.213",
         "payloadType": "str",
         "x": 590,
-        "y": 140,
+        "y": 100,
         "wires": [
             [
                 "a910c3cc4f077abc"
@@ -815,7 +856,7 @@
         "to": "",
         "reg": false,
         "x": 820,
-        "y": 140,
+        "y": 100,
         "wires": [
             []
         ]
@@ -824,8 +865,9 @@
         "id": "f465b58ced62aa08",
         "type": "function",
         "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
         "name": "JSON Data",
-        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = 5; // 1-7\nlet cameras = 2; //number of cameras\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter') //current daily frame shot\n\n\n\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2)\n}\n\nmsg.payload = JSON.stringify(data);\n\nreturn msg;\n\n\n//DailyDownload_Gb: parseFloat(dailyDownload.toFixed(1))",
+        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\n\n\n\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n}\n\nmsg.payload = JSON.stringify(data);\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -843,6 +885,7 @@
         "id": "ce7d54d2d3ddbd6d",
         "type": "debug",
         "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -852,7 +895,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1030,
+        "x": 710,
         "y": 440,
         "wires": []
     },
@@ -860,30 +903,34 @@
         "id": "a7a7e873ba3f26aa",
         "type": "file",
         "z": "b1ca81c2f04dcad4",
-        "name": "",
+        "g": "753a188897bcf967",
+        "name": "Write to Dropbox",
         "filename": "/Users/pato/Dropbox/test_camera_dragonframe_nodered_data.json",
         "appendNewline": true,
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 730,
+        "x": 570,
         "y": 400,
         "wires": [
-            []
+            [
+                "20d1b381141749a0"
+            ]
         ]
     },
     {
         "id": "1fcd3b55c321da25",
         "type": "file in",
         "z": "b1ca81c2f04dcad4",
-        "name": "",
+        "g": "753a188897bcf967",
+        "name": "Read from Dropbox",
         "filename": "/Users/pato/Dropbox/test_camera_dragonframe_nodered_data.json",
         "format": "utf8",
         "chunk": false,
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 530,
+        "x": 370,
         "y": 440,
         "wires": [
             [
@@ -895,11 +942,12 @@
         "id": "3d699c0e9cf3ba43",
         "type": "json",
         "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 870,
+        "x": 550,
         "y": 440,
         "wires": [
             [
@@ -911,6 +959,7 @@
         "id": "9a153fed4834e1b5",
         "type": "inject",
         "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
         "name": "",
         "props": [
             {
@@ -940,7 +989,8 @@
         "id": "413f398f8b246afd",
         "type": "link in",
         "z": "b1ca81c2f04dcad4",
-        "name": "",
+        "g": "753a188897bcf967",
+        "name": "Camera Triggered",
         "links": [
             "603cd39c5c9e7e12"
         ],
@@ -953,9 +1003,230 @@
         ]
     },
     {
+        "id": "4fd8572e540f0b6d",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "g": "bdd30934fab20f76",
+        "name": "Number of days of week",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "09ae81d09c077154"
+            ]
+        ]
+    },
+    {
+        "id": "09ae81d09c077154",
+        "type": "link out",
+        "z": "b1ca81c2f04dcad4",
+        "g": "bdd30934fab20f76",
+        "name": "Number of days in week",
+        "mode": "link",
+        "links": [
+            "14736c5d8fc2fce6"
+        ],
+        "x": 395,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "20d1b381141749a0",
+        "type": "debug",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "62a79b1eeecdbfcf",
+        "type": "link out",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "95162f2031c7c733"
+        ],
+        "x": 325,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "01c9118824ba88a2",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "Manual Trigger",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{ \"command\" : \"shoot\", \"frames\" : 1 }",
+        "payloadType": "str",
+        "x": 200,
+        "y": 580,
+        "wires": [
+            [
+                "62a79b1eeecdbfcf"
+            ]
+        ]
+    },
+    {
+        "id": "07106db4ed1173e3",
+        "type": "fs-ops-size",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "path": "/Users/pato/Dropbox",
+        "pathType": "str",
+        "filename": "Test_002.dgn",
+        "filenameType": "str",
+        "size": "filesize",
+        "sizeType": "msg",
+        "x": 440,
+        "y": 500,
+        "wires": [
+            [
+                "f95df886c5437ac1",
+                "af7d36f41bdd02bb"
+            ]
+        ]
+    },
+    {
+        "id": "a963fb8864cd1195",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "nothing",
+        "payloadType": "str",
+        "x": 270,
+        "y": 500,
+        "wires": [
+            [
+                "07106db4ed1173e3"
+            ]
+        ]
+    },
+    {
+        "id": "49e622801dcaf994",
+        "type": "debug",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "f95df886c5437ac1",
+        "type": "calculator",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "inputMsgField": "filesize",
+        "outputMsgField": "payload",
+        "operation": "div",
+        "constant": "1024",
+        "round": true,
+        "decimals": "2",
+        "x": 600,
+        "y": 500,
+        "wires": [
+            [
+                "49e622801dcaf994"
+            ]
+        ]
+    },
+    {
+        "id": "af7d36f41bdd02bb",
+        "type": "debug",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "8d8436b99f874fcb",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "name": "Rebel 28Mb",
+        "info": "",
+        "x": 950,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "224531824cf12c1d",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "name": "60D 24Mb",
+        "info": "",
+        "x": 940,
+        "y": 260,
+        "wires": []
+    },
+    {
         "id": "8f763fcfa9a2d554",
         "type": "time-inject",
         "z": "20ac8dd407885f5d",
+        "d": true,
         "g": "9bb44f6703637248",
         "name": "Intervalometer",
         "nameInt": "global.startTime - global.endTime[Mon-Fri] =... ↻",
@@ -1232,7 +1503,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 740,
-        "y": 720,
+        "y": 680,
         "wires": []
     },
     {
@@ -1575,10 +1846,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
+                "p": "topic",
                 "pt": "msg",
-                "to": "reset",
-                "tot": "msg"
+                "to": "RESET",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -1586,27 +1857,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
-        "y": 760,
+        "x": 850,
+        "y": 780,
         "wires": [
             [
-                "ad668695f02ae062",
-                "12408f35f6cee229"
-            ]
-        ]
-    },
-    {
-        "id": "12408f35f6cee229",
-        "type": "counter",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "inc": 1,
-        "name": "",
-        "x": 1040,
-        "y": 740,
-        "wires": [
-            [
-                "c485baf2dbc34784"
+                "8d53700361a8d8ba"
             ]
         ]
     },
@@ -1616,7 +1871,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "Daily Counter",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1723,7 +1978,7 @@
             [
                 "4406adeb35e5e2e7",
                 "ad668695f02ae062",
-                "12408f35f6cee229"
+                "8d53700361a8d8ba"
             ],
             [
                 "406cc4d760a0a25a"
@@ -1745,14 +2000,14 @@
         "type": "function",
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
-        "name": "",
+        "name": "Hello Event",
         "func": "msg.payload = {\n    command: msg.payload.event,\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
+        "x": 750,
         "y": 460,
         "wires": [
             [
@@ -1887,8 +2142,8 @@
         "outport": "2222",
         "base64": false,
         "multicast": "false",
-        "x": 1200,
-        "y": 320,
+        "x": 1160,
+        "y": 340,
         "wires": []
     },
     {
@@ -2074,7 +2329,6 @@
         "id": "ac735291685f7021",
         "type": "function",
         "z": "20ac8dd407885f5d",
-        "d": true,
         "g": "fc95a5364964861e",
         "name": "Last Frame Message",
         "func": "let expectedFrames = global.get('framesDay');\nlet shotFrames = global.get('dailyCounter');\nlet cameraName = global.get('camName');\n\nif (expectedFrames===shotFrames){\n    msg.payload = {\n    content:`All frames shot today from ${cameraName}`,\n    type: \"message\",\n    chatId: 1951007350,\n};\n} else {\n    msg.payload = {\n    content:`Frame count not as expected from ${cameraName}`,\n    type: \"message\",\n    chatId: 1951007350,\n};\n}\nreturn msg;",
@@ -2097,7 +2351,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "End of day trigger",
-        "nameInt": "⏲ global.endTime↷[Mon-Fri] = timestamp",
+        "nameInt": "⏲ global.endTime[Mon-Fri] = timestamp",
         "positionConfig": "6f2ee2563c258dce",
         "props": [
             {
@@ -2127,8 +2381,8 @@
         "intervalCountMultiplier": 60000,
         "time": "endTime",
         "timeType": "global",
-        "offset": "5",
-        "offsetType": "num",
+        "offset": "",
+        "offsetType": "none",
         "offsetMultiplier": 1000,
         "timeEnd": "",
         "timeEndType": "entered",
@@ -2162,12 +2416,13 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 430,
-        "y": 800,
+        "x": 450,
+        "y": 820,
         "wires": [
             [
                 "ac735291685f7021",
-                "4dd1bbe994c3b52f"
+                "68e544609342c4b8",
+                "f5f26648fe24ff3b"
             ]
         ]
     },
@@ -2408,5 +2663,161 @@
         "x": 965,
         "y": 580,
         "wires": []
+    },
+    {
+        "id": "68e544609342c4b8",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "reset",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "reset",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 740,
+        "wires": [
+            [
+                "ad668695f02ae062"
+            ]
+        ]
+    },
+    {
+        "id": "f5f26648fe24ff3b",
+        "type": "delay",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 720,
+        "y": 780,
+        "wires": [
+            [
+                "4dd1bbe994c3b52f"
+            ]
+        ]
+    },
+    {
+        "id": "14736c5d8fc2fce6",
+        "type": "link in",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "Number of days in week",
+        "links": [
+            "09ae81d09c077154"
+        ],
+        "x": 775,
+        "y": 240,
+        "wires": [
+            [
+                "583a423cd7a9e971"
+            ]
+        ]
+    },
+    {
+        "id": "583a423cd7a9e971",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "set weekDays variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "weekDays",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1160,
+        "y": 240,
+        "wires": [
+            [
+                "918751fa42cebd85"
+            ]
+        ]
+    },
+    {
+        "id": "918751fa42cebd85",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "728af4eea16d05c3",
+        "name": "# of days",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "95162f2031c7c733",
+        "type": "link in",
+        "z": "20ac8dd407885f5d",
+        "g": "9bb44f6703637248",
+        "name": "Trigger from Setup Screen",
+        "links": [
+            "62a79b1eeecdbfcf"
+        ],
+        "x": 315,
+        "y": 360,
+        "wires": [
+            [
+                "ca9db2b297167bc6"
+            ]
+        ]
+    },
+    {
+        "id": "8d53700361a8d8ba",
+        "type": "countula",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "",
+        "x": 1000,
+        "y": 740,
+        "wires": [
+            [],
+            [
+                "c485baf2dbc34784"
+            ]
+        ]
     }
 ]
