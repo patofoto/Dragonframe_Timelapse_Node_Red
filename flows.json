@@ -377,11 +377,13 @@
             "a963fb8864cd1195",
             "49e622801dcaf994",
             "f95df886c5437ac1",
-            "af7d36f41bdd02bb"
+            "af7d36f41bdd02bb",
+            "3ac229cfaf20bbfe",
+            "34200b309889cce5"
         ],
         "x": 74,
         "y": 359,
-        "w": 822,
+        "w": 1192,
         "h": 262
     },
     {
@@ -867,7 +869,7 @@
         "z": "b1ca81c2f04dcad4",
         "g": "753a188897bcf967",
         "name": "JSON Data",
-        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\n\n\n\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n}\n\nmsg.payload = JSON.stringify(data);\n\nreturn msg;",
+        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nconst d = new Date();\nlet time = d.getTime();\n\n\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n}\n\nmsg.payload = JSON.stringify(data);\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -895,7 +897,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 710,
+        "x": 950,
         "y": 440,
         "wires": []
     },
@@ -947,11 +949,12 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 550,
+        "x": 730,
         "y": 440,
         "wires": [
             [
-                "ce7d54d2d3ddbd6d"
+                "ce7d54d2d3ddbd6d",
+                "3ac229cfaf20bbfe"
             ]
         ]
     },
@@ -1160,7 +1163,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
+        "x": 730,
         "y": 500,
         "wires": []
     },
@@ -1221,6 +1224,49 @@
         "x": 940,
         "y": 260,
         "wires": []
+    },
+    {
+        "id": "34200b309889cce5",
+        "type": "debug",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "3ac229cfaf20bbfe",
+        "type": "moment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "topic": "",
+        "input": "current_shot_time",
+        "inputType": "msg",
+        "inTz": "America/New_York",
+        "adjAmount": "0",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "LLL",
+        "locale": "en-US",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "America/New_York",
+        "x": 960,
+        "y": 480,
+        "wires": [
+            [
+                "34200b309889cce5"
+            ]
+        ]
     },
     {
         "id": "8f763fcfa9a2d554",
@@ -1542,8 +1588,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload.frame",
-        "targetType": "msg",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
         "x": 1020,
