@@ -2112,6 +2112,7 @@
         "id": "ac735291685f7021",
         "type": "function",
         "z": "20ac8dd407885f5d",
+        "d": true,
         "g": "fc95a5364964861e",
         "name": "Last Frame Message",
         "func": "let expectedFrames = global.get('framesDay');\nlet shotFrames = global.get('dailyCounter');\nlet cameraName = global.get('camName');\n\nif (expectedFrames===shotFrames){\n    msg.payload = {\n    content:`All frames shot today from ${cameraName}`,\n    type: \"message\",\n    chatId: 1951007350,\n};\n} else {\n    msg.payload = {\n    content:`Frame count not as expected from ${cameraName}`,\n    type: \"message\",\n    chatId: 1951007350,\n};\n}\nreturn msg;",
