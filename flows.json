@@ -245,16 +245,12 @@
         "nodes": [
             "869fa2a8fa523984",
             "d2d9a905d0204ceb",
-            "3c8e30648efc73b8",
-            "c7f6fc6f04bbb3dc",
-            "f63b16679781980b",
-            "ccbf032c757d06c1",
-            "f6ea6508b7328b90"
+            "3c8e30648efc73b8"
         ],
         "x": 34,
         "y": 979,
-        "w": 592,
-        "h": 162
+        "w": 572,
+        "h": 82
     },
     {
         "id": "e86b7e85ec7e628e",
@@ -339,14 +335,12 @@
         "nodes": [
             "8f6e305b656ef1d1",
             "59d2852f08fdfa93",
-            "ad028c28323036ac",
             "2caed68993d32ffe",
-            "a910c3cc4f077abc",
-            "4ad8d78a941ac3fb"
+            "a910c3cc4f077abc"
         ],
         "x": 474,
         "y": 59,
-        "w": 522,
+        "w": 472,
         "h": 122
     },
     {
@@ -745,9 +739,7 @@
         "x": 820,
         "y": 100,
         "wires": [
-            [
-                "ad028c28323036ac"
-            ]
+            []
         ]
     },
     {
@@ -775,20 +767,6 @@
                 "8f6e305b656ef1d1"
             ]
         ]
-    },
-    {
-        "id": "ad028c28323036ac",
-        "type": "link out",
-        "z": "b1ca81c2f04dcad4",
-        "g": "eb1500eb239e6526",
-        "name": "Alive Port",
-        "mode": "link",
-        "links": [
-            "c7f6fc6f04bbb3dc"
-        ],
-        "x": 955,
-        "y": 100,
-        "wires": []
     },
     {
         "id": "2caed68993d32ffe",
@@ -839,24 +817,8 @@
         "x": 820,
         "y": 140,
         "wires": [
-            [
-                "4ad8d78a941ac3fb"
-            ]
+            []
         ]
-    },
-    {
-        "id": "4ad8d78a941ac3fb",
-        "type": "link out",
-        "z": "b1ca81c2f04dcad4",
-        "g": "eb1500eb239e6526",
-        "name": "IP Listener",
-        "mode": "link",
-        "links": [
-            "ccbf032c757d06c1"
-        ],
-        "x": 955,
-        "y": 140,
-        "wires": []
     },
     {
         "id": "f465b58ced62aa08",
@@ -1909,8 +1871,8 @@
         "outport": "",
         "base64": false,
         "multicast": "false",
-        "x": 550,
-        "y": 1060,
+        "x": 530,
+        "y": 1020,
         "wires": []
     },
     {
@@ -1935,7 +1897,7 @@
         "z": "20ac8dd407885f5d",
         "g": "66d748d8b763e343",
         "name": "Alive Message",
-        "func": "msg.payload = `${global.get('camName')} is alive`;\n\nreturn msg;",
+        "func": "msg.payload = `${global.get('camName')} is alive`;\nmsg.port = global.get('alivePort');\nmsg.ip = global.get('ipListen');\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2430,96 +2392,6 @@
         "wires": [
             [
                 "eef13addb5939a98"
-            ]
-        ]
-    },
-    {
-        "id": "c7f6fc6f04bbb3dc",
-        "type": "link in",
-        "z": "20ac8dd407885f5d",
-        "g": "66d748d8b763e343",
-        "name": "Alive Port",
-        "links": [
-            "ad028c28323036ac"
-        ],
-        "x": 215,
-        "y": 1060,
-        "wires": [
-            [
-                "f63b16679781980b"
-            ]
-        ]
-    },
-    {
-        "id": "f63b16679781980b",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "66d748d8b763e343",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "port",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 360,
-        "y": 1060,
-        "wires": [
-            [
-                "d2d9a905d0204ceb"
-            ]
-        ]
-    },
-    {
-        "id": "ccbf032c757d06c1",
-        "type": "link in",
-        "z": "20ac8dd407885f5d",
-        "g": "66d748d8b763e343",
-        "name": "",
-        "links": [
-            "4ad8d78a941ac3fb"
-        ],
-        "x": 215,
-        "y": 1100,
-        "wires": [
-            [
-                "f6ea6508b7328b90"
-            ]
-        ]
-    },
-    {
-        "id": "f6ea6508b7328b90",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "66d748d8b763e343",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "ip",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 360,
-        "y": 1100,
-        "wires": [
-            [
-                "d2d9a905d0204ceb"
             ]
         ]
     },
