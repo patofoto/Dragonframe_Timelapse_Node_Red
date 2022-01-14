@@ -1103,7 +1103,7 @@
             [
                 "fd41d6ae3f2edbdf",
                 "d7df4ca601759750",
-                "93aad228810673ba"
+                "f796e60ca7ad161d"
             ]
         ]
     },
@@ -1139,11 +1139,11 @@
         "timer": "60",
         "repeat": false,
         "again": true,
-        "x": 750,
+        "x": 450,
         "y": 960,
         "wires": [
             [
-                "aa69fab8dd6d1c40"
+                "93aad228810673ba"
             ]
         ]
     },
@@ -2466,11 +2466,11 @@
         "link": "",
         "director": "0f9b22e2b168f267",
         "resendLast": false,
-        "x": 470,
+        "x": 770,
         "y": 960,
         "wires": [
             [
-                "f796e60ca7ad161d"
+                "aa69fab8dd6d1c40"
             ]
         ]
     }
