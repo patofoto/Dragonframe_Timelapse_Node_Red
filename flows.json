@@ -107,40 +107,10 @@
             "edd2e6c375c6198e",
             "5b745e71205304b9"
         ],
-        "x": 34,
-        "y": 19,
-        "w": 762,
+        "x": 874,
+        "y": 239,
+        "w": 742,
         "h": 182
-    },
-    {
-        "id": "0bb745afc23d0509",
-        "type": "group",
-        "z": "20ac8dd407885f5d",
-        "name": "Intervalometer Setup",
-        "style": {
-            "label": true,
-            "color": "#000000",
-            "label-position": "n",
-            "fill": "#ffffff"
-        },
-        "nodes": [
-            "46d78d863bf40c19",
-            "e04c5893018bb8f9",
-            "f155cd0a6b510828",
-            "1783358b9ae93b5b",
-            "eb4444322a75b3c1",
-            "681a21428075b6f9",
-            "736dd74c72d2a204",
-            "96425f00a551e968",
-            "0e4f9f21c44e4155",
-            "191c1d8ffa34bbe6",
-            "3bcbb20cdf28833c",
-            "4c14d19363082c7c"
-        ],
-        "x": 34,
-        "y": 219,
-        "w": 572,
-        "h": 202
     },
     {
         "id": "fc95a5364964861e",
@@ -188,41 +158,8 @@
         ],
         "x": 34,
         "y": 439,
-        "w": 1852,
+        "w": 1832,
         "h": 542
-    },
-    {
-        "id": "728af4eea16d05c3",
-        "type": "group",
-        "z": "20ac8dd407885f5d",
-        "name": "Calculations",
-        "style": {
-            "label": true,
-            "label-position": "n",
-            "color": "#000000",
-            "fill": "#ffffff"
-        },
-        "nodes": [
-            "8b46c3288f3c192f",
-            "4bd131d11e5656df",
-            "7343288e0a5c8760",
-            "ed4deacfc469ea0f",
-            "eb40f576e817ee93",
-            "2be5d300b13c3936",
-            "6fa3553b068fe207",
-            "ac0e05234a14655c",
-            "4871b344d6671ecf",
-            "eef13addb5939a98",
-            "1468539339414676",
-            "c1ceaa231f70e595",
-            "14736c5d8fc2fce6",
-            "583a423cd7a9e971",
-            "918751fa42cebd85"
-        ],
-        "x": 814,
-        "y": 79,
-        "w": 892,
-        "h": 242
     },
     {
         "id": "66d748d8b763e343",
@@ -241,39 +178,16 @@
             "3c8e30648efc73b8",
             "36afaf5c0128c993"
         ],
-        "x": 634,
-        "y": 339,
+        "x": 874,
+        "y": 139,
         "w": 752,
         "h": 82
-    },
-    {
-        "id": "e86b7e85ec7e628e",
-        "type": "group",
-        "z": "20ac8dd407885f5d",
-        "name": "Notes",
-        "style": {
-            "fill": "#ffffff",
-            "label": true,
-            "label-position": "n",
-            "color": "#000000"
-        },
-        "nodes": [
-            "1f80a68806d157b6",
-            "fb159ba299d590e7",
-            "dc4fb9cd4aca1e50",
-            "5efad5f13ccddc1d",
-            "d1e27294d49c58e8"
-        ],
-        "x": 34,
-        "y": 999,
-        "w": 432,
-        "h": 172
     },
     {
         "id": "bdd30934fab20f76",
         "type": "group",
         "z": "b1ca81c2f04dcad4",
-        "name": "Intervalometer",
+        "name": "Comm Switch for Testing",
         "style": {
             "fill": "#ffffff",
             "label": true,
@@ -281,65 +195,13 @@
             "color": "#000000"
         },
         "nodes": [
-            "09a28c394e1ad440",
-            "d9d7ea72c7e079dc",
-            "5fc4f5f87de38afb",
-            "6f64efcdc791e39c",
-            "beccddc992f6cfbd",
-            "be24dd8189481830",
-            "412bc206bcf4755c",
-            "566508d582d9ca7e",
-            "4fd8572e540f0b6d",
-            "09ae81d09c077154",
             "70b986f801f2d36c",
             "e8585acc2fab7ffd",
             "fd291cf60bf80b78"
         ],
-        "x": 74,
+        "x": 54,
         "y": 59,
-        "w": 362,
-        "h": 322
-    },
-    {
-        "id": "d9f935c786fedbad",
-        "type": "group",
-        "z": "b1ca81c2f04dcad4",
-        "name": "Calculations",
-        "style": {
-            "fill": "#ffffff",
-            "label": true,
-            "label-position": "n",
-            "color": "#000000"
-        },
-        "nodes": [
-            "9a22c9ce666839c3",
-            "1bc7f71706ceea1d"
-        ],
-        "x": 494,
-        "y": 199,
-        "w": 362,
-        "h": 82
-    },
-    {
-        "id": "eb1500eb239e6526",
-        "type": "group",
-        "z": "b1ca81c2f04dcad4",
-        "name": "Alive Listener Configuration",
-        "style": {
-            "fill": "#ffffff",
-            "label": true,
-            "label-position": "n",
-            "color": "#000000"
-        },
-        "nodes": [
-            "8f6e305b656ef1d1",
-            "59d2852f08fdfa93",
-            "2caed68993d32ffe",
-            "a910c3cc4f077abc"
-        ],
-        "x": 494,
-        "y": 59,
-        "w": 472,
+        "w": 352,
         "h": 122
     },
     {
@@ -367,10 +229,92 @@
             "3ac229cfaf20bbfe",
             "34200b309889cce5"
         ],
-        "x": 74,
-        "y": 419,
+        "x": 54,
+        "y": 399,
         "w": 1032,
         "h": 162
+    },
+    {
+        "id": "a42ca3454e649528",
+        "type": "group",
+        "z": "20ac8dd407885f5d",
+        "name": "Settings Read from Dropbox file",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "65eea3b9086e805a",
+            "76568bf6d6f1f497",
+            "d52d01beec4bcf34",
+            "d13f2e7f7a456055",
+            "16338821e57dcf77",
+            "1034c9a7b66749a2",
+            "2eaf416ee0f851bb",
+            "275f7fbf74463a7d",
+            "f436049697b26c62",
+            "491a43890f874c47",
+            "61d682227f18622d",
+            "ece0774163b15372"
+        ],
+        "x": 34,
+        "y": 19,
+        "w": 812,
+        "h": 402
+    },
+    {
+        "id": "26bfc8b1bbe35854",
+        "type": "group",
+        "z": "b1ca81c2f04dcad4",
+        "name": "Calculations",
+        "style": {
+            "label": true,
+            "label-position": "n",
+            "color": "#000000",
+            "fill": "#ffffff"
+        },
+        "nodes": [
+            "f708884cda75b18e",
+            "a8b80a2868ddbec8",
+            "1829d2a6802c40b3",
+            "69555b2781e053f6",
+            "90d432cc8393defa",
+            "0aac6f60b0d3b001",
+            "319722d18d0a7aea",
+            "81e79e9b5f48e837",
+            "77993aab8dd4e3e2"
+        ],
+        "x": 54,
+        "y": 199,
+        "w": 892,
+        "h": 162
+    },
+    {
+        "id": "44252d98befbcddf",
+        "type": "group",
+        "z": "b1ca81c2f04dcad4",
+        "name": "Notes",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "440eb33527dbccdb",
+            "6ef65e878697980b",
+            "041e16b5532e6bbf",
+            "5e6f70f1c17ce8de",
+            "9370224fd33cc191",
+            "8d8436b99f874fcb",
+            "224531824cf12c1d"
+        ],
+        "x": 974,
+        "y": 139,
+        "w": 432,
+        "h": 222
     },
     {
         "id": "6f2ee2563c258dce",
@@ -546,323 +490,19 @@
         ]
     },
     {
-        "id": "09a28c394e1ad440",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "bdd30934fab20f76",
-        "name": "Interval in Minutes",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "5",
-        "payloadType": "num",
-        "x": 210,
-        "y": 140,
-        "wires": [
-            [
-                "be24dd8189481830"
-            ]
-        ]
-    },
-    {
-        "id": "d9d7ea72c7e079dc",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "bdd30934fab20f76",
-        "name": "Camera Name",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Test Camera",
-        "payloadType": "str",
-        "x": 200,
-        "y": 100,
-        "wires": [
-            [
-                "beccddc992f6cfbd"
-            ]
-        ]
-    },
-    {
-        "id": "5fc4f5f87de38afb",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "bdd30934fab20f76",
-        "name": "Start Time",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "6:00",
-        "payloadType": "str",
-        "x": 190,
-        "y": 180,
-        "wires": [
-            [
-                "412bc206bcf4755c"
-            ]
-        ]
-    },
-    {
-        "id": "6f64efcdc791e39c",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "bdd30934fab20f76",
-        "name": "End Time",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "17:00",
-        "payloadType": "str",
-        "x": 180,
-        "y": 220,
-        "wires": [
-            [
-                "566508d582d9ca7e"
-            ]
-        ]
-    },
-    {
-        "id": "9a22c9ce666839c3",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "d9f935c786fedbad",
-        "name": "File Size per frame in Mb",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "6.2",
-        "payloadType": "num",
-        "x": 650,
-        "y": 240,
-        "wires": [
-            [
-                "1bc7f71706ceea1d"
-            ]
-        ]
-    },
-    {
-        "id": "beccddc992f6cfbd",
-        "type": "link out",
-        "z": "b1ca81c2f04dcad4",
-        "g": "bdd30934fab20f76",
-        "name": "Camera Name",
-        "mode": "link",
-        "links": [
-            "0e4f9f21c44e4155"
-        ],
-        "x": 395,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "be24dd8189481830",
-        "type": "link out",
-        "z": "b1ca81c2f04dcad4",
-        "g": "bdd30934fab20f76",
-        "name": "Interval",
-        "mode": "link",
-        "links": [
-            "191c1d8ffa34bbe6"
-        ],
-        "x": 395,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "412bc206bcf4755c",
-        "type": "link out",
-        "z": "b1ca81c2f04dcad4",
-        "g": "bdd30934fab20f76",
-        "name": "Start Time",
-        "mode": "link",
-        "links": [
-            "3bcbb20cdf28833c"
-        ],
-        "x": 395,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "566508d582d9ca7e",
-        "type": "link out",
-        "z": "b1ca81c2f04dcad4",
-        "g": "bdd30934fab20f76",
-        "name": "End Time",
-        "mode": "link",
-        "links": [
-            "4c14d19363082c7c"
-        ],
-        "x": 395,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "1bc7f71706ceea1d",
-        "type": "link out",
-        "z": "b1ca81c2f04dcad4",
-        "g": "d9f935c786fedbad",
-        "name": "File Size",
-        "mode": "link",
-        "links": [
-            "c1ceaa231f70e595"
-        ],
-        "x": 815,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "8f6e305b656ef1d1",
-        "type": "change",
-        "z": "b1ca81c2f04dcad4",
-        "g": "eb1500eb239e6526",
-        "name": "set alivePort variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "alivePort",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 840,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "59d2852f08fdfa93",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "eb1500eb239e6526",
-        "name": "Alive Comm Port",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "65515",
-        "payloadType": "num",
-        "x": 630,
-        "y": 140,
-        "wires": [
-            [
-                "8f6e305b656ef1d1"
-            ]
-        ]
-    },
-    {
-        "id": "2caed68993d32ffe",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "eb1500eb239e6526",
-        "name": "Listener IP",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "74.108.21.213",
-        "payloadType": "str",
-        "x": 610,
-        "y": 100,
-        "wires": [
-            [
-                "a910c3cc4f077abc"
-            ]
-        ]
-    },
-    {
-        "id": "a910c3cc4f077abc",
-        "type": "change",
-        "z": "b1ca81c2f04dcad4",
-        "g": "eb1500eb239e6526",
-        "name": "set ipListen variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "ipListen",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 840,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "f465b58ced62aa08",
         "type": "function",
         "z": "b1ca81c2f04dcad4",
         "g": "753a188897bcf967",
-        "name": "JSON Data",
+        "name": "JSON Shot Data",
         "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nconst d = new Date();\nlet time = d.getTime();\n\n\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n}\n\nmsg.payload = JSON.stringify(data);\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 460,
+        "x": 340,
+        "y": 440,
         "wires": [
             [
                 "a7a7e873ba3f26aa"
@@ -883,8 +523,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
-        "y": 500,
+        "x": 750,
+        "y": 480,
         "wires": []
     },
     {
@@ -898,8 +538,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 570,
-        "y": 460,
+        "x": 550,
+        "y": 440,
         "wires": [
             [
                 "20d1b381141749a0"
@@ -918,8 +558,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 370,
-        "y": 500,
+        "x": 350,
+        "y": 480,
         "wires": [
             [
                 "3d699c0e9cf3ba43"
@@ -935,8 +575,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 530,
-        "y": 500,
+        "x": 510,
+        "y": 480,
         "wires": [
             [
                 "ce7d54d2d3ddbd6d",
@@ -966,8 +606,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 500,
+        "x": 160,
+        "y": 480,
         "wires": [
             [
                 "1fcd3b55c321da25"
@@ -983,53 +623,13 @@
         "links": [
             "603cd39c5c9e7e12"
         ],
-        "x": 135,
-        "y": 460,
+        "x": 115,
+        "y": 440,
         "wires": [
             [
                 "f465b58ced62aa08"
             ]
         ]
-    },
-    {
-        "id": "4fd8572e540f0b6d",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "bdd30934fab20f76",
-        "name": "Number of days of week",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "5",
-        "payloadType": "num",
-        "x": 230,
-        "y": 260,
-        "wires": [
-            [
-                "09ae81d09c077154"
-            ]
-        ]
-    },
-    {
-        "id": "09ae81d09c077154",
-        "type": "link out",
-        "z": "b1ca81c2f04dcad4",
-        "g": "bdd30934fab20f76",
-        "name": "Number of days in week",
-        "mode": "link",
-        "links": [
-            "14736c5d8fc2fce6"
-        ],
-        "x": 395,
-        "y": 260,
-        "wires": []
     },
     {
         "id": "20d1b381141749a0",
@@ -1044,8 +644,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 770,
-        "y": 460,
+        "x": 750,
+        "y": 440,
         "wires": []
     },
     {
@@ -1058,8 +658,8 @@
         "links": [
             "95162f2031c7c733"
         ],
-        "x": 315,
-        "y": 540,
+        "x": 295,
+        "y": 520,
         "wires": []
     },
     {
@@ -1080,8 +680,8 @@
         "topic": "",
         "payload": "{ \"command\" : \"shoot\", \"frames\" : 1 }",
         "payloadType": "str",
-        "x": 200,
-        "y": 540,
+        "x": 180,
+        "y": 520,
         "wires": [
             [
                 "62a79b1eeecdbfcf"
@@ -1089,40 +689,20 @@
         ]
     },
     {
-        "id": "8d8436b99f874fcb",
-        "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "name": "Rebel 28Mb",
-        "info": "",
-        "x": 950,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "224531824cf12c1d",
-        "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "name": "60D 24Mb",
-        "info": "",
-        "x": 940,
-        "y": 260,
-        "wires": []
-    },
-    {
         "id": "34200b309889cce5",
         "type": "debug",
         "z": "b1ca81c2f04dcad4",
         "g": "753a188897bcf967",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 990,
-        "y": 540,
+        "x": 970,
+        "y": 520,
         "wires": []
     },
     {
@@ -1143,8 +723,8 @@
         "output": "payload",
         "outputType": "msg",
         "outTz": "America/New_York",
-        "x": 800,
-        "y": 540,
+        "x": 780,
+        "y": 520,
         "wires": [
             [
                 "34200b309889cce5"
@@ -1168,8 +748,8 @@
         "useTimeOut": false,
         "timeOut": "30",
         "timeOutUnit": "s",
-        "x": 330,
-        "y": 320,
+        "x": 310,
+        "y": 120,
         "wires": [
             []
         ]
@@ -1192,8 +772,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 170,
-        "y": 300,
+        "x": 150,
+        "y": 100,
         "wires": [
             [
                 "70b986f801f2d36c"
@@ -1222,13 +802,287 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 170,
-        "y": 340,
+        "x": 150,
+        "y": 140,
         "wires": [
             [
                 "70b986f801f2d36c"
             ]
         ]
+    },
+    {
+        "id": "f708884cda75b18e",
+        "type": "function",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "Shooting Hours",
+        "func": "let numStartTime = parseInt(global.get('startTime'), 10);\nlet numEndTime = parseInt(global.get('endTime'), 10);\n\nmsg.payload = shootHours = numEndTime - numStartTime;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "69555b2781e053f6"
+            ]
+        ]
+    },
+    {
+        "id": "a8b80a2868ddbec8",
+        "type": "debug",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "Hours a day",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "1829d2a6802c40b3",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "f708884cda75b18e",
+                "90d432cc8393defa",
+                "81e79e9b5f48e837"
+            ]
+        ]
+    },
+    {
+        "id": "69555b2781e053f6",
+        "type": "change",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "set shootHours variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "shootHours",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 240,
+        "wires": [
+            [
+                "a8b80a2868ddbec8"
+            ]
+        ]
+    },
+    {
+        "id": "90d432cc8393defa",
+        "type": "function",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "Frames a day",
+        "func": "let framesHour = parseInt(60/global.get('interval'), 10);\n\nmsg.payload = global.get('shootHours')*framesHour;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 280,
+        "wires": [
+            [
+                "0aac6f60b0d3b001"
+            ]
+        ]
+    },
+    {
+        "id": "0aac6f60b0d3b001",
+        "type": "change",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "set framesDay variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "framesDay",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 280,
+        "wires": [
+            [
+                "319722d18d0a7aea"
+            ]
+        ]
+    },
+    {
+        "id": "319722d18d0a7aea",
+        "type": "debug",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "Frames per day",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "81e79e9b5f48e837",
+        "type": "function",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "Data Calculations",
+        "func": "let interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = 5; // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet cameras = 2; //number of cameras\n\nlet dailyFrames = (dailyHours*60)/interval;\nlet monthlyFrames = (dailyFrames*weekDays)*4\n\nlet dailyDownload = (dailyFrames*frameSize)/1024; //Size in Gb\nlet weeklyDownload = (dailyFrames*weekDays)*frameSize/1024; //Size in Gb\nlet monthlyDownload = (monthlyFrames*frameSize)/1024; //Size in Gb\n\nmsg.payload = {\n\n    DailyFrames: dailyFrames,\n    MonthlyFrames: monthlyFrames,\n    DailyDownload_Gb: parseFloat(dailyDownload.toFixed(1)),\n    WeeklyDownload_Gb: parseFloat(weeklyDownload.toFixed(1)),\n    MonthlyDownload_Gb: parseFloat(monthlyDownload.toFixed(1)),\n\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 320,
+        "wires": [
+            [
+                "77993aab8dd4e3e2"
+            ]
+        ]
+    },
+    {
+        "id": "77993aab8dd4e3e2",
+        "type": "debug",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "Calculations",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "8d8436b99f874fcb",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "Rebel 28Mb",
+        "info": "",
+        "x": 1070,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "224531824cf12c1d",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "60D 24Mb",
+        "info": "",
+        "x": 1220,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "440eb33527dbccdb",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "Dragonframe sends \"Hello\"handshake every 20 sec",
+        "info": "",
+        "x": 1190,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6ef65e878697980b",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "frameComplete",
+        "info": "event: \"frameComplete\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nimageFileName: \"\"\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
+        "x": 1080,
+        "y": 225,
+        "wires": []
+    },
+    {
+        "id": "041e16b5532e6bbf",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "Capture State",
+        "info": "event: \"captureState\"\nreadyToCapture: false\nstate: \"READY\"\n\n\nevent: \"captureState\"\nreadyToCapture: false\nstate: \"SHOOTING\"\n\n\nevent: \"captureState\"\nreadyToCapture: true\nstate: \"READY\"",
+        "x": 1250,
+        "y": 225,
+        "wires": []
+    },
+    {
+        "id": "5e6f70f1c17ce8de",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "Shoot",
+        "info": "event: \"shoot\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
+        "x": 1170,
+        "y": 270,
+        "wires": []
+    },
+    {
+        "id": "9370224fd33cc191",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "Events",
+        "info": "hello\n    maxVersion: 1\n    minVersion: 1\n\ncaptureState\n    readyToCapture: true|false\n    \ncaptureComplete\n    exposure: 1   \n    imageFileName: \"xxxxx\"\n    \nframeComplete\n    exposure: 1\n\nposition\n    exposure: 1",
+        "x": 1050,
+        "y": 270,
+        "wires": []
     },
     {
         "id": "8f763fcfa9a2d554",
@@ -1301,8 +1155,8 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 150,
-        "y": 60,
+        "x": 990,
+        "y": 280,
         "wires": [
             [
                 "edd2e6c375c6198e"
@@ -1434,7 +1288,7 @@
         "bot": "f52ae91beb2ca245",
         "haserroroutput": false,
         "outputs": 1,
-        "x": 1540,
+        "x": 1520,
         "y": 820,
         "wires": [
             [
@@ -1456,7 +1310,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1740,
+        "x": 1720,
         "y": 820,
         "wires": []
     },
@@ -1532,8 +1386,8 @@
         "topic": "",
         "payload": "{ \"command\" : \"shoot\", \"frames\" : 1 }",
         "payloadType": "str",
-        "x": 160,
-        "y": 120,
+        "x": 1000,
+        "y": 340,
         "wires": [
             [
                 "ca9db2b297167bc6"
@@ -1557,52 +1411,6 @@
         "x": 1020,
         "y": 640,
         "wires": []
-    },
-    {
-        "id": "46d78d863bf40c19",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "Display Interval",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 460,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "e04c5893018bb8f9",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "interval Variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "interval",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 200,
-        "y": 300,
-        "wires": [
-            [
-                "46d78d863bf40c19"
-            ]
-        ]
     },
     {
         "id": "5b9f30ef3294e253",
@@ -1670,8 +1478,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 610,
-        "y": 120,
+        "x": 1430,
+        "y": 340,
         "wires": [
             [
                 "5b745e71205304b9"
@@ -1706,98 +1514,6 @@
                 "603cd39c5c9e7e12"
             ]
         ]
-    },
-    {
-        "id": "f155cd0a6b510828",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "startTime Variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "startTime",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 210,
-        "y": 340,
-        "wires": [
-            [
-                "1783358b9ae93b5b"
-            ]
-        ]
-    },
-    {
-        "id": "1783358b9ae93b5b",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "Display Start Time",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 470,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "eb4444322a75b3c1",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "endTime Variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "endTime",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 210,
-        "y": 380,
-        "wires": [
-            [
-                "681a21428075b6f9"
-            ]
-        ]
-    },
-    {
-        "id": "681a21428075b6f9",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "Display End Time",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 470,
-        "y": 380,
-        "wires": []
     },
     {
         "id": "96d34eae343acaac",
@@ -1887,53 +1603,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1720,
+        "x": 1700,
         "y": 760,
-        "wires": []
-    },
-    {
-        "id": "736dd74c72d2a204",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "camName Variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "camName",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 210,
-        "y": 260,
-        "wires": [
-            [
-                "96425f00a551e968"
-            ]
-        ]
-    },
-    {
-        "id": "96425f00a551e968",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 450,
-        "y": 260,
         "wires": []
     },
     {
@@ -2112,8 +1783,8 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 760,
-        "y": 380,
+        "x": 1000,
+        "y": 180,
         "wires": [
             [
                 "3c8e30648efc73b8"
@@ -2133,8 +1804,8 @@
         "outport": "",
         "base64": false,
         "multicast": "false",
-        "x": 1310,
-        "y": 380,
+        "x": 1550,
+        "y": 180,
         "wires": []
     },
     {
@@ -2149,7 +1820,7 @@
         "outport": "2222",
         "base64": false,
         "multicast": "false",
-        "x": 1720,
+        "x": 1700,
         "y": 580,
         "wires": []
     },
@@ -2165,172 +1836,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
-        "y": 380,
+        "x": 1200,
+        "y": 180,
         "wires": [
             [
                 "36afaf5c0128c993"
             ]
         ]
-    },
-    {
-        "id": "8b46c3288f3c192f",
-        "type": "function",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "Shooting Hours",
-        "func": "let numStartTime = parseInt(global.get('startTime'), 10);\nlet numEndTime = parseInt(global.get('endTime'), 10);\n\nmsg.payload = shootHours = numEndTime - numStartTime;\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1120,
-        "y": 120,
-        "wires": [
-            [
-                "ed4deacfc469ea0f"
-            ]
-        ]
-    },
-    {
-        "id": "4bd131d11e5656df",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "Hours a day",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1570,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "7343288e0a5c8760",
-        "type": "inject",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 930,
-        "y": 160,
-        "wires": [
-            [
-                "8b46c3288f3c192f",
-                "eb40f576e817ee93",
-                "ac0e05234a14655c"
-            ]
-        ]
-    },
-    {
-        "id": "ed4deacfc469ea0f",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "set shootHours variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "shootHours",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1350,
-        "y": 120,
-        "wires": [
-            [
-                "4bd131d11e5656df"
-            ]
-        ]
-    },
-    {
-        "id": "eb40f576e817ee93",
-        "type": "function",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "Frames a day",
-        "func": "let framesHour = parseInt(60/global.get('interval'), 10);\n\nmsg.payload = global.get('shootHours')*framesHour;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1120,
-        "y": 160,
-        "wires": [
-            [
-                "2be5d300b13c3936"
-            ]
-        ]
-    },
-    {
-        "id": "2be5d300b13c3936",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "set framesDay variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "framesDay",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1340,
-        "y": 160,
-        "wires": [
-            [
-                "6fa3553b068fe207"
-            ]
-        ]
-    },
-    {
-        "id": "6fa3553b068fe207",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "Frames per day",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1580,
-        "y": 160,
-        "wires": []
     },
     {
         "id": "ac735291685f7021",
@@ -2434,230 +1946,6 @@
         ]
     },
     {
-        "id": "1f80a68806d157b6",
-        "type": "comment",
-        "z": "20ac8dd407885f5d",
-        "g": "e86b7e85ec7e628e",
-        "name": "Dragonframe sends \"Hello\"handshake every 20 sec",
-        "info": "",
-        "x": 250,
-        "y": 1040,
-        "wires": []
-    },
-    {
-        "id": "fb159ba299d590e7",
-        "type": "comment",
-        "z": "20ac8dd407885f5d",
-        "g": "e86b7e85ec7e628e",
-        "name": "frameComplete",
-        "info": "event: \"frameComplete\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nimageFileName: \"\"\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 140,
-        "y": 1085,
-        "wires": []
-    },
-    {
-        "id": "dc4fb9cd4aca1e50",
-        "type": "comment",
-        "z": "20ac8dd407885f5d",
-        "g": "e86b7e85ec7e628e",
-        "name": "Capture State",
-        "info": "event: \"captureState\"\nreadyToCapture: false\nstate: \"READY\"\n\n\nevent: \"captureState\"\nreadyToCapture: false\nstate: \"SHOOTING\"\n\n\nevent: \"captureState\"\nreadyToCapture: true\nstate: \"READY\"",
-        "x": 310,
-        "y": 1085,
-        "wires": []
-    },
-    {
-        "id": "5efad5f13ccddc1d",
-        "type": "comment",
-        "z": "20ac8dd407885f5d",
-        "g": "e86b7e85ec7e628e",
-        "name": "Shoot",
-        "info": "event: \"shoot\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 230,
-        "y": 1130,
-        "wires": []
-    },
-    {
-        "id": "d1e27294d49c58e8",
-        "type": "comment",
-        "z": "20ac8dd407885f5d",
-        "g": "e86b7e85ec7e628e",
-        "name": "Events",
-        "info": "hello\n    maxVersion: 1\n    minVersion: 1\n\ncaptureState\n    readyToCapture: true|false\n    \ncaptureComplete\n    exposure: 1   \n    imageFileName: \"xxxxx\"\n    \nframeComplete\n    exposure: 1\n\nposition\n    exposure: 1",
-        "x": 110,
-        "y": 1130,
-        "wires": []
-    },
-    {
-        "id": "ac0e05234a14655c",
-        "type": "function",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "Data Calculations",
-        "func": "let interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = 5; // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet cameras = 2; //number of cameras\n\nlet dailyFrames = (dailyHours*60)/interval;\nlet monthlyFrames = (dailyFrames*weekDays)*4\n\nlet dailyDownload = (dailyFrames*frameSize)/1024; //Size in Gb\nlet weeklyDownload = (dailyFrames*weekDays)*frameSize/1024; //Size in Gb\nlet monthlyDownload = (monthlyFrames*frameSize)/1024; //Size in Gb\n\nmsg.payload = {\n\n    DailyFrames: dailyFrames,\n    MonthlyFrames: monthlyFrames,\n    DailyDownload_Gb: parseFloat(dailyDownload.toFixed(1)),\n    WeeklyDownload_Gb: parseFloat(weeklyDownload.toFixed(1)),\n    MonthlyDownload_Gb: parseFloat(monthlyDownload.toFixed(1)),\n\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1130,
-        "y": 200,
-        "wires": [
-            [
-                "4871b344d6671ecf"
-            ]
-        ]
-    },
-    {
-        "id": "4871b344d6671ecf",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "Calculations",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1570,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "eef13addb5939a98",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "set fileSize variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "fileSize",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1330,
-        "y": 240,
-        "wires": [
-            [
-                "1468539339414676"
-            ]
-        ]
-    },
-    {
-        "id": "1468539339414676",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "File Size",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1560,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "0e4f9f21c44e4155",
-        "type": "link in",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "Camera Name",
-        "links": [
-            "beccddc992f6cfbd"
-        ],
-        "x": 75,
-        "y": 260,
-        "wires": [
-            [
-                "736dd74c72d2a204"
-            ]
-        ]
-    },
-    {
-        "id": "191c1d8ffa34bbe6",
-        "type": "link in",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "Interval",
-        "links": [
-            "be24dd8189481830"
-        ],
-        "x": 75,
-        "y": 300,
-        "wires": [
-            [
-                "e04c5893018bb8f9"
-            ]
-        ]
-    },
-    {
-        "id": "3bcbb20cdf28833c",
-        "type": "link in",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "Start Time",
-        "links": [
-            "412bc206bcf4755c"
-        ],
-        "x": 75,
-        "y": 340,
-        "wires": [
-            [
-                "f155cd0a6b510828"
-            ]
-        ]
-    },
-    {
-        "id": "4c14d19363082c7c",
-        "type": "link in",
-        "z": "20ac8dd407885f5d",
-        "g": "0bb745afc23d0509",
-        "name": "End Time",
-        "links": [
-            "566508d582d9ca7e"
-        ],
-        "x": 75,
-        "y": 380,
-        "wires": [
-            [
-                "eb4444322a75b3c1"
-            ]
-        ]
-    },
-    {
-        "id": "c1ceaa231f70e595",
-        "type": "link in",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "File Size",
-        "links": [
-            "1bc7f71706ceea1d"
-        ],
-        "x": 955,
-        "y": 240,
-        "wires": [
-            [
-                "eef13addb5939a98"
-            ]
-        ]
-    },
-    {
         "id": "603cd39c5c9e7e12",
         "type": "link out",
         "z": "20ac8dd407885f5d",
@@ -2733,69 +2021,6 @@
         ]
     },
     {
-        "id": "14736c5d8fc2fce6",
-        "type": "link in",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "Number of days in week",
-        "links": [
-            "09ae81d09c077154"
-        ],
-        "x": 955,
-        "y": 280,
-        "wires": [
-            [
-                "583a423cd7a9e971"
-            ]
-        ]
-    },
-    {
-        "id": "583a423cd7a9e971",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "set weekDays variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "weekDays",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1340,
-        "y": 280,
-        "wires": [
-            [
-                "918751fa42cebd85"
-            ]
-        ]
-    },
-    {
-        "id": "918751fa42cebd85",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "728af4eea16d05c3",
-        "name": "# of days",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1560,
-        "y": 280,
-        "wires": []
-    },
-    {
         "id": "95162f2031c7c733",
         "type": "link in",
         "z": "20ac8dd407885f5d",
@@ -2804,8 +2029,8 @@
         "links": [
             "62a79b1eeecdbfcf"
         ],
-        "x": 215,
-        "y": 160,
+        "x": 1055,
+        "y": 380,
         "wires": [
             [
                 "ca9db2b297167bc6"
@@ -2833,7 +2058,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2854,8 +2079,8 @@
         "link": "",
         "director": "70b986f801f2d36c",
         "resendLast": false,
-        "x": 1150,
-        "y": 380,
+        "x": 1390,
+        "y": 180,
         "wires": [
             [
                 "d2d9a905d0204ceb"
@@ -2888,8 +2113,8 @@
         "link": "",
         "director": "70b986f801f2d36c",
         "resendLast": false,
-        "x": 380,
-        "y": 60,
+        "x": 1220,
+        "y": 280,
         "wires": [
             [
                 "ca9db2b297167bc6"
@@ -2906,8 +2131,8 @@
         "links": [
             "0fb5a9bb5160bba9"
         ],
-        "x": 755,
-        "y": 120,
+        "x": 1575,
+        "y": 340,
         "wires": []
     },
     {
@@ -2919,12 +2144,307 @@
         "links": [
             "5b745e71205304b9"
         ],
-        "x": 1575,
+        "x": 1555,
         "y": 540,
         "wires": [
             [
                 "8c50a50d865f61ce"
             ]
         ]
+    },
+    {
+        "id": "65eea3b9086e805a",
+        "type": "file in",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "Read from Dropbox",
+        "filename": "/Users/pato/Dropbox/Point72_Camera_Settings/test_settings.json",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 330,
+        "y": 200,
+        "wires": [
+            [
+                "d52d01beec4bcf34"
+            ]
+        ]
+    },
+    {
+        "id": "76568bf6d6f1f497",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 200,
+        "wires": [
+            [
+                "65eea3b9086e805a"
+            ]
+        ]
+    },
+    {
+        "id": "d52d01beec4bcf34",
+        "type": "json",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 200,
+        "wires": [
+            [
+                "d13f2e7f7a456055",
+                "16338821e57dcf77",
+                "1034c9a7b66749a2",
+                "2eaf416ee0f851bb",
+                "275f7fbf74463a7d",
+                "f436049697b26c62",
+                "491a43890f874c47",
+                "61d682227f18622d",
+                "ece0774163b15372"
+            ]
+        ]
+    },
+    {
+        "id": "d13f2e7f7a456055",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "camName variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "camName",
+                "pt": "global",
+                "to": "payload.camName",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16338821e57dcf77",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "interval variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "interval",
+                "pt": "global",
+                "to": "payload.interval",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1034c9a7b66749a2",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "startTime variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "startTime",
+                "pt": "global",
+                "to": "payload.startTime",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2eaf416ee0f851bb",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "endTime variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "endTime",
+                "pt": "global",
+                "to": "payload.endTime",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "275f7fbf74463a7d",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "weekDays variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "weekDays",
+                "pt": "global",
+                "to": "payload.weekDays",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f436049697b26c62",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "ipListen variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ipListen",
+                "pt": "global",
+                "to": "payload.ipListen",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "491a43890f874c47",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "alivePort variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "alivePort",
+                "pt": "global",
+                "to": "payload.alivePort",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61d682227f18622d",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "fileSize variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fileSize",
+                "pt": "global",
+                "to": "payload.fileSize",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ece0774163b15372",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 380,
+        "wires": []
     }
 ]

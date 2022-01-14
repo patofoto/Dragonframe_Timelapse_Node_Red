@@ -6,10 +6,9 @@
         "node-red-contrib-timeout": "1.1.5",
         "node-red-contrib-telegrambot": "11.0.0",
         "node-red-contrib-sun-position": "2.0.6",
-        "node-red-contrib-fs-ops": "1.6.0",
         "node-red-contrib-countula": "1.1.9",
-        "node-red-contrib-calc": "1.0.5",
-        "node-red-contrib-moment": "4.0.0"
+        "node-red-contrib-moment": "4.0.0",
+        "node-red-contrib-switch-break": "1.0.1"
     },
     "node-red": {
         "settings": {
