@@ -104,8 +104,8 @@
             "4a5a8d6cd7ad3256",
             "ca9db2b297167bc6",
             "95162f2031c7c733",
-            "edd2e6c375c6198e",
-            "5b745e71205304b9"
+            "5b745e71205304b9",
+            "dc2afc305b3f4049"
         ],
         "x": 874,
         "y": 279,
@@ -152,9 +152,9 @@
             "f5f26648fe24ff3b",
             "8d53700361a8d8ba",
             "d7df4ca601759750",
-            "2bbd39311ee7a069",
             "8c50a50d865f61ce",
-            "0fb5a9bb5160bba9"
+            "0fb5a9bb5160bba9",
+            "93aad228810673ba"
         ],
         "x": 34,
         "y": 479,
@@ -176,33 +176,12 @@
             "869fa2a8fa523984",
             "d2d9a905d0204ceb",
             "3c8e30648efc73b8",
-            "36afaf5c0128c993"
+            "609686ac0b89abea"
         ],
         "x": 874,
         "y": 179,
         "w": 752,
         "h": 82
-    },
-    {
-        "id": "bdd30934fab20f76",
-        "type": "group",
-        "z": "b1ca81c2f04dcad4",
-        "name": "Comm Switch for Testing",
-        "style": {
-            "fill": "#ffffff",
-            "label": true,
-            "label-position": "n",
-            "color": "#000000"
-        },
-        "nodes": [
-            "70b986f801f2d36c",
-            "e8585acc2fab7ffd",
-            "fd291cf60bf80b78"
-        ],
-        "x": 54,
-        "y": 59,
-        "w": 352,
-        "h": 122
     },
     {
         "id": "753a188897bcf967",
@@ -229,8 +208,8 @@
             "3ac229cfaf20bbfe",
             "34200b309889cce5"
         ],
-        "x": 54,
-        "y": 379,
+        "x": 34,
+        "y": 219,
         "w": 1032,
         "h": 162
     },
@@ -287,8 +266,8 @@
             "81e79e9b5f48e837",
             "77993aab8dd4e3e2"
         ],
-        "x": 54,
-        "y": 199,
+        "x": 34,
+        "y": 39,
         "w": 892,
         "h": 162
     },
@@ -312,10 +291,31 @@
             "8d8436b99f874fcb",
             "224531824cf12c1d"
         ],
-        "x": 974,
-        "y": 139,
+        "x": 1094,
+        "y": 39,
         "w": 432,
         "h": 222
+    },
+    {
+        "id": "e16afa60a218c27d",
+        "type": "group",
+        "z": "20ac8dd407885f5d",
+        "name": "Comm Switch for Testing",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "0f9b22e2b168f267",
+            "fe1c87cb537bd4c2",
+            "eb1be034d2df2c66"
+        ],
+        "x": 874,
+        "y": 39,
+        "w": 352,
+        "h": 122
     },
     {
         "id": "6f2ee2563c258dce",
@@ -502,8 +502,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 420,
+        "x": 320,
+        "y": 260,
         "wires": [
             [
                 "a7a7e873ba3f26aa"
@@ -524,8 +524,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 750,
-        "y": 460,
+        "x": 730,
+        "y": 300,
         "wires": []
     },
     {
@@ -539,8 +539,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 550,
-        "y": 420,
+        "x": 530,
+        "y": 260,
         "wires": [
             [
                 "20d1b381141749a0"
@@ -559,8 +559,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 350,
-        "y": 460,
+        "x": 330,
+        "y": 300,
         "wires": [
             [
                 "3d699c0e9cf3ba43"
@@ -576,8 +576,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 510,
-        "y": 460,
+        "x": 490,
+        "y": 300,
         "wires": [
             [
                 "ce7d54d2d3ddbd6d",
@@ -607,8 +607,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 160,
-        "y": 460,
+        "x": 140,
+        "y": 300,
         "wires": [
             [
                 "1fcd3b55c321da25"
@@ -624,8 +624,8 @@
         "links": [
             "603cd39c5c9e7e12"
         ],
-        "x": 115,
-        "y": 420,
+        "x": 95,
+        "y": 260,
         "wires": [
             [
                 "f465b58ced62aa08"
@@ -645,8 +645,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 750,
-        "y": 420,
+        "x": 730,
+        "y": 260,
         "wires": []
     },
     {
@@ -659,8 +659,8 @@
         "links": [
             "95162f2031c7c733"
         ],
-        "x": 295,
-        "y": 500,
+        "x": 275,
+        "y": 340,
         "wires": []
     },
     {
@@ -681,8 +681,8 @@
         "topic": "",
         "payload": "{ \"command\" : \"shoot\", \"frames\" : 1 }",
         "payloadType": "str",
-        "x": 180,
-        "y": 500,
+        "x": 160,
+        "y": 340,
         "wires": [
             [
                 "62a79b1eeecdbfcf"
@@ -702,8 +702,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
-        "y": 500,
+        "x": 950,
+        "y": 340,
         "wires": []
     },
     {
@@ -724,90 +724,11 @@
         "output": "payload",
         "outputType": "msg",
         "outTz": "America/New_York",
-        "x": 780,
-        "y": 500,
+        "x": 760,
+        "y": 340,
         "wires": [
             [
                 "34200b309889cce5"
-            ]
-        ]
-    },
-    {
-        "id": "70b986f801f2d36c",
-        "type": "break director",
-        "z": "b1ca81c2f04dcad4",
-        "g": "bdd30934fab20f76",
-        "name": "UDP Comms",
-        "actors": "",
-        "inputType": "msg",
-        "inputValue": "payload",
-        "lockType": "bool",
-        "lockValue": "true",
-        "unlockType": "else",
-        "unlockValue": "false",
-        "defaultState": true,
-        "useTimeOut": false,
-        "timeOut": "30",
-        "timeOutUnit": "s",
-        "x": 310,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e8585acc2fab7ffd",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "bdd30934fab20f76",
-        "name": "OFF",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 150,
-        "y": 100,
-        "wires": [
-            [
-                "70b986f801f2d36c"
-            ]
-        ]
-    },
-    {
-        "id": "fd291cf60bf80b78",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "bdd30934fab20f76",
-        "name": "ON",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 150,
-        "y": 140,
-        "wires": [
-            [
-                "70b986f801f2d36c"
             ]
         ]
     },
@@ -823,8 +744,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 240,
+        "x": 340,
+        "y": 80,
         "wires": [
             [
                 "69555b2781e053f6"
@@ -845,8 +766,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 810,
-        "y": 240,
+        "x": 790,
+        "y": 80,
         "wires": []
     },
     {
@@ -866,8 +787,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 170,
-        "y": 280,
+        "x": 150,
+        "y": 120,
         "wires": [
             [
                 "f708884cda75b18e",
@@ -896,8 +817,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 240,
+        "x": 570,
+        "y": 80,
         "wires": [
             [
                 "a8b80a2868ddbec8"
@@ -916,8 +837,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 280,
+        "x": 340,
+        "y": 120,
         "wires": [
             [
                 "0aac6f60b0d3b001"
@@ -944,8 +865,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 580,
-        "y": 280,
+        "x": 560,
+        "y": 120,
         "wires": [
             [
                 "319722d18d0a7aea"
@@ -966,8 +887,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 820,
-        "y": 280,
+        "x": 800,
+        "y": 120,
         "wires": []
     },
     {
@@ -982,8 +903,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 320,
+        "x": 350,
+        "y": 160,
         "wires": [
             [
                 "77993aab8dd4e3e2"
@@ -1004,8 +925,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 810,
-        "y": 320,
+        "x": 790,
+        "y": 160,
         "wires": []
     },
     {
@@ -1015,8 +936,8 @@
         "g": "44252d98befbcddf",
         "name": "Rebel 28Mb",
         "info": "",
-        "x": 1070,
-        "y": 320,
+        "x": 1190,
+        "y": 220,
         "wires": []
     },
     {
@@ -1026,8 +947,8 @@
         "g": "44252d98befbcddf",
         "name": "60D 24Mb",
         "info": "",
-        "x": 1220,
-        "y": 320,
+        "x": 1340,
+        "y": 220,
         "wires": []
     },
     {
@@ -1037,8 +958,8 @@
         "g": "44252d98befbcddf",
         "name": "Dragonframe sends \"Hello\"handshake every 20 sec",
         "info": "",
-        "x": 1190,
-        "y": 180,
+        "x": 1310,
+        "y": 80,
         "wires": []
     },
     {
@@ -1048,8 +969,8 @@
         "g": "44252d98befbcddf",
         "name": "frameComplete",
         "info": "event: \"frameComplete\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nimageFileName: \"\"\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 1080,
-        "y": 225,
+        "x": 1200,
+        "y": 125,
         "wires": []
     },
     {
@@ -1059,8 +980,8 @@
         "g": "44252d98befbcddf",
         "name": "Capture State",
         "info": "event: \"captureState\"\nreadyToCapture: false\nstate: \"READY\"\n\n\nevent: \"captureState\"\nreadyToCapture: false\nstate: \"SHOOTING\"\n\n\nevent: \"captureState\"\nreadyToCapture: true\nstate: \"READY\"",
-        "x": 1250,
-        "y": 225,
+        "x": 1370,
+        "y": 125,
         "wires": []
     },
     {
@@ -1070,8 +991,8 @@
         "g": "44252d98befbcddf",
         "name": "Shoot",
         "info": "event: \"shoot\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 1170,
-        "y": 270,
+        "x": 1290,
+        "y": 170,
         "wires": []
     },
     {
@@ -1081,8 +1002,8 @@
         "g": "44252d98befbcddf",
         "name": "Events",
         "info": "hello\n    maxVersion: 1\n    minVersion: 1\n\ncaptureState\n    readyToCapture: true|false\n    \ncaptureComplete\n    exposure: 1   \n    imageFileName: \"xxxxx\"\n    \nframeComplete\n    exposure: 1\n\nposition\n    exposure: 1",
-        "x": 1050,
-        "y": 270,
+        "x": 1170,
+        "y": 170,
         "wires": []
     },
     {
@@ -1160,7 +1081,7 @@
         "y": 320,
         "wires": [
             [
-                "edd2e6c375c6198e"
+                "dc2afc305b3f4049"
             ]
         ]
     },
@@ -1180,9 +1101,9 @@
         "y": 800,
         "wires": [
             [
-                "f796e60ca7ad161d",
                 "fd41d6ae3f2edbdf",
-                "d7df4ca601759750"
+                "d7df4ca601759750",
+                "93aad228810673ba"
             ]
         ]
     },
@@ -1218,11 +1139,11 @@
         "timer": "60",
         "repeat": false,
         "again": true,
-        "x": 430,
+        "x": 750,
         "y": 960,
         "wires": [
             [
-                "2bbd39311ee7a069"
+                "aa69fab8dd6d1c40"
             ]
         ]
     },
@@ -1841,7 +1762,7 @@
         "y": 220,
         "wires": [
             [
-                "36afaf5c0128c993"
+                "609686ac0b89abea"
             ]
         ]
     },
@@ -2070,57 +1991,6 @@
         "x": 400,
         "y": 800,
         "wires": []
-    },
-    {
-        "id": "36afaf5c0128c993",
-        "type": "break actor",
-        "z": "20ac8dd407885f5d",
-        "g": "66d748d8b763e343",
-        "name": "Alive Comm",
-        "link": "",
-        "director": "70b986f801f2d36c",
-        "resendLast": false,
-        "x": 1390,
-        "y": 220,
-        "wires": [
-            [
-                "d2d9a905d0204ceb"
-            ]
-        ]
-    },
-    {
-        "id": "2bbd39311ee7a069",
-        "type": "break actor",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Dragonframe lost Comm",
-        "link": "",
-        "director": "70b986f801f2d36c",
-        "resendLast": false,
-        "x": 750,
-        "y": 960,
-        "wires": [
-            [
-                "aa69fab8dd6d1c40"
-            ]
-        ]
-    },
-    {
-        "id": "edd2e6c375c6198e",
-        "type": "break actor",
-        "z": "20ac8dd407885f5d",
-        "g": "9bb44f6703637248",
-        "name": "Intervalometer",
-        "link": "",
-        "director": "70b986f801f2d36c",
-        "resendLast": false,
-        "x": 1220,
-        "y": 320,
-        "wires": [
-            [
-                "ca9db2b297167bc6"
-            ]
-        ]
     },
     {
         "id": "5b745e71205304b9",
@@ -2472,6 +2342,136 @@
         "y": 380,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "0f9b22e2b168f267",
+        "type": "break director",
+        "z": "20ac8dd407885f5d",
+        "g": "e16afa60a218c27d",
+        "name": "UDP Comms",
+        "actors": "",
+        "inputType": "msg",
+        "inputValue": "payload",
+        "lockType": "bool",
+        "lockValue": "true",
+        "unlockType": "else",
+        "unlockValue": "",
+        "defaultState": true,
+        "useTimeOut": false,
+        "timeOut": "30",
+        "timeOutUnit": "s",
+        "x": 1130,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe1c87cb537bd4c2",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "g": "e16afa60a218c27d",
+        "name": "OFF",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 970,
+        "y": 80,
+        "wires": [
+            [
+                "0f9b22e2b168f267"
+            ]
+        ]
+    },
+    {
+        "id": "eb1be034d2df2c66",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "g": "e16afa60a218c27d",
+        "name": "ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 970,
+        "y": 120,
+        "wires": [
+            [
+                "0f9b22e2b168f267"
+            ]
+        ]
+    },
+    {
+        "id": "609686ac0b89abea",
+        "type": "break actor",
+        "z": "20ac8dd407885f5d",
+        "g": "66d748d8b763e343",
+        "name": "Alive Comm",
+        "link": "",
+        "director": "0f9b22e2b168f267",
+        "resendLast": false,
+        "x": 1390,
+        "y": 220,
+        "wires": [
+            [
+                "d2d9a905d0204ceb"
+            ]
+        ]
+    },
+    {
+        "id": "dc2afc305b3f4049",
+        "type": "break actor",
+        "z": "20ac8dd407885f5d",
+        "g": "9bb44f6703637248",
+        "name": "Intervalometer",
+        "link": "",
+        "director": "0f9b22e2b168f267",
+        "resendLast": false,
+        "x": 1180,
+        "y": 320,
+        "wires": [
+            [
+                "ca9db2b297167bc6"
+            ]
+        ]
+    },
+    {
+        "id": "93aad228810673ba",
+        "type": "break actor",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Dragonframe lost Comm",
+        "link": "",
+        "director": "0f9b22e2b168f267",
+        "resendLast": false,
+        "x": 470,
+        "y": 960,
+        "wires": [
+            [
+                "f796e60ca7ad161d"
+            ]
         ]
     }
 ]
