@@ -154,7 +154,9 @@
             "34200b309889cce5"
         ],
         "x": 34,
-        "y": 259
+        "y": 259,
+        "w": 1032,
+        "h": 142
     },
     {
         "id": "a42ca3454e649528",
@@ -216,7 +218,9 @@
             "77993aab8dd4e3e2"
         ],
         "x": 34,
-        "y": 39
+        "y": 39,
+        "w": 892,
+        "h": 162
     },
     {
         "id": "44252d98befbcddf",
@@ -239,7 +243,9 @@
             "224531824cf12c1d"
         ],
         "x": 1094,
-        "y": 39
+        "y": 39,
+        "w": 432,
+        "h": 222
     },
     {
         "id": "e16afa60a218c27d",
@@ -2155,7 +2161,7 @@
         "z": "b1ca81c2f04dcad4",
         "g": "753a188897bcf967",
         "name": "Read from Dropbox",
-        "filename": "/Users/pato/Dropbox/test_camera_dragonframe_nodered_data.json",
+        "filename": "",
         "format": "utf8",
         "chunk": false,
         "sendError": false,
@@ -2195,10 +2201,8 @@
         "name": "",
         "props": [
             {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
+                "p": "filename",
+                "v": "/Users/pato/Dropbox/Point72_Camera_Settings/Info_Last Shot_Test_Camera.json",
                 "vt": "str"
             }
         ],
@@ -2207,9 +2211,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
+        "x": 130,
         "y": 300,
         "wires": [
             [
@@ -2223,7 +2225,7 @@
         "z": "b1ca81c2f04dcad4",
         "g": "753a188897bcf967",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2231,7 +2233,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 950,
-        "y": 340,
+        "y": 360,
         "wires": []
     },
     {
@@ -2247,13 +2249,13 @@
         "adjAmount": "0",
         "adjType": "hours",
         "adjDir": "add",
-        "format": "LLL",
+        "format": "HH:mm:ss MM/DD/YYYY",
         "locale": "en-US",
         "output": "payload",
         "outputType": "msg",
         "outTz": "America/New_York",
         "x": 760,
-        "y": 340,
+        "y": 360,
         "wires": [
             [
                 "34200b309889cce5"
