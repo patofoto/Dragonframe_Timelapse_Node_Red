@@ -1,16 +1,16 @@
 [
     {
-        "id": "b1ca81c2f04dcad4",
+        "id": "20ac8dd407885f5d",
         "type": "tab",
-        "label": "Set Up",
+        "label": "Dragonframe_Int",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "20ac8dd407885f5d",
+        "id": "b1ca81c2f04dcad4",
         "type": "tab",
-        "label": "Dragonframe_Int",
+        "label": "Set Up",
         "disabled": false,
         "info": "",
         "env": []
@@ -488,409 +488,6 @@
         ]
     },
     {
-        "id": "ce7d54d2d3ddbd6d",
-        "type": "debug",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 730,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "1fcd3b55c321da25",
-        "type": "file in",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "Read from Dropbox",
-        "filename": "/Users/pato/Dropbox/test_camera_dragonframe_nodered_data.json",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 330,
-        "y": 300,
-        "wires": [
-            [
-                "3d699c0e9cf3ba43"
-            ]
-        ]
-    },
-    {
-        "id": "3d699c0e9cf3ba43",
-        "type": "json",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 490,
-        "y": 300,
-        "wires": [
-            [
-                "ce7d54d2d3ddbd6d",
-                "3ac229cfaf20bbfe"
-            ]
-        ]
-    },
-    {
-        "id": "9a153fed4834e1b5",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 300,
-        "wires": [
-            [
-                "1fcd3b55c321da25"
-            ]
-        ]
-    },
-    {
-        "id": "34200b309889cce5",
-        "type": "debug",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 950,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "3ac229cfaf20bbfe",
-        "type": "moment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "",
-        "topic": "",
-        "input": "current_shot_time",
-        "inputType": "msg",
-        "inTz": "America/New_York",
-        "adjAmount": "0",
-        "adjType": "hours",
-        "adjDir": "add",
-        "format": "LLL",
-        "locale": "en-US",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "America/New_York",
-        "x": 760,
-        "y": 340,
-        "wires": [
-            [
-                "34200b309889cce5"
-            ]
-        ]
-    },
-    {
-        "id": "f708884cda75b18e",
-        "type": "function",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
-        "name": "Shooting Hours",
-        "func": "let numStartTime = parseInt(global.get('startTime'), 10);\nlet numEndTime = parseInt(global.get('endTime'), 10);\n\nmsg.payload = shootHours = numEndTime - numStartTime;\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 80,
-        "wires": [
-            [
-                "69555b2781e053f6"
-            ]
-        ]
-    },
-    {
-        "id": "a8b80a2868ddbec8",
-        "type": "debug",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
-        "name": "Hours a day",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 790,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "1829d2a6802c40b3",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 150,
-        "y": 120,
-        "wires": [
-            [
-                "f708884cda75b18e",
-                "90d432cc8393defa",
-                "81e79e9b5f48e837"
-            ]
-        ]
-    },
-    {
-        "id": "69555b2781e053f6",
-        "type": "change",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
-        "name": "set shootHours variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "shootHours",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 570,
-        "y": 80,
-        "wires": [
-            [
-                "a8b80a2868ddbec8"
-            ]
-        ]
-    },
-    {
-        "id": "90d432cc8393defa",
-        "type": "function",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
-        "name": "Frames a day",
-        "func": "let framesHour = parseInt(60/global.get('interval'), 10);\n\nmsg.payload = global.get('shootHours')*framesHour;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 120,
-        "wires": [
-            [
-                "0aac6f60b0d3b001"
-            ]
-        ]
-    },
-    {
-        "id": "0aac6f60b0d3b001",
-        "type": "change",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
-        "name": "set framesDay variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "framesDay",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 560,
-        "y": 120,
-        "wires": [
-            [
-                "319722d18d0a7aea"
-            ]
-        ]
-    },
-    {
-        "id": "319722d18d0a7aea",
-        "type": "debug",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
-        "name": "Frames per day",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 800,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "81e79e9b5f48e837",
-        "type": "function",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
-        "name": "Data Calculations",
-        "func": "let interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = 5; // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet cameras = 2; //number of cameras\n\nlet dailyFrames = (dailyHours*60)/interval;\nlet monthlyFrames = (dailyFrames*weekDays)*4\n\nlet dailyDownload = (dailyFrames*frameSize)/1024; //Size in Gb\nlet weeklyDownload = (dailyFrames*weekDays)*frameSize/1024; //Size in Gb\nlet monthlyDownload = (monthlyFrames*frameSize)/1024; //Size in Gb\n\nmsg.payload = {\n\n    DailyFrames: dailyFrames,\n    MonthlyFrames: monthlyFrames,\n    DailyDownload_Gb: parseFloat(dailyDownload.toFixed(1)),\n    WeeklyDownload_Gb: parseFloat(weeklyDownload.toFixed(1)),\n    MonthlyDownload_Gb: parseFloat(monthlyDownload.toFixed(1)),\n\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 350,
-        "y": 160,
-        "wires": [
-            [
-                "77993aab8dd4e3e2"
-            ]
-        ]
-    },
-    {
-        "id": "77993aab8dd4e3e2",
-        "type": "debug",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
-        "name": "Calculations",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 790,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "8d8436b99f874fcb",
-        "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
-        "name": "Rebel 28Mb",
-        "info": "",
-        "x": 1190,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "224531824cf12c1d",
-        "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
-        "name": "60D 24Mb",
-        "info": "",
-        "x": 1340,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "440eb33527dbccdb",
-        "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
-        "name": "Dragonframe sends \"Hello\"handshake every 20 sec",
-        "info": "",
-        "x": 1310,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "6ef65e878697980b",
-        "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
-        "name": "frameComplete",
-        "info": "event: \"frameComplete\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nimageFileName: \"\"\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 1200,
-        "y": 125,
-        "wires": []
-    },
-    {
-        "id": "041e16b5532e6bbf",
-        "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
-        "name": "Capture State",
-        "info": "event: \"captureState\"\nreadyToCapture: false\nstate: \"READY\"\n\n\nevent: \"captureState\"\nreadyToCapture: false\nstate: \"SHOOTING\"\n\n\nevent: \"captureState\"\nreadyToCapture: true\nstate: \"READY\"",
-        "x": 1370,
-        "y": 125,
-        "wires": []
-    },
-    {
-        "id": "5e6f70f1c17ce8de",
-        "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
-        "name": "Shoot",
-        "info": "event: \"shoot\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 1290,
-        "y": 170,
-        "wires": []
-    },
-    {
-        "id": "9370224fd33cc191",
-        "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
-        "name": "Events",
-        "info": "hello\n    maxVersion: 1\n    minVersion: 1\n\ncaptureState\n    readyToCapture: true|false\n    \ncaptureComplete\n    exposure: 1   \n    imageFileName: \"xxxxx\"\n    \nframeComplete\n    exposure: 1\n\nposition\n    exposure: 1",
-        "x": 1170,
-        "y": 170,
-        "wires": []
-    },
-    {
         "id": "8f763fcfa9a2d554",
         "type": "time-inject",
         "z": "20ac8dd407885f5d",
@@ -1176,13 +773,13 @@
         "z": "20ac8dd407885f5d",
         "g": "a42ca3454e649528",
         "name": "Read from Dropbox",
-        "filename": "/Users/pato/Dropbox/Point72_Camera_Settings/test_settings.json",
+        "filename": "",
         "format": "utf8",
         "chunk": false,
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 330,
+        "x": 350,
         "y": 200,
         "wires": [
             [
@@ -1195,10 +792,12 @@
         "type": "inject",
         "z": "20ac8dd407885f5d",
         "g": "a42ca3454e649528",
-        "name": "",
+        "name": "Read Settings",
         "props": [
             {
-                "p": "payload"
+                "p": "filename",
+                "v": "/Users/pato/Dropbox/Point72_Camera_Settings/test_settings.json",
+                "vt": "str"
             }
         ],
         "repeat": "",
@@ -1206,8 +805,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payloadType": "date",
-        "x": 150,
+        "x": 160,
         "y": 200,
         "wires": [
             [
@@ -1506,7 +1104,7 @@
         "lockValue": "true",
         "unlockType": "else",
         "unlockValue": "",
-        "defaultState": true,
+        "defaultState": false,
         "useTimeOut": false,
         "timeOut": "30",
         "timeOutUnit": "s",
@@ -2427,5 +2025,408 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "ce7d54d2d3ddbd6d",
+        "type": "debug",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1fcd3b55c321da25",
+        "type": "file in",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "Read from Dropbox",
+        "filename": "/Users/pato/Dropbox/test_camera_dragonframe_nodered_data.json",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 330,
+        "y": 300,
+        "wires": [
+            [
+                "3d699c0e9cf3ba43"
+            ]
+        ]
+    },
+    {
+        "id": "3d699c0e9cf3ba43",
+        "type": "json",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 490,
+        "y": 300,
+        "wires": [
+            [
+                "ce7d54d2d3ddbd6d",
+                "3ac229cfaf20bbfe"
+            ]
+        ]
+    },
+    {
+        "id": "9a153fed4834e1b5",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "1fcd3b55c321da25"
+            ]
+        ]
+    },
+    {
+        "id": "34200b309889cce5",
+        "type": "debug",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "3ac229cfaf20bbfe",
+        "type": "moment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "753a188897bcf967",
+        "name": "",
+        "topic": "",
+        "input": "current_shot_time",
+        "inputType": "msg",
+        "inTz": "America/New_York",
+        "adjAmount": "0",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "LLL",
+        "locale": "en-US",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "America/New_York",
+        "x": 760,
+        "y": 340,
+        "wires": [
+            [
+                "34200b309889cce5"
+            ]
+        ]
+    },
+    {
+        "id": "f708884cda75b18e",
+        "type": "function",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "Shooting Hours",
+        "func": "let numStartTime = parseInt(global.get('startTime'), 10);\nlet numEndTime = parseInt(global.get('endTime'), 10);\n\nmsg.payload = shootHours = numEndTime - numStartTime;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 80,
+        "wires": [
+            [
+                "69555b2781e053f6"
+            ]
+        ]
+    },
+    {
+        "id": "a8b80a2868ddbec8",
+        "type": "debug",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "Hours a day",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "1829d2a6802c40b3",
+        "type": "inject",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "f708884cda75b18e",
+                "90d432cc8393defa",
+                "81e79e9b5f48e837"
+            ]
+        ]
+    },
+    {
+        "id": "69555b2781e053f6",
+        "type": "change",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "set shootHours variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "shootHours",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 80,
+        "wires": [
+            [
+                "a8b80a2868ddbec8"
+            ]
+        ]
+    },
+    {
+        "id": "90d432cc8393defa",
+        "type": "function",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "Frames a day",
+        "func": "let framesHour = parseInt(60/global.get('interval'), 10);\n\nmsg.payload = global.get('shootHours')*framesHour;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 120,
+        "wires": [
+            [
+                "0aac6f60b0d3b001"
+            ]
+        ]
+    },
+    {
+        "id": "0aac6f60b0d3b001",
+        "type": "change",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "set framesDay variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "framesDay",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 120,
+        "wires": [
+            [
+                "319722d18d0a7aea"
+            ]
+        ]
+    },
+    {
+        "id": "319722d18d0a7aea",
+        "type": "debug",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "Frames per day",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "81e79e9b5f48e837",
+        "type": "function",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "Data Calculations",
+        "func": "let interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = 5; // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet cameras = 2; //number of cameras\n\nlet dailyFrames = (dailyHours*60)/interval;\nlet monthlyFrames = (dailyFrames*weekDays)*4\n\nlet dailyDownload = (dailyFrames*frameSize)/1024; //Size in Gb\nlet weeklyDownload = (dailyFrames*weekDays)*frameSize/1024; //Size in Gb\nlet monthlyDownload = (monthlyFrames*frameSize)/1024; //Size in Gb\n\nmsg.payload = {\n\n    DailyFrames: dailyFrames,\n    MonthlyFrames: monthlyFrames,\n    DailyDownload_Gb: parseFloat(dailyDownload.toFixed(1)),\n    WeeklyDownload_Gb: parseFloat(weeklyDownload.toFixed(1)),\n    MonthlyDownload_Gb: parseFloat(monthlyDownload.toFixed(1)),\n\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 160,
+        "wires": [
+            [
+                "77993aab8dd4e3e2"
+            ]
+        ]
+    },
+    {
+        "id": "77993aab8dd4e3e2",
+        "type": "debug",
+        "z": "b1ca81c2f04dcad4",
+        "g": "26bfc8b1bbe35854",
+        "name": "Calculations",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8d8436b99f874fcb",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "Rebel 28Mb",
+        "info": "",
+        "x": 1190,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "224531824cf12c1d",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "60D 24Mb",
+        "info": "",
+        "x": 1340,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "440eb33527dbccdb",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "Dragonframe sends \"Hello\"handshake every 20 sec",
+        "info": "",
+        "x": 1310,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6ef65e878697980b",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "frameComplete",
+        "info": "event: \"frameComplete\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nimageFileName: \"\"\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
+        "x": 1200,
+        "y": 125,
+        "wires": []
+    },
+    {
+        "id": "041e16b5532e6bbf",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "Capture State",
+        "info": "event: \"captureState\"\nreadyToCapture: false\nstate: \"READY\"\n\n\nevent: \"captureState\"\nreadyToCapture: false\nstate: \"SHOOTING\"\n\n\nevent: \"captureState\"\nreadyToCapture: true\nstate: \"READY\"",
+        "x": 1370,
+        "y": 125,
+        "wires": []
+    },
+    {
+        "id": "5e6f70f1c17ce8de",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "Shoot",
+        "info": "event: \"shoot\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
+        "x": 1290,
+        "y": 170,
+        "wires": []
+    },
+    {
+        "id": "9370224fd33cc191",
+        "type": "comment",
+        "z": "b1ca81c2f04dcad4",
+        "g": "44252d98befbcddf",
+        "name": "Events",
+        "info": "hello\n    maxVersion: 1\n    minVersion: 1\n\ncaptureState\n    readyToCapture: true|false\n    \ncaptureComplete\n    exposure: 1   \n    imageFileName: \"xxxxx\"\n    \nframeComplete\n    exposure: 1\n\nposition\n    exposure: 1",
+        "x": 1170,
+        "y": 170,
+        "wires": []
     }
 ]
