@@ -1232,7 +1232,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "JSON Shot Data",
-        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nlet userName = global.get('userName');\nlet projectName = global.get('projectName');\nlet dropBoxPath = global.get('dropBoxPath');\nlet upTime = global.get('computerUpTime');\nlet availSpace = global.get('availableSpace');\nconst d = new Date();\nlet time = d.getTime();\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n    computer_uptime: upTime,\n    avail_hd_space: availSpace,\n}\n\nmsg.payload = JSON.stringify(data);\nmsg.filename = `/Users/${userName}/Dropbox/${projectName}_Camera_Settings/Info_Last Shot_${cameraName}_Camera.json`;\n\nreturn msg;",
+        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nlet userName = env.get('USER');\nlet projectName = global.get('projectName');\nlet dropBoxPath = global.get('dropBoxPath');\nlet upTime = global.get('computerUpTime');\nlet availSpace = global.get('availableSpace');\nconst d = new Date();\nlet time = d.getTime();\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n    computer_uptime: upTime,\n    avail_hd_space: availSpace,\n}\n\nmsg.payload = JSON.stringify(data);\n//msg.filename = `/Users/${userName}/Dropbox/${projectName}_Camera_Settings/Info_Last Shot_${cameraName}_Camera.json`;\nmsg.filename = `/Users/${userName}/Dropbox/${projectName}_Camera_Settings/Info_Last Shot_${cameraName}_Camera.json`;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2183,6 +2183,64 @@
         "reg": false,
         "x": 820,
         "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "218a1ed6aec1fc70",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "USER",
+        "payloadType": "env",
+        "x": 250,
+        "y": 1280,
+        "wires": [
+            [
+                "d1a9f65601c85711"
+            ]
+        ]
+    },
+    {
+        "id": "d1a9f65601c85711",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "ec77888a24772520",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "func": "msg.payload = {\n    userName: $USER,\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 1220,
         "wires": [
             []
         ]
