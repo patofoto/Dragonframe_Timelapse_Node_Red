@@ -113,55 +113,6 @@
         "h": 182
     },
     {
-        "id": "fc95a5364964861e",
-        "type": "group",
-        "z": "20ac8dd407885f5d",
-        "name": "Communication from Dragonframe",
-        "style": {
-            "label": true,
-            "color": "#000000",
-            "fill": "#ffffff"
-        },
-        "nodes": [
-            "777c711320926b28",
-            "291068297d309ff4",
-            "f796e60ca7ad161d",
-            "aa69fab8dd6d1c40",
-            "8e2ec8c8916bdf24",
-            "06b7e743d486e5ec",
-            "83558a2d4dd1ec39",
-            "7766a80f579491d0",
-            "1299a236e72220b3",
-            "406cc4d760a0a25a",
-            "6a8302e07e51c516",
-            "5b9f30ef3294e253",
-            "250d8277323b0835",
-            "4406adeb35e5e2e7",
-            "96d34eae343acaac",
-            "ad668695f02ae062",
-            "4dd1bbe994c3b52f",
-            "6edae490f780c504",
-            "c485baf2dbc34784",
-            "fd41d6ae3f2edbdf",
-            "d5010ddcf1962b6b",
-            "a54d238e37f49a60",
-            "ac735291685f7021",
-            "dad9def59723f79b",
-            "603cd39c5c9e7e12",
-            "68e544609342c4b8",
-            "f5f26648fe24ff3b",
-            "8d53700361a8d8ba",
-            "d7df4ca601759750",
-            "8c50a50d865f61ce",
-            "0fb5a9bb5160bba9",
-            "93aad228810673ba"
-        ],
-        "x": 34,
-        "y": 479,
-        "w": 1832,
-        "h": 542
-    },
-    {
         "id": "66d748d8b763e343",
         "type": "group",
         "z": "20ac8dd407885f5d",
@@ -195,23 +146,17 @@
             "color": "#000000"
         },
         "nodes": [
-            "f465b58ced62aa08",
             "ce7d54d2d3ddbd6d",
-            "a7a7e873ba3f26aa",
             "1fcd3b55c321da25",
             "3d699c0e9cf3ba43",
             "9a153fed4834e1b5",
-            "413f398f8b246afd",
-            "20d1b381141749a0",
-            "62a79b1eeecdbfcf",
-            "01c9118824ba88a2",
             "3ac229cfaf20bbfe",
             "34200b309889cce5"
         ],
         "x": 34,
-        "y": 219,
+        "y": 259,
         "w": 1032,
-        "h": 162
+        "h": 122
     },
     {
         "id": "a42ca3454e649528",
@@ -237,12 +182,13 @@
             "491a43890f874c47",
             "61d682227f18622d",
             "ece0774163b15372",
-            "6a59d3ea8c2bb88f"
+            "6a59d3ea8c2bb88f",
+            "daf31bd16fea7e87"
         ],
         "x": 34,
         "y": 19,
         "w": 832,
-        "h": 442
+        "h": 482
     },
     {
         "id": "26bfc8b1bbe35854",
@@ -316,6 +262,57 @@
         "y": 39,
         "w": 352,
         "h": 122
+    },
+    {
+        "id": "fc95a5364964861e",
+        "type": "group",
+        "z": "20ac8dd407885f5d",
+        "name": "Communication from Dragonframe",
+        "style": {
+            "label": true,
+            "color": "#000000",
+            "fill": "#ffffff"
+        },
+        "nodes": [
+            "777c711320926b28",
+            "291068297d309ff4",
+            "f796e60ca7ad161d",
+            "aa69fab8dd6d1c40",
+            "8e2ec8c8916bdf24",
+            "06b7e743d486e5ec",
+            "83558a2d4dd1ec39",
+            "7766a80f579491d0",
+            "1299a236e72220b3",
+            "406cc4d760a0a25a",
+            "6a8302e07e51c516",
+            "5b9f30ef3294e253",
+            "250d8277323b0835",
+            "4406adeb35e5e2e7",
+            "96d34eae343acaac",
+            "ad668695f02ae062",
+            "4dd1bbe994c3b52f",
+            "6edae490f780c504",
+            "c485baf2dbc34784",
+            "fd41d6ae3f2edbdf",
+            "d5010ddcf1962b6b",
+            "a54d238e37f49a60",
+            "ac735291685f7021",
+            "dad9def59723f79b",
+            "68e544609342c4b8",
+            "f5f26648fe24ff3b",
+            "8d53700361a8d8ba",
+            "d7df4ca601759750",
+            "8c50a50d865f61ce",
+            "0fb5a9bb5160bba9",
+            "93aad228810673ba",
+            "74cdc4803abf3f17",
+            "f6ae599248f3a131",
+            "ac1ba67ab623576c"
+        ],
+        "x": 34,
+        "y": 519,
+        "w": 1832,
+        "h": 542
     },
     {
         "id": "6f2ee2563c258dce",
@@ -491,26 +488,6 @@
         ]
     },
     {
-        "id": "f465b58ced62aa08",
-        "type": "function",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "JSON Shot Data",
-        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nconst d = new Date();\nlet time = d.getTime();\n\n\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n}\n\nmsg.payload = JSON.stringify(data);\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 260,
-        "wires": [
-            [
-                "a7a7e873ba3f26aa"
-            ]
-        ]
-    },
-    {
         "id": "ce7d54d2d3ddbd6d",
         "type": "debug",
         "z": "b1ca81c2f04dcad4",
@@ -527,25 +504,6 @@
         "x": 730,
         "y": 300,
         "wires": []
-    },
-    {
-        "id": "a7a7e873ba3f26aa",
-        "type": "file",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "Write to Dropbox",
-        "filename": "/Users/pato/Dropbox/test_camera_dragonframe_nodered_data.json",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 530,
-        "y": 260,
-        "wires": [
-            [
-                "20d1b381141749a0"
-            ]
-        ]
     },
     {
         "id": "1fcd3b55c321da25",
@@ -612,80 +570,6 @@
         "wires": [
             [
                 "1fcd3b55c321da25"
-            ]
-        ]
-    },
-    {
-        "id": "413f398f8b246afd",
-        "type": "link in",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "Camera Triggered",
-        "links": [
-            "603cd39c5c9e7e12"
-        ],
-        "x": 95,
-        "y": 260,
-        "wires": [
-            [
-                "f465b58ced62aa08"
-            ]
-        ]
-    },
-    {
-        "id": "20d1b381141749a0",
-        "type": "debug",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 730,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "62a79b1eeecdbfcf",
-        "type": "link out",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "",
-        "mode": "link",
-        "links": [
-            "95162f2031c7c733"
-        ],
-        "x": 275,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "01c9118824ba88a2",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "Manual Trigger",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{ \"command\" : \"shoot\", \"frames\" : 1 }",
-        "payloadType": "str",
-        "x": 160,
-        "y": 340,
-        "wires": [
-            [
-                "62a79b1eeecdbfcf"
             ]
         ]
     },
@@ -1086,211 +970,6 @@
         ]
     },
     {
-        "id": "777c711320926b28",
-        "type": "udp in",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "from Dragonframe",
-        "iface": "",
-        "port": "8888",
-        "ipv": "udp4",
-        "multicast": "false",
-        "group": "",
-        "datatype": "utf8",
-        "x": 150,
-        "y": 800,
-        "wires": [
-            [
-                "fd41d6ae3f2edbdf",
-                "d7df4ca601759750",
-                "f796e60ca7ad161d"
-            ]
-        ]
-    },
-    {
-        "id": "291068297d309ff4",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Connection alive message",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1260,
-        "y": 940,
-        "wires": []
-    },
-    {
-        "id": "f796e60ca7ad161d",
-        "type": "timeout",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Lost Dragonframe Comm Timer",
-        "outtopic": "dragonframe",
-        "outsafe": "1",
-        "outwarning": "Warning",
-        "outunsafe": "0",
-        "warning": "5",
-        "timer": "60",
-        "repeat": false,
-        "again": true,
-        "x": 450,
-        "y": 960,
-        "wires": [
-            [
-                "93aad228810673ba"
-            ]
-        ]
-    },
-    {
-        "id": "aa69fab8dd6d1c40",
-        "type": "switch",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 990,
-        "y": 960,
-        "wires": [
-            [
-                "291068297d309ff4"
-            ],
-            [
-                "8e2ec8c8916bdf24"
-            ]
-        ]
-    },
-    {
-        "id": "8e2ec8c8916bdf24",
-        "type": "function",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Disconnected Message",
-        "func": "msg.payload = {\n    content:`Dragonframe from ${global.get('camName')} is offline`,\n    type: \"message\",\n    chatId: 1951007350\n};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1250,
-        "y": 980,
-        "wires": [
-            [
-                "06b7e743d486e5ec"
-            ]
-        ]
-    },
-    {
-        "id": "06b7e743d486e5ec",
-        "type": "telegram sender",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "",
-        "bot": "f52ae91beb2ca245",
-        "haserroroutput": false,
-        "outputs": 1,
-        "x": 1520,
-        "y": 860,
-        "wires": [
-            [
-                "83558a2d4dd1ec39"
-            ]
-        ]
-    },
-    {
-        "id": "83558a2d4dd1ec39",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Message to Telegram",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload.content.text",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1720,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "7766a80f579491d0",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "captureState",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 750,
-        "y": 600,
-        "wires": []
-    },
-    {
-        "id": "1299a236e72220b3",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "captureComplete",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 770,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "406cc4d760a0a25a",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "position",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 740,
-        "y": 740,
-        "wires": []
-    },
-    {
         "id": "4a5a8d6cd7ad3256",
         "type": "inject",
         "z": "20ac8dd407885f5d",
@@ -1317,70 +996,6 @@
         ]
     },
     {
-        "id": "6a8302e07e51c516",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "frameComplete",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1020,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "5b9f30ef3294e253",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "set dfPort variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "dfport",
-                "pt": "global",
-                "to": "port",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 770,
-        "y": 560,
-        "wires": [
-            [
-                "8c50a50d865f61ce"
-            ]
-        ]
-    },
-    {
-        "id": "250d8277323b0835",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Hello",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1270,
-        "y": 520,
-        "wires": []
-    },
-    {
         "id": "ca9db2b297167bc6",
         "type": "change",
         "z": "20ac8dd407885f5d",
@@ -1405,232 +1020,6 @@
         "wires": [
             [
                 "5b745e71205304b9"
-            ]
-        ]
-    },
-    {
-        "id": "4406adeb35e5e2e7",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "set currentFrame variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "currentFrame",
-                "pt": "global",
-                "to": "payload.frame",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 790,
-        "y": 680,
-        "wires": [
-            [
-                "6a8302e07e51c516",
-                "603cd39c5c9e7e12"
-            ]
-        ]
-    },
-    {
-        "id": "96d34eae343acaac",
-        "type": "function",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Format message for Telegram",
-        "func": "msg.payload = {\n    content: `Shot frame ${global.get('dailyCounter')} of total frames ${global.get('currentFrame')} from ${global.get('camName')}`,\n    type: \"message\",\n    chatId: 1951007350,\n\n};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1270,
-        "y": 740,
-        "wires": [
-            [
-                "06b7e743d486e5ec"
-            ]
-        ]
-    },
-    {
-        "id": "ad668695f02ae062",
-        "type": "trigger",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "",
-        "op1": "",
-        "op2": "0",
-        "op1type": "date",
-        "op2type": "str",
-        "duration": "0",
-        "extend": false,
-        "overrideDelay": false,
-        "units": "ms",
-        "reset": "reset",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 1,
-        "x": 1020,
-        "y": 740,
-        "wires": [
-            [
-                "96d34eae343acaac"
-            ]
-        ]
-    },
-    {
-        "id": "4dd1bbe994c3b52f",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Reset",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "RESET",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 870,
-        "y": 840,
-        "wires": [
-            [
-                "8d53700361a8d8ba"
-            ]
-        ]
-    },
-    {
-        "id": "6edae490f780c504",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Daily Counter",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1700,
-        "y": 800,
-        "wires": []
-    },
-    {
-        "id": "c485baf2dbc34784",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Daily Counter Variable",
-        "rules": [
-            {
-                "t": "set",
-                "p": "dailyCounter",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1240,
-        "y": 800,
-        "wires": [
-            [
-                "6edae490f780c504"
-            ]
-        ]
-    },
-    {
-        "id": "fd41d6ae3f2edbdf",
-        "type": "subflow:1f4aaa9f87211afb",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "",
-        "x": 420,
-        "y": 660,
-        "wires": [
-            [
-                "d5010ddcf1962b6b",
-                "5b9f30ef3294e253"
-            ],
-            [
-                "7766a80f579491d0"
-            ],
-            [
-                "1299a236e72220b3"
-            ],
-            [
-                "4406adeb35e5e2e7",
-                "ad668695f02ae062",
-                "8d53700361a8d8ba"
-            ],
-            [
-                "406cc4d760a0a25a"
-            ]
-        ],
-        "inputLabels": [
-            "UDP from port 8888"
-        ],
-        "outputLabels": [
-            "Hello",
-            "captureState",
-            "captureComplete",
-            "frameComplete",
-            "position"
-        ]
-    },
-    {
-        "id": "d5010ddcf1962b6b",
-        "type": "function",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Hello Event",
-        "func": "msg.payload = {\n    command: msg.payload.event,\n};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 750,
-        "y": 520,
-        "wires": [
-            [
-                "a54d238e37f49a60"
-            ]
-        ]
-    },
-    {
-        "id": "a54d238e37f49a60",
-        "type": "json",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 1010,
-        "y": 520,
-        "wires": [
-            [
-                "250d8277323b0835",
-                "8c50a50d865f61ce"
             ]
         ]
     },
@@ -1731,22 +1120,6 @@
         "wires": []
     },
     {
-        "id": "8c50a50d865f61ce",
-        "type": "udp out",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "to Dragonframe",
-        "addr": "127.0.0.1",
-        "iface": "",
-        "port": "",
-        "outport": "2222",
-        "base64": false,
-        "multicast": "false",
-        "x": 1700,
-        "y": 620,
-        "wires": []
-    },
-    {
         "id": "3c8e30648efc73b8",
         "type": "function",
         "z": "20ac8dd407885f5d",
@@ -1763,182 +1136,6 @@
         "wires": [
             [
                 "609686ac0b89abea"
-            ]
-        ]
-    },
-    {
-        "id": "ac735291685f7021",
-        "type": "function",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Last Frame Message",
-        "func": "let expectedFrames = global.get('framesDay');\nlet shotFrames = global.get('dailyCounter');\nlet cameraName = global.get('camName');\n\nif (expectedFrames===shotFrames){\n    msg.payload = {\n    content:`All frames shot today from ${cameraName}`,\n    type: \"message\",\n    chatId: 1951007350,\n};\n} else {\n    msg.payload = {\n    content:`Frame count not as expected from ${cameraName}`,\n    type: \"message\",\n    chatId: 1951007350,\n};\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1240,
-        "y": 860,
-        "wires": [
-            [
-                "06b7e743d486e5ec"
-            ]
-        ]
-    },
-    {
-        "id": "dad9def59723f79b",
-        "type": "time-inject",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "End of day trigger",
-        "nameInt": "⏲ global.endTime[Mon-Fri] = timestamp",
-        "positionConfig": "6f2ee2563c258dce",
-        "props": [
-            {
-                "p": "",
-                "pt": "msgPayload",
-                "v": "",
-                "vt": "date",
-                "o": "",
-                "oT": "none",
-                "oM": "60000",
-                "f": 0,
-                "fS": 0,
-                "fT": "UNIX timestamp (ms)",
-                "fI": "0",
-                "next": true,
-                "days": "*",
-                "months": "*",
-                "onlyOddDays": false,
-                "onlyEvenDays": false,
-                "onlyOddWeeks": false,
-                "onlyEvenWeeks": false
-            }
-        ],
-        "injectTypeSelect": "time",
-        "intervalCount": 1,
-        "intervalCountType": "num",
-        "intervalCountMultiplier": 60000,
-        "time": "endTime",
-        "timeType": "global",
-        "offset": "",
-        "offsetType": "none",
-        "offsetMultiplier": 1000,
-        "timeEnd": "",
-        "timeEndType": "entered",
-        "timeEndOffset": 0,
-        "timeEndOffsetType": "none",
-        "timeEndOffsetMultiplier": 60000,
-        "timeDays": "1,2,3,4,5",
-        "timeOnlyOddDays": false,
-        "timeOnlyEvenDays": false,
-        "timeOnlyOddWeeks": false,
-        "timeOnlyEvenWeeks": false,
-        "timeMonths": "*",
-        "timedatestart": "",
-        "timedateend": "",
-        "property": "",
-        "propertyType": "none",
-        "propertyCompare": "true",
-        "propertyThreshold": "",
-        "propertyThresholdType": "num",
-        "timeAlt": "",
-        "timeAltType": "entered",
-        "timeAltDays": "*",
-        "timeAltOnlyOddDays": false,
-        "timeAltOnlyEvenDays": false,
-        "timeAltOnlyOddWeeks": false,
-        "timeAltOnlyEvenWeeks": false,
-        "timeAltMonths": "*",
-        "timeAltOffset": 0,
-        "timeAltOffsetType": "none",
-        "timeAltOffsetMultiplier": 60000,
-        "once": false,
-        "onceDelay": 0.1,
-        "recalcTime": 2,
-        "x": 450,
-        "y": 880,
-        "wires": [
-            [
-                "ac735291685f7021",
-                "68e544609342c4b8",
-                "f5f26648fe24ff3b"
-            ]
-        ]
-    },
-    {
-        "id": "603cd39c5c9e7e12",
-        "type": "link out",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Frame Shot",
-        "mode": "link",
-        "links": [
-            "413f398f8b246afd"
-        ],
-        "x": 965,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "68e544609342c4b8",
-        "type": "change",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Reset",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "reset",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "reset",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 730,
-        "y": 800,
-        "wires": [
-            [
-                "ad668695f02ae062"
-            ]
-        ]
-    },
-    {
-        "id": "f5f26648fe24ff3b",
-        "type": "delay",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 740,
-        "y": 840,
-        "wires": [
-            [
-                "4dd1bbe994c3b52f"
             ]
         ]
     },
@@ -1960,39 +1157,6 @@
         ]
     },
     {
-        "id": "8d53700361a8d8ba",
-        "type": "countula",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "Counter",
-        "x": 1020,
-        "y": 800,
-        "wires": [
-            [],
-            [
-                "c485baf2dbc34784"
-            ]
-        ]
-    },
-    {
-        "id": "d7df4ca601759750",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 400,
-        "y": 800,
-        "wires": []
-    },
-    {
         "id": "5b745e71205304b9",
         "type": "link out",
         "z": "20ac8dd407885f5d",
@@ -2005,23 +1169,6 @@
         "x": 1575,
         "y": 380,
         "wires": []
-    },
-    {
-        "id": "0fb5a9bb5160bba9",
-        "type": "link in",
-        "z": "20ac8dd407885f5d",
-        "g": "fc95a5364964861e",
-        "name": "dfPort",
-        "links": [
-            "5b745e71205304b9"
-        ],
-        "x": 1555,
-        "y": 580,
-        "wires": [
-            [
-                "8c50a50d865f61ce"
-            ]
-        ]
     },
     {
         "id": "65eea3b9086e805a",
@@ -2089,7 +1236,9 @@
                 "f436049697b26c62",
                 "491a43890f874c47",
                 "61d682227f18622d",
-                "ece0774163b15372"
+                "ece0774163b15372",
+                "daf31bd16fea7e87",
+                "6a59d3ea8c2bb88f"
             ]
         ]
     },
@@ -2315,7 +1464,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 710,
-        "y": 420,
+        "y": 460,
         "wires": []
     },
     {
@@ -2458,6 +1607,785 @@
         ]
     },
     {
+        "id": "ac1ba67ab623576c",
+        "type": "file",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Write to Dropbox",
+        "filename": "",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1230,
+        "y": 680,
+        "wires": [
+            [
+                "f6ae599248f3a131"
+            ]
+        ]
+    },
+    {
+        "id": "74cdc4803abf3f17",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "JSON Shot Data",
+        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nlet dropBoxPath = global.get('dropBoxPath');\nconst d = new Date();\nlet time = d.getTime();\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n}\n\nmsg.payload = JSON.stringify(data);\nmsg.filename = `${dropBoxPath}Info_Last Shot_${cameraName}_Camera.json`;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 680,
+        "wires": [
+            [
+                "ac1ba67ab623576c"
+            ]
+        ]
+    },
+    {
+        "id": "f6ae599248f3a131",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1430,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "777c711320926b28",
+        "type": "udp in",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "from Dragonframe",
+        "iface": "",
+        "port": "8888",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 150,
+        "y": 840,
+        "wires": [
+            [
+                "fd41d6ae3f2edbdf",
+                "d7df4ca601759750",
+                "f796e60ca7ad161d"
+            ]
+        ]
+    },
+    {
+        "id": "291068297d309ff4",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Connection alive message",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "f796e60ca7ad161d",
+        "type": "timeout",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Lost Dragonframe Comm Timer",
+        "outtopic": "dragonframe",
+        "outsafe": "1",
+        "outwarning": "Warning",
+        "outunsafe": "0",
+        "warning": "5",
+        "timer": "60",
+        "repeat": false,
+        "again": true,
+        "x": 450,
+        "y": 1000,
+        "wires": [
+            [
+                "93aad228810673ba"
+            ]
+        ]
+    },
+    {
+        "id": "aa69fab8dd6d1c40",
+        "type": "switch",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 990,
+        "y": 1000,
+        "wires": [
+            [
+                "291068297d309ff4"
+            ],
+            [
+                "8e2ec8c8916bdf24"
+            ]
+        ]
+    },
+    {
+        "id": "8e2ec8c8916bdf24",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Disconnected Message",
+        "func": "msg.payload = {\n    content:`Dragonframe from ${global.get('camName')} is offline`,\n    type: \"message\",\n    chatId: 1951007350\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 1020,
+        "wires": [
+            [
+                "06b7e743d486e5ec"
+            ]
+        ]
+    },
+    {
+        "id": "06b7e743d486e5ec",
+        "type": "telegram sender",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "",
+        "bot": "f52ae91beb2ca245",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1520,
+        "y": 900,
+        "wires": [
+            [
+                "83558a2d4dd1ec39"
+            ]
+        ]
+    },
+    {
+        "id": "83558a2d4dd1ec39",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Message to Telegram",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.content.text",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1720,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "7766a80f579491d0",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "captureState",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "1299a236e72220b3",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "captureComplete",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "406cc4d760a0a25a",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "position",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "6a8302e07e51c516",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "frameComplete",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "5b9f30ef3294e253",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "set dfPort variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "dfport",
+                "pt": "global",
+                "to": "port",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 600,
+        "wires": [
+            [
+                "8c50a50d865f61ce"
+            ]
+        ]
+    },
+    {
+        "id": "250d8277323b0835",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Hello",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "4406adeb35e5e2e7",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "set currentFrame variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "currentFrame",
+                "pt": "global",
+                "to": "payload.frame",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 720,
+        "wires": [
+            [
+                "6a8302e07e51c516",
+                "74cdc4803abf3f17"
+            ]
+        ]
+    },
+    {
+        "id": "96d34eae343acaac",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Format message for Telegram",
+        "func": "msg.payload = {\n    content: `Shot frame ${global.get('dailyCounter')} of total frames ${global.get('currentFrame')} from ${global.get('camName')}`,\n    type: \"message\",\n    chatId: 1951007350,\n\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 780,
+        "wires": [
+            [
+                "06b7e743d486e5ec"
+            ]
+        ]
+    },
+    {
+        "id": "ad668695f02ae062",
+        "type": "trigger",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "",
+        "op1": "",
+        "op2": "0",
+        "op1type": "date",
+        "op2type": "str",
+        "duration": "0",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "reset",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1020,
+        "y": 780,
+        "wires": [
+            [
+                "96d34eae343acaac"
+            ]
+        ]
+    },
+    {
+        "id": "4dd1bbe994c3b52f",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "RESET",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 870,
+        "y": 880,
+        "wires": [
+            [
+                "8d53700361a8d8ba"
+            ]
+        ]
+    },
+    {
+        "id": "6edae490f780c504",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Daily Counter",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1700,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "c485baf2dbc34784",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Daily Counter Variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "dailyCounter",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 840,
+        "wires": [
+            [
+                "6edae490f780c504"
+            ]
+        ]
+    },
+    {
+        "id": "fd41d6ae3f2edbdf",
+        "type": "subflow:1f4aaa9f87211afb",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "",
+        "x": 420,
+        "y": 700,
+        "wires": [
+            [
+                "5b9f30ef3294e253",
+                "d5010ddcf1962b6b"
+            ],
+            [
+                "7766a80f579491d0"
+            ],
+            [
+                "1299a236e72220b3"
+            ],
+            [
+                "4406adeb35e5e2e7",
+                "ad668695f02ae062",
+                "8d53700361a8d8ba"
+            ],
+            [
+                "406cc4d760a0a25a"
+            ]
+        ],
+        "inputLabels": [
+            "UDP from port 8888"
+        ],
+        "outputLabels": [
+            "Hello",
+            "captureState",
+            "captureComplete",
+            "frameComplete",
+            "position"
+        ]
+    },
+    {
+        "id": "d5010ddcf1962b6b",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Hello Event",
+        "func": "msg.payload = {\n    command: msg.payload.event,\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 560,
+        "wires": [
+            [
+                "a54d238e37f49a60"
+            ]
+        ]
+    },
+    {
+        "id": "a54d238e37f49a60",
+        "type": "json",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1010,
+        "y": 560,
+        "wires": [
+            [
+                "250d8277323b0835",
+                "8c50a50d865f61ce"
+            ]
+        ]
+    },
+    {
+        "id": "ac735291685f7021",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Last Frame Message",
+        "func": "let expectedFrames = global.get('framesDay');\nlet shotFrames = global.get('dailyCounter');\nlet cameraName = global.get('camName');\n\nif (expectedFrames===shotFrames){\n    msg.payload = {\n    content:`All frames shot today from ${cameraName}`,\n    type: \"message\",\n    chatId: 1951007350,\n};\n} else {\n    msg.payload = {\n    content:`Frame count not as expected from ${cameraName}`,\n    type: \"message\",\n    chatId: 1951007350,\n};\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 900,
+        "wires": [
+            [
+                "06b7e743d486e5ec"
+            ]
+        ]
+    },
+    {
+        "id": "dad9def59723f79b",
+        "type": "time-inject",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "End of day trigger",
+        "nameInt": "⏲ global.endTime[Mon-Fri] = timestamp",
+        "positionConfig": "6f2ee2563c258dce",
+        "props": [
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "",
+                "vt": "date",
+                "o": "",
+                "oT": "none",
+                "oM": "60000",
+                "f": 0,
+                "fS": 0,
+                "fT": "UNIX timestamp (ms)",
+                "fI": "0",
+                "next": true,
+                "days": "*",
+                "months": "*",
+                "onlyOddDays": false,
+                "onlyEvenDays": false,
+                "onlyOddWeeks": false,
+                "onlyEvenWeeks": false
+            }
+        ],
+        "injectTypeSelect": "time",
+        "intervalCount": 1,
+        "intervalCountType": "num",
+        "intervalCountMultiplier": 60000,
+        "time": "endTime",
+        "timeType": "global",
+        "offset": "",
+        "offsetType": "none",
+        "offsetMultiplier": 1000,
+        "timeEnd": "",
+        "timeEndType": "entered",
+        "timeEndOffset": 0,
+        "timeEndOffsetType": "none",
+        "timeEndOffsetMultiplier": 60000,
+        "timeDays": "1,2,3,4,5",
+        "timeOnlyOddDays": false,
+        "timeOnlyEvenDays": false,
+        "timeOnlyOddWeeks": false,
+        "timeOnlyEvenWeeks": false,
+        "timeMonths": "*",
+        "timedatestart": "",
+        "timedateend": "",
+        "property": "",
+        "propertyType": "none",
+        "propertyCompare": "true",
+        "propertyThreshold": "",
+        "propertyThresholdType": "num",
+        "timeAlt": "",
+        "timeAltType": "entered",
+        "timeAltDays": "*",
+        "timeAltOnlyOddDays": false,
+        "timeAltOnlyEvenDays": false,
+        "timeAltOnlyOddWeeks": false,
+        "timeAltOnlyEvenWeeks": false,
+        "timeAltMonths": "*",
+        "timeAltOffset": 0,
+        "timeAltOffsetType": "none",
+        "timeAltOffsetMultiplier": 60000,
+        "once": false,
+        "onceDelay": 0.1,
+        "recalcTime": 2,
+        "x": 450,
+        "y": 920,
+        "wires": [
+            [
+                "ac735291685f7021",
+                "68e544609342c4b8",
+                "f5f26648fe24ff3b"
+            ]
+        ]
+    },
+    {
+        "id": "68e544609342c4b8",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "reset",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "reset",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 840,
+        "wires": [
+            [
+                "ad668695f02ae062"
+            ]
+        ]
+    },
+    {
+        "id": "f5f26648fe24ff3b",
+        "type": "delay",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 740,
+        "y": 880,
+        "wires": [
+            [
+                "4dd1bbe994c3b52f"
+            ]
+        ]
+    },
+    {
+        "id": "8d53700361a8d8ba",
+        "type": "countula",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "Counter",
+        "x": 1020,
+        "y": 840,
+        "wires": [
+            [],
+            [
+                "c485baf2dbc34784"
+            ]
+        ]
+    },
+    {
+        "id": "d7df4ca601759750",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "8c50a50d865f61ce",
+        "type": "udp out",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "to Dragonframe",
+        "addr": "127.0.0.1",
+        "iface": "",
+        "port": "",
+        "outport": "2222",
+        "base64": false,
+        "multicast": "false",
+        "x": 1700,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "0fb5a9bb5160bba9",
+        "type": "link in",
+        "z": "20ac8dd407885f5d",
+        "g": "fc95a5364964861e",
+        "name": "dfPort",
+        "links": [
+            "5b745e71205304b9"
+        ],
+        "x": 1555,
+        "y": 620,
+        "wires": [
+            [
+                "8c50a50d865f61ce"
+            ]
+        ]
+    },
+    {
         "id": "93aad228810673ba",
         "type": "break actor",
         "z": "20ac8dd407885f5d",
@@ -2467,11 +2395,37 @@
         "director": "0f9b22e2b168f267",
         "resendLast": false,
         "x": 770,
-        "y": 960,
+        "y": 1000,
         "wires": [
             [
                 "aa69fab8dd6d1c40"
             ]
+        ]
+    },
+    {
+        "id": "daf31bd16fea7e87",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "dropBoxPath variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "dropBoxPath",
+                "pt": "global",
+                "to": "payload.dropBoxPath",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 420,
+        "wires": [
+            []
         ]
     }
 ]
