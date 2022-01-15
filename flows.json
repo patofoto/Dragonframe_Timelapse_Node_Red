@@ -154,9 +154,7 @@
             "34200b309889cce5"
         ],
         "x": 34,
-        "y": 259,
-        "w": 1032,
-        "h": 122
+        "y": 259
     },
     {
         "id": "a42ca3454e649528",
@@ -183,7 +181,12 @@
             "61d682227f18622d",
             "ece0774163b15372",
             "6a59d3ea8c2bb88f",
-            "daf31bd16fea7e87"
+            "daf31bd16fea7e87",
+            "55f90c3aae5f59ed",
+            "0b284b36f48fb3dd",
+            "f15c94f47ebaa145",
+            "1fa798ef9e399169",
+            "ee81464a8e7ce0bc"
         ],
         "x": 34,
         "y": 19,
@@ -213,9 +216,7 @@
             "77993aab8dd4e3e2"
         ],
         "x": 34,
-        "y": 39,
-        "w": 892,
-        "h": 162
+        "y": 39
     },
     {
         "id": "44252d98befbcddf",
@@ -238,9 +239,7 @@
             "224531824cf12c1d"
         ],
         "x": 1094,
-        "y": 39,
-        "w": 432,
-        "h": 222
+        "y": 39
     },
     {
         "id": "e16afa60a218c27d",
@@ -1229,7 +1228,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "JSON Shot Data",
-        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nlet dropBoxPath = global.get('dropBoxPath');\nconst d = new Date();\nlet time = d.getTime();\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n}\n\nmsg.payload = JSON.stringify(data);\nmsg.filename = `${dropBoxPath}Info_Last Shot_${cameraName}_Camera.json`;\n\nreturn msg;",
+        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nlet dropBoxPath = global.get('dropBoxPath');\nlet upTime = global.get('computerUpTime');\nlet availSpace = global.get('availableSpace');\nconst d = new Date();\nlet time = d.getTime();\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n    computer_uptime: upTime,\n    avail_hd_space: availSpace,\n}\n\nmsg.payload = JSON.stringify(data);\nmsg.filename = `${dropBoxPath}Info_Last Shot_${cameraName}_Camera.json`;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1249,7 +1248,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2022,6 +2021,112 @@
         "reg": false,
         "x": 740,
         "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b284b36f48fb3dd",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "set computerUpTime",
+        "rules": [
+            {
+                "t": "set",
+                "p": "computerUpTime",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55f90c3aae5f59ed",
+        "type": "Uptime",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "",
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "0b284b36f48fb3dd"
+            ]
+        ]
+    },
+    {
+        "id": "f15c94f47ebaa145",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "55f90c3aae5f59ed",
+                "1fa798ef9e399169"
+            ]
+        ]
+    },
+    {
+        "id": "1fa798ef9e399169",
+        "type": "Drives",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "",
+        "x": 290,
+        "y": 300,
+        "wires": [
+            [
+                "ee81464a8e7ce0bc"
+            ]
+        ]
+    },
+    {
+        "id": "ee81464a8e7ce0bc",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "set availableSpace variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "availableSpace",
+                "pt": "global",
+                "to": "payload[7].available",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 300,
         "wires": [
             []
         ]
