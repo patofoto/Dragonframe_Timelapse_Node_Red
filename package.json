@@ -8,7 +8,9 @@
         "node-red-contrib-sun-position": "2.0.6",
         "node-red-contrib-countula": "1.1.9",
         "node-red-contrib-moment": "4.0.0",
-        "node-red-contrib-switch-break": "1.0.1"
+        "node-red-contrib-switch-break": "1.0.1",
+        "node-red-contrib-os": "0.2.1",
+        "node-red-node-dropbox": "1.0.2"
     },
     "node-red": {
         "settings": {

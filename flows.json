@@ -8,14 +8,6 @@
         "env": []
     },
     {
-        "id": "b1ca81c2f04dcad4",
-        "type": "tab",
-        "label": "Set Up",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "1f4aaa9f87211afb",
         "type": "subflow",
         "name": "Message from Dragonframe",
@@ -103,14 +95,13 @@
             "8f763fcfa9a2d554",
             "4a5a8d6cd7ad3256",
             "ca9db2b297167bc6",
-            "95162f2031c7c733",
             "5b745e71205304b9",
             "dc2afc305b3f4049"
         ],
         "x": 974,
-        "y": 259,
+        "y": 299,
         "w": 742,
-        "h": 182
+        "h": 142
     },
     {
         "id": "66d748d8b763e343",
@@ -130,31 +121,9 @@
             "609686ac0b89abea"
         ],
         "x": 974,
-        "y": 159,
+        "y": 199,
         "w": 752,
         "h": 82
-    },
-    {
-        "id": "753a188897bcf967",
-        "type": "group",
-        "z": "b1ca81c2f04dcad4",
-        "name": "Testing",
-        "style": {
-            "fill": "#ffbfbf",
-            "label": true,
-            "label-position": "n",
-            "color": "#000000"
-        },
-        "nodes": [
-            "ce7d54d2d3ddbd6d",
-            "1fcd3b55c321da25",
-            "3d699c0e9cf3ba43",
-            "9a153fed4834e1b5",
-            "3ac229cfaf20bbfe",
-            "34200b309889cce5"
-        ],
-        "x": 34,
-        "y": 259
     },
     {
         "id": "a42ca3454e649528",
@@ -187,60 +156,14 @@
             "1fa798ef9e399169",
             "ee81464a8e7ce0bc",
             "2861060b662bcd0f",
-            "7ad85db95ceb8d52"
+            "7ad85db95ceb8d52",
+            "a538d555759315e8",
+            "44d4ec20d44a2314"
         ],
         "x": 34,
         "y": 19,
         "w": 912,
         "h": 522
-    },
-    {
-        "id": "26bfc8b1bbe35854",
-        "type": "group",
-        "z": "b1ca81c2f04dcad4",
-        "name": "Calculations",
-        "style": {
-            "label": true,
-            "label-position": "n",
-            "color": "#000000",
-            "fill": "#ffffff"
-        },
-        "nodes": [
-            "f708884cda75b18e",
-            "a8b80a2868ddbec8",
-            "1829d2a6802c40b3",
-            "69555b2781e053f6",
-            "90d432cc8393defa",
-            "0aac6f60b0d3b001",
-            "319722d18d0a7aea",
-            "81e79e9b5f48e837",
-            "77993aab8dd4e3e2"
-        ],
-        "x": 34,
-        "y": 39
-    },
-    {
-        "id": "44252d98befbcddf",
-        "type": "group",
-        "z": "b1ca81c2f04dcad4",
-        "name": "Notes",
-        "style": {
-            "fill": "#ffffff",
-            "label": true,
-            "label-position": "n",
-            "color": "#000000"
-        },
-        "nodes": [
-            "440eb33527dbccdb",
-            "6ef65e878697980b",
-            "041e16b5532e6bbf",
-            "5e6f70f1c17ce8de",
-            "9370224fd33cc191",
-            "8d8436b99f874fcb",
-            "224531824cf12c1d"
-        ],
-        "x": 1094,
-        "y": 39
     },
     {
         "id": "e16afa60a218c27d",
@@ -258,8 +181,8 @@
             "fe1c87cb537bd4c2",
             "eb1be034d2df2c66"
         ],
-        "x": 974,
-        "y": 19,
+        "x": 114,
+        "y": 79,
         "w": 352,
         "h": 122
     },
@@ -311,8 +234,84 @@
         ],
         "x": 34,
         "y": 559,
-        "w": 1832,
+        "w": 1852,
         "h": 542
+    },
+    {
+        "id": "8ff9f23da2ccc134",
+        "type": "group",
+        "z": "20ac8dd407885f5d",
+        "name": "Calculations",
+        "style": {
+            "label": true,
+            "label-position": "n",
+            "color": "#000000",
+            "fill": "#ffffff"
+        },
+        "nodes": [
+            "688f10d6edfb3084",
+            "744fb39301e3cb89",
+            "e80123f0211fb519",
+            "b8cfb59c1c31dde7",
+            "32abb38f14b3ca0e",
+            "b348c9ad8bdb872e",
+            "d06f29162b479201",
+            "418ef16dd3aedbed",
+            "a8e7c705f5059430"
+        ],
+        "x": 974,
+        "y": 19,
+        "w": 892,
+        "h": 162
+    },
+    {
+        "id": "c7a36f579ef38092",
+        "type": "group",
+        "z": "20ac8dd407885f5d",
+        "name": "Notes",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "8f2484fb1544823e",
+            "b0e7814b358d33ed",
+            "c431111496bac673",
+            "7df5f26e788032bf",
+            "a521d58dfaba0a70",
+            "1d6172b039713461",
+            "c6f81929fc80f8a0"
+        ],
+        "x": 34,
+        "y": 1119,
+        "w": 432,
+        "h": 222
+    },
+    {
+        "id": "bb4a0f4eef75b051",
+        "type": "group",
+        "z": "20ac8dd407885f5d",
+        "name": "Testing",
+        "style": {
+            "fill": "#ffbfbf",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "f1e5e0034bf6db70",
+            "3a8e9f46eee797e4",
+            "1b11cce585cc8b49",
+            "d76a4b9b1bd03c39",
+            "1d027c5ee1de9f29",
+            "0d1979209c387517"
+        ],
+        "x": 494,
+        "y": 1119,
+        "w": 1032,
+        "h": 142
     },
     {
         "id": "6f2ee2563c258dce",
@@ -351,6 +350,11 @@
         "useselfsignedcertificate": false,
         "sslterminated": false,
         "verboselogging": true
+    },
+    {
+        "id": "b7f078388f50571a",
+        "type": "dropbox-config",
+        "name": "Dropbox"
     },
     {
         "id": "384db60c452cd757",
@@ -559,7 +563,7 @@
         "onceDelay": 0.1,
         "recalcTime": 2,
         "x": 1090,
-        "y": 300,
+        "y": 340,
         "wires": [
             [
                 "dc2afc305b3f4049"
@@ -585,7 +589,7 @@
         "payload": "{ \"command\" : \"shoot\", \"frames\" : 1 }",
         "payloadType": "str",
         "x": 1100,
-        "y": 360,
+        "y": 400,
         "wires": [
             [
                 "ca9db2b297167bc6"
@@ -613,7 +617,7 @@
         "to": "",
         "reg": false,
         "x": 1530,
-        "y": 360,
+        "y": 400,
         "wires": [
             [
                 "5b745e71205304b9"
@@ -692,7 +696,7 @@
         "onceDelay": 0.1,
         "recalcTime": 2,
         "x": 1100,
-        "y": 200,
+        "y": 240,
         "wires": [
             [
                 "3c8e30648efc73b8"
@@ -713,7 +717,7 @@
         "base64": false,
         "multicast": "false",
         "x": 1650,
-        "y": 200,
+        "y": 240,
         "wires": []
     },
     {
@@ -729,27 +733,10 @@
         "finalize": "",
         "libs": [],
         "x": 1300,
-        "y": 200,
+        "y": 240,
         "wires": [
             [
                 "609686ac0b89abea"
-            ]
-        ]
-    },
-    {
-        "id": "95162f2031c7c733",
-        "type": "link in",
-        "z": "20ac8dd407885f5d",
-        "g": "9bb44f6703637248",
-        "name": "Trigger from Setup Screen",
-        "links": [
-            "62a79b1eeecdbfcf"
-        ],
-        "x": 1155,
-        "y": 400,
-        "wires": [
-            [
-                "ca9db2b297167bc6"
             ]
         ]
     },
@@ -764,7 +751,7 @@
             "0fb5a9bb5160bba9"
         ],
         "x": 1675,
-        "y": 360,
+        "y": 400,
         "wires": []
     },
     {
@@ -800,7 +787,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "30",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -1055,7 +1042,7 @@
         "z": "20ac8dd407885f5d",
         "g": "a42ca3454e649528",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1109,8 +1096,8 @@
         "useTimeOut": false,
         "timeOut": "30",
         "timeOutUnit": "s",
-        "x": 1230,
-        "y": 80,
+        "x": 370,
+        "y": 140,
         "wires": [
             []
         ]
@@ -1133,8 +1120,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 1070,
-        "y": 60,
+        "x": 210,
+        "y": 120,
         "wires": [
             [
                 "0f9b22e2b168f267"
@@ -1163,8 +1150,8 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 1070,
-        "y": 100,
+        "x": 210,
+        "y": 160,
         "wires": [
             [
                 "0f9b22e2b168f267"
@@ -1181,7 +1168,7 @@
         "director": "0f9b22e2b168f267",
         "resendLast": false,
         "x": 1490,
-        "y": 200,
+        "y": 240,
         "wires": [
             [
                 "d2d9a905d0204ceb"
@@ -1198,7 +1185,7 @@
         "director": "0f9b22e2b168f267",
         "resendLast": false,
         "x": 1280,
-        "y": 300,
+        "y": 340,
         "wires": [
             [
                 "ca9db2b297167bc6"
@@ -1386,7 +1373,7 @@
         "bot": "f52ae91beb2ca245",
         "haserroroutput": false,
         "outputs": 1,
-        "x": 1520,
+        "x": 1540,
         "y": 940,
         "wires": [
             [
@@ -1408,7 +1395,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1720,
+        "x": 1740,
         "y": 940,
         "wires": []
     },
@@ -2059,11 +2046,12 @@
         "topic": "",
         "payloadType": "date",
         "x": 150,
-        "y": 360,
+        "y": 380,
         "wires": [
             [
                 "55f90c3aae5f59ed",
-                "1fa798ef9e399169"
+                "1fa798ef9e399169",
+                "44d4ec20d44a2314"
             ]
         ]
     },
@@ -2160,135 +2148,10 @@
         ]
     },
     {
-        "id": "ce7d54d2d3ddbd6d",
-        "type": "debug",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 730,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "1fcd3b55c321da25",
-        "type": "file in",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "Read from Dropbox",
-        "filename": "",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 330,
-        "y": 300,
-        "wires": [
-            [
-                "3d699c0e9cf3ba43"
-            ]
-        ]
-    },
-    {
-        "id": "3d699c0e9cf3ba43",
-        "type": "json",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 490,
-        "y": 300,
-        "wires": [
-            [
-                "ce7d54d2d3ddbd6d",
-                "3ac229cfaf20bbfe"
-            ]
-        ]
-    },
-    {
-        "id": "9a153fed4834e1b5",
-        "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "",
-        "props": [
-            {
-                "p": "filename",
-                "v": "/Users/pato/Dropbox/Point72_Camera_Settings/Info_Last Shot_Test_Camera.json",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 130,
-        "y": 300,
-        "wires": [
-            [
-                "1fcd3b55c321da25"
-            ]
-        ]
-    },
-    {
-        "id": "34200b309889cce5",
-        "type": "debug",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 950,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "3ac229cfaf20bbfe",
-        "type": "moment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "753a188897bcf967",
-        "name": "",
-        "topic": "",
-        "input": "current_shot_time",
-        "inputType": "msg",
-        "inTz": "America/New_York",
-        "adjAmount": "0",
-        "adjType": "hours",
-        "adjDir": "add",
-        "format": "HH:mm:ss MM/DD/YYYY",
-        "locale": "en-US",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "America/New_York",
-        "x": 760,
-        "y": 360,
-        "wires": [
-            [
-                "34200b309889cce5"
-            ]
-        ]
-    },
-    {
-        "id": "f708884cda75b18e",
+        "id": "688f10d6edfb3084",
         "type": "function",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
+        "z": "20ac8dd407885f5d",
+        "g": "8ff9f23da2ccc134",
         "name": "Shooting Hours",
         "func": "let numStartTime = parseInt(global.get('startTime'), 10);\nlet numEndTime = parseInt(global.get('endTime'), 10);\n\nmsg.payload = shootHours = numEndTime - numStartTime;\n\nreturn msg;",
         "outputs": 1,
@@ -2296,19 +2159,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 80,
+        "x": 1280,
+        "y": 60,
         "wires": [
             [
-                "69555b2781e053f6"
+                "b8cfb59c1c31dde7"
             ]
         ]
     },
     {
-        "id": "a8b80a2868ddbec8",
+        "id": "744fb39301e3cb89",
         "type": "debug",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
+        "z": "20ac8dd407885f5d",
+        "g": "8ff9f23da2ccc134",
         "name": "Hours a day",
         "active": false,
         "tosidebar": true,
@@ -2318,15 +2181,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 80,
+        "x": 1730,
+        "y": 60,
         "wires": []
     },
     {
-        "id": "1829d2a6802c40b3",
+        "id": "e80123f0211fb519",
         "type": "inject",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
+        "z": "20ac8dd407885f5d",
+        "g": "8ff9f23da2ccc134",
         "name": "",
         "props": [
             {
@@ -2339,21 +2202,21 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 150,
-        "y": 120,
+        "x": 1090,
+        "y": 100,
         "wires": [
             [
-                "f708884cda75b18e",
-                "90d432cc8393defa",
-                "81e79e9b5f48e837"
+                "688f10d6edfb3084",
+                "32abb38f14b3ca0e",
+                "418ef16dd3aedbed"
             ]
         ]
     },
     {
-        "id": "69555b2781e053f6",
+        "id": "b8cfb59c1c31dde7",
         "type": "change",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
+        "z": "20ac8dd407885f5d",
+        "g": "8ff9f23da2ccc134",
         "name": "set shootHours variable",
         "rules": [
             {
@@ -2369,19 +2232,19 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
-        "y": 80,
+        "x": 1510,
+        "y": 60,
         "wires": [
             [
-                "a8b80a2868ddbec8"
+                "744fb39301e3cb89"
             ]
         ]
     },
     {
-        "id": "90d432cc8393defa",
+        "id": "32abb38f14b3ca0e",
         "type": "function",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
+        "z": "20ac8dd407885f5d",
+        "g": "8ff9f23da2ccc134",
         "name": "Frames a day",
         "func": "let framesHour = parseInt(60/global.get('interval'), 10);\n\nmsg.payload = global.get('shootHours')*framesHour;\nreturn msg;",
         "outputs": 1,
@@ -2389,19 +2252,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 120,
+        "x": 1280,
+        "y": 100,
         "wires": [
             [
-                "0aac6f60b0d3b001"
+                "b348c9ad8bdb872e"
             ]
         ]
     },
     {
-        "id": "0aac6f60b0d3b001",
+        "id": "b348c9ad8bdb872e",
         "type": "change",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
+        "z": "20ac8dd407885f5d",
+        "g": "8ff9f23da2ccc134",
         "name": "set framesDay variable",
         "rules": [
             {
@@ -2417,19 +2280,19 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
-        "y": 120,
+        "x": 1500,
+        "y": 100,
         "wires": [
             [
-                "319722d18d0a7aea"
+                "d06f29162b479201"
             ]
         ]
     },
     {
-        "id": "319722d18d0a7aea",
+        "id": "d06f29162b479201",
         "type": "debug",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
+        "z": "20ac8dd407885f5d",
+        "g": "8ff9f23da2ccc134",
         "name": "Frames per day",
         "active": false,
         "tosidebar": true,
@@ -2439,15 +2302,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 800,
-        "y": 120,
+        "x": 1740,
+        "y": 100,
         "wires": []
     },
     {
-        "id": "81e79e9b5f48e837",
+        "id": "418ef16dd3aedbed",
         "type": "function",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
+        "z": "20ac8dd407885f5d",
+        "g": "8ff9f23da2ccc134",
         "name": "Data Calculations",
         "func": "let interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = 5; // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet cameras = 2; //number of cameras\n\nlet dailyFrames = (dailyHours*60)/interval;\nlet monthlyFrames = (dailyFrames*weekDays)*4\n\nlet dailyDownload = (dailyFrames*frameSize)/1024; //Size in Gb\nlet weeklyDownload = (dailyFrames*weekDays)*frameSize/1024; //Size in Gb\nlet monthlyDownload = (monthlyFrames*frameSize)/1024; //Size in Gb\n\nmsg.payload = {\n\n    DailyFrames: dailyFrames,\n    MonthlyFrames: monthlyFrames,\n    DailyDownload_Gb: parseFloat(dailyDownload.toFixed(1)),\n    WeeklyDownload_Gb: parseFloat(weeklyDownload.toFixed(1)),\n    MonthlyDownload_Gb: parseFloat(monthlyDownload.toFixed(1)),\n\n}\nreturn msg;",
         "outputs": 1,
@@ -2455,19 +2318,57 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 160,
+        "x": 1290,
+        "y": 140,
         "wires": [
             [
-                "77993aab8dd4e3e2"
+                "a8e7c705f5059430"
             ]
         ]
     },
     {
-        "id": "77993aab8dd4e3e2",
+        "id": "a8e7c705f5059430",
         "type": "debug",
-        "z": "b1ca81c2f04dcad4",
-        "g": "26bfc8b1bbe35854",
+        "z": "20ac8dd407885f5d",
+        "g": "8ff9f23da2ccc134",
+        "name": "Calculations",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1730,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "44d4ec20d44a2314",
+        "type": "function",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "Data Calculations",
+        "func": "let interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = 5; // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet cameras = 2; //number of cameras\n\nlet dailyFrames = (dailyHours*60)/interval;\nlet monthlyFrames = (dailyFrames*weekDays)*4\n\nlet dailyDownload = (dailyFrames*frameSize)/1024; //Size in Gb\nlet weeklyDownload = (dailyFrames*weekDays)*frameSize/1024; //Size in Gb\nlet monthlyDownload = (monthlyFrames*frameSize)/1024; //Size in Gb\n\nmsg.payload = {\n\n    DailyFrames: dailyFrames,\n    MonthlyFrames: monthlyFrames,\n    DailyDownload_Gb: parseFloat(dailyDownload.toFixed(1)),\n    WeeklyDownload_Gb: parseFloat(weeklyDownload.toFixed(1)),\n    MonthlyDownload_Gb: parseFloat(monthlyDownload.toFixed(1)),\n\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 420,
+        "wires": [
+            [
+                "a538d555759315e8"
+            ]
+        ]
+    },
+    {
+        "id": "a538d555759315e8",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
         "name": "Calculations",
         "active": false,
         "tosidebar": true,
@@ -2477,85 +2378,210 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 160,
+        "x": 510,
+        "y": 420,
         "wires": []
     },
     {
-        "id": "8d8436b99f874fcb",
+        "id": "8f2484fb1544823e",
         "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
-        "name": "Rebel 28Mb",
-        "info": "",
-        "x": 1190,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "224531824cf12c1d",
-        "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
-        "name": "60D 24Mb",
-        "info": "",
-        "x": 1340,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "440eb33527dbccdb",
-        "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
+        "z": "20ac8dd407885f5d",
+        "g": "c7a36f579ef38092",
         "name": "Dragonframe sends \"Hello\"handshake every 20 sec",
         "info": "",
-        "x": 1310,
-        "y": 80,
+        "x": 250,
+        "y": 1160,
         "wires": []
     },
     {
-        "id": "6ef65e878697980b",
+        "id": "b0e7814b358d33ed",
         "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
+        "z": "20ac8dd407885f5d",
+        "g": "c7a36f579ef38092",
         "name": "frameComplete",
         "info": "event: \"frameComplete\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nimageFileName: \"\"\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 1200,
-        "y": 125,
+        "x": 140,
+        "y": 1205,
         "wires": []
     },
     {
-        "id": "041e16b5532e6bbf",
+        "id": "c431111496bac673",
         "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
+        "z": "20ac8dd407885f5d",
+        "g": "c7a36f579ef38092",
         "name": "Capture State",
         "info": "event: \"captureState\"\nreadyToCapture: false\nstate: \"READY\"\n\n\nevent: \"captureState\"\nreadyToCapture: false\nstate: \"SHOOTING\"\n\n\nevent: \"captureState\"\nreadyToCapture: true\nstate: \"READY\"",
-        "x": 1370,
-        "y": 125,
+        "x": 310,
+        "y": 1205,
         "wires": []
     },
     {
-        "id": "5e6f70f1c17ce8de",
+        "id": "7df5f26e788032bf",
         "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
+        "z": "20ac8dd407885f5d",
+        "g": "c7a36f579ef38092",
         "name": "Shoot",
         "info": "event: \"shoot\"\nexposure: 1\nexposureName: \"X1\"\nframe: 35\nproduction: \"Test\"\nscene: \"002\"\nstereoIndex: 0\ntake: \"01\"",
-        "x": 1290,
-        "y": 170,
+        "x": 230,
+        "y": 1250,
         "wires": []
     },
     {
-        "id": "9370224fd33cc191",
+        "id": "a521d58dfaba0a70",
         "type": "comment",
-        "z": "b1ca81c2f04dcad4",
-        "g": "44252d98befbcddf",
+        "z": "20ac8dd407885f5d",
+        "g": "c7a36f579ef38092",
         "name": "Events",
         "info": "hello\n    maxVersion: 1\n    minVersion: 1\n\ncaptureState\n    readyToCapture: true|false\n    \ncaptureComplete\n    exposure: 1   \n    imageFileName: \"xxxxx\"\n    \nframeComplete\n    exposure: 1\n\nposition\n    exposure: 1",
-        "x": 1170,
-        "y": 170,
+        "x": 110,
+        "y": 1250,
+        "wires": []
+    },
+    {
+        "id": "1d6172b039713461",
+        "type": "comment",
+        "z": "20ac8dd407885f5d",
+        "g": "c7a36f579ef38092",
+        "name": "Rebel 28Mb",
+        "info": "",
+        "x": 130,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "c6f81929fc80f8a0",
+        "type": "comment",
+        "z": "20ac8dd407885f5d",
+        "g": "c7a36f579ef38092",
+        "name": "60D 24Mb",
+        "info": "",
+        "x": 280,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "f1e5e0034bf6db70",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "bb4a0f4eef75b051",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "3a8e9f46eee797e4",
+        "type": "file in",
+        "z": "20ac8dd407885f5d",
+        "g": "bb4a0f4eef75b051",
+        "name": "Read from Dropbox",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 790,
+        "y": 1160,
+        "wires": [
+            [
+                "1b11cce585cc8b49"
+            ]
+        ]
+    },
+    {
+        "id": "1b11cce585cc8b49",
+        "type": "json",
+        "z": "20ac8dd407885f5d",
+        "g": "bb4a0f4eef75b051",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 950,
+        "y": 1160,
+        "wires": [
+            [
+                "f1e5e0034bf6db70",
+                "1d027c5ee1de9f29"
+            ]
+        ]
+    },
+    {
+        "id": "d76a4b9b1bd03c39",
+        "type": "inject",
+        "z": "20ac8dd407885f5d",
+        "g": "bb4a0f4eef75b051",
+        "name": "",
+        "props": [
+            {
+                "p": "filename",
+                "v": "/Users/pato/Dropbox/Point72_Camera_Settings/Info_Last Shot_Test_Camera.json",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 590,
+        "y": 1160,
+        "wires": [
+            [
+                "3a8e9f46eee797e4"
+            ]
+        ]
+    },
+    {
+        "id": "1d027c5ee1de9f29",
+        "type": "moment",
+        "z": "20ac8dd407885f5d",
+        "g": "bb4a0f4eef75b051",
+        "name": "",
+        "topic": "",
+        "input": "current_shot_time",
+        "inputType": "msg",
+        "inTz": "America/New_York",
+        "adjAmount": "0",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "HH:mm:ss MM/DD/YYYY",
+        "locale": "en-US",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "America/New_York",
+        "x": 1220,
+        "y": 1220,
+        "wires": [
+            [
+                "0d1979209c387517"
+            ]
+        ]
+    },
+    {
+        "id": "0d1979209c387517",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "bb4a0f4eef75b051",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1410,
+        "y": 1220,
         "wires": []
     }
 ]
