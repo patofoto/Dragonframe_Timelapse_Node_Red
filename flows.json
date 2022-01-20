@@ -374,11 +374,6 @@
         "verboselogging": true
     },
     {
-        "id": "b7f078388f50571a",
-        "type": "dropbox-config",
-        "name": "Dropbox"
-    },
-    {
         "id": "384db60c452cd757",
         "type": "json",
         "z": "1f4aaa9f87211afb",
@@ -1764,7 +1759,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "End of day trigger",
-        "nameInt": "⏲ global.endTime[Mon-Fri] = timestamp",
+        "nameInt": "⏲ global.endTime↷[Mon-Fri] = timestamp",
         "positionConfig": "6f2ee2563c258dce",
         "props": [
             {
@@ -1794,8 +1789,8 @@
         "intervalCountMultiplier": 60000,
         "time": "endTime",
         "timeType": "global",
-        "offset": "",
-        "offsetType": "none",
+        "offset": "5",
+        "offsetType": "num",
         "offsetMultiplier": 1000,
         "timeEnd": "",
         "timeEndType": "entered",
