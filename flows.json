@@ -180,8 +180,7 @@
             "44d4ec20d44a2314",
             "e3982fe56a8fbd8f",
             "05f44cf939c27c36",
-            "3a04eadae0a74ea8",
-            "95940e752f34e35f"
+            "3a04eadae0a74ea8"
         ],
         "x": 74,
         "y": 279,
@@ -1202,7 +1201,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "JSON Shot Data",
-        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nlet userName = env.get('USER'); //get OS user name for Dropbox path\nlet projectName = global.get('projectName'); //set name of project for Dropbox\nlet upTime = global.get('computerUpTime');\nlet availSpace = global.get('availSpace');\nconst d = new Date();\nlet time = d.getTime();\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n    computer_uptime: upTime,\n    avail_Hd_Space: availSpace,\n}\n\nmsg.payload = JSON.stringify(data);\nmsg.filename = `/Users/${userName}/Dropbox/${projectName}_Camera_Settings/Info_Last Shot_${cameraName}_Camera.json`;\nreturn msg;",
+        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nlet userName = env.get('USER'); //get OS user name for Dropbox path\nlet projectName = global.get('projectName'); //set name of project for Dropbox\nlet upTime = JSON.stringify(global.get('computerUpTime'));\nlet availSpace = global.get('availSpace');\nconst d = new Date();\nlet time = d.getTime();\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n    computer_uptime: upTime,\n    avail_Hd_Space: availSpace,\n}\n\nmsg.payload = JSON.stringify(data);\nmsg.filename = `/Users/${userName}/Dropbox/${projectName}_Camera_Settings/Info_Last Shot_${cameraName}_Camera.json`;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1222,7 +1221,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1993,7 +1992,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
+        "x": 520,
         "y": 380,
         "wires": [
             [
@@ -2011,7 +2010,7 @@
         "y": 380,
         "wires": [
             [
-                "95940e752f34e35f"
+                "0b284b36f48fb3dd"
             ]
         ]
     },
@@ -2548,22 +2547,5 @@
         "x": 1040,
         "y": 340,
         "wires": []
-    },
-    {
-        "id": "95940e752f34e35f",
-        "type": "json",
-        "z": "20ac8dd407885f5d",
-        "g": "a42ca3454e649528",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 490,
-        "y": 380,
-        "wires": [
-            [
-                "0b284b36f48fb3dd"
-            ]
-        ]
     }
 ]
