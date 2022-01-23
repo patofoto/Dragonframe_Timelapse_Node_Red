@@ -97,7 +97,18 @@
                 ]
             }
         ],
-        "out": [],
+        "out": [
+            {
+                "x": 400,
+                "y": 500,
+                "wires": [
+                    {
+                        "id": "d52d01beec4bcf34",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
         "env": [],
         "meta": {},
         "color": "#DDAA99"
@@ -120,8 +131,8 @@
             "5b745e71205304b9",
             "dc2afc305b3f4049"
         ],
-        "x": 694,
-        "y": 359,
+        "x": 454,
+        "y": 119,
         "w": 742,
         "h": 142
     },
@@ -142,8 +153,8 @@
             "3c8e30648efc73b8",
             "609686ac0b89abea"
         ],
-        "x": 694,
-        "y": 259,
+        "x": 534,
+        "y": 1259,
         "w": 752,
         "h": 82
     },
@@ -168,11 +179,12 @@
             "a538d555759315e8",
             "44d4ec20d44a2314",
             "e3982fe56a8fbd8f",
-            "05f44cf939c27c36"
+            "05f44cf939c27c36",
+            "3a04eadae0a74ea8"
         ],
         "x": 74,
         "y": 279,
-        "w": 592,
+        "w": 772,
         "h": 222
     },
     {
@@ -270,8 +282,8 @@
             "418ef16dd3aedbed",
             "a8e7c705f5059430"
         ],
-        "x": 694,
-        "y": 79,
+        "x": 534,
+        "y": 1079,
         "w": 892,
         "h": 162
     },
@@ -694,22 +706,6 @@
         ]
     },
     {
-        "id": "ece0774163b15372",
-        "type": "debug",
-        "z": "b45223fa5af84c34",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 450,
-        "y": 480,
-        "wires": []
-    },
-    {
         "id": "6a59d3ea8c2bb88f",
         "type": "change",
         "z": "b45223fa5af84c34",
@@ -779,7 +775,6 @@
                 "f436049697b26c62",
                 "491a43890f874c47",
                 "61d682227f18622d",
-                "ece0774163b15372",
                 "6a59d3ea8c2bb88f",
                 "7ad85db95ceb8d52"
             ]
@@ -856,8 +851,8 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 810,
-        "y": 400,
+        "x": 570,
+        "y": 160,
         "wires": [
             [
                 "dc2afc305b3f4049"
@@ -882,8 +877,8 @@
         "topic": "",
         "payload": "{ \"command\" : \"shoot\", \"frames\" : 1 }",
         "payloadType": "str",
-        "x": 820,
-        "y": 460,
+        "x": 580,
+        "y": 220,
         "wires": [
             [
                 "ca9db2b297167bc6"
@@ -910,8 +905,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1250,
-        "y": 460,
+        "x": 1010,
+        "y": 220,
         "wires": [
             [
                 "5b745e71205304b9"
@@ -989,8 +984,8 @@
         "once": false,
         "onceDelay": 0.1,
         "recalcTime": 2,
-        "x": 820,
-        "y": 300,
+        "x": 660,
+        "y": 1300,
         "wires": [
             [
                 "3c8e30648efc73b8"
@@ -1010,8 +1005,8 @@
         "outport": "",
         "base64": false,
         "multicast": "false",
-        "x": 1370,
-        "y": 300,
+        "x": 1210,
+        "y": 1300,
         "wires": []
     },
     {
@@ -1026,8 +1021,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
-        "y": 300,
+        "x": 860,
+        "y": 1300,
         "wires": [
             [
                 "609686ac0b89abea"
@@ -1044,8 +1039,8 @@
         "links": [
             "0fb5a9bb5160bba9"
         ],
-        "x": 1395,
-        "y": 460,
+        "x": 1155,
+        "y": 220,
         "wires": []
     },
     {
@@ -1156,8 +1151,8 @@
         "link": "",
         "director": "0f9b22e2b168f267",
         "resendLast": false,
-        "x": 1210,
-        "y": 300,
+        "x": 1050,
+        "y": 1300,
         "wires": [
             [
                 "d2d9a905d0204ceb"
@@ -1173,8 +1168,8 @@
         "link": "",
         "director": "0f9b22e2b168f267",
         "resendLast": false,
-        "x": 1040,
-        "y": 400,
+        "x": 800,
+        "y": 160,
         "wires": [
             [
                 "ca9db2b297167bc6"
@@ -1206,7 +1201,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "JSON Shot Data",
-        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nlet userName = env.get('USER'); //get OS user name for Dropbox path\nlet projectName = global.get('projectName'); //set name of project for Dropbox\nlet upTime = global.get('computerUpTime');\nlet availSpace = global.get('availableSpace');\nconst d = new Date();\nlet time = d.getTime();\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n    computer_uptime: upTime,\n    avail_hd_space: availSpace,\n}\n\nmsg.payload = JSON.stringify(data);\nmsg.filename = `/Users/${userName}/Dropbox/${projectName}_Camera_Settings/Info_Last Shot_${cameraName}_Camera.json`;\nreturn msg;",
+        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nlet userName = env.get('USER'); //get OS user name for Dropbox path\nlet projectName = global.get('projectName'); //set name of project for Dropbox\nlet upTime = global.get('computerUpTime');\nlet availSpace = global.get('availableSpace');\nconst d = new Date();\nlet time = d.getTime();\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n    computer_uptime: upTime,\n    avail_Hd_Space: availSpace,\n}\n\nmsg.payload = JSON.stringify(data);\nmsg.filename = `/Users/${userName}/Dropbox/${projectName}_Camera_Settings/Info_Last Shot_${cameraName}_Camera.json`;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1233,7 +1228,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1470,
+        "x": 1490,
         "y": 680,
         "wires": []
     },
@@ -2096,8 +2091,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1000,
-        "y": 120,
+        "x": 840,
+        "y": 1120,
         "wires": [
             [
                 "b8cfb59c1c31dde7"
@@ -2118,8 +2113,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1450,
-        "y": 120,
+        "x": 1290,
+        "y": 1120,
         "wires": []
     },
     {
@@ -2139,8 +2134,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 810,
-        "y": 160,
+        "x": 650,
+        "y": 1160,
         "wires": [
             [
                 "688f10d6edfb3084",
@@ -2169,8 +2164,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1230,
-        "y": 120,
+        "x": 1070,
+        "y": 1120,
         "wires": [
             [
                 "744fb39301e3cb89"
@@ -2189,8 +2184,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1000,
-        "y": 160,
+        "x": 840,
+        "y": 1160,
         "wires": [
             [
                 "b348c9ad8bdb872e"
@@ -2217,8 +2212,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1220,
-        "y": 160,
+        "x": 1060,
+        "y": 1160,
         "wires": [
             [
                 "d06f29162b479201"
@@ -2239,8 +2234,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1460,
-        "y": 160,
+        "x": 1300,
+        "y": 1160,
         "wires": []
     },
     {
@@ -2255,8 +2250,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1010,
-        "y": 200,
+        "x": 850,
+        "y": 1200,
         "wires": [
             [
                 "a8e7c705f5059430"
@@ -2277,8 +2272,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1450,
-        "y": 200,
+        "x": 1290,
+        "y": 1200,
         "wires": []
     },
     {
@@ -2486,6 +2481,27 @@
         "g": "a42ca3454e649528",
         "name": "Camera Settings Parsing",
         "x": 530,
+        "y": 320,
+        "wires": [
+            [
+                "3a04eadae0a74ea8"
+            ]
+        ]
+    },
+    {
+        "id": "3a04eadae0a74ea8",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "g": "a42ca3454e649528",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
         "y": 320,
         "wires": []
     }
