@@ -1542,7 +1542,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1430,
+        "x": 1450,
         "y": 780,
         "wires": [
             [
@@ -1642,7 +1642,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1260,
+        "x": 1280,
         "y": 860,
         "wires": [
             [
@@ -2466,7 +2466,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1220,
+        "x": 1240,
         "y": 780,
         "wires": [
             [
