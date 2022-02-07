@@ -8,14 +8,6 @@
         "env": []
     },
     {
-        "id": "f20a80c5c0dfd286",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "1f4aaa9f87211afb",
         "type": "subflow",
         "name": "Message from Dragonframe",
@@ -2564,58 +2556,6 @@
         "active": true,
         "x": 1330,
         "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fe621f2cae711311",
-        "type": "watch-directory",
-        "z": "f20a80c5c0dfd286",
-        "folder": "/Users/pato/Dropbox/Test_002.dgn",
-        "recursive": "3",
-        "typeEvent": "create",
-        "ignoreInitial": true,
-        "ignoredFiles": ".tiff",
-        "ignoredFilesType": "re",
-        "name": "",
-        "x": 280,
-        "y": 320,
-        "wires": [
-            [
-                "c47ae141ea9e1407",
-                "0765da00821229ca"
-            ]
-        ]
-    },
-    {
-        "id": "c47ae141ea9e1407",
-        "type": "debug",
-        "z": "f20a80c5c0dfd286",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 810,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "0765da00821229ca",
-        "type": "image viewer",
-        "z": "f20a80c5c0dfd286",
-        "name": "",
-        "width": 160,
-        "data": "payload",
-        "dataType": "msg",
-        "active": true,
-        "x": 810,
-        "y": 120,
         "wires": [
             []
         ]
