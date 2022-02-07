@@ -279,14 +279,12 @@
             "b8cfb59c1c31dde7",
             "32abb38f14b3ca0e",
             "b348c9ad8bdb872e",
-            "d06f29162b479201",
-            "418ef16dd3aedbed",
-            "a8e7c705f5059430"
+            "d06f29162b479201"
         ],
-        "x": 854,
-        "y": 299,
+        "x": 834,
+        "y": 319,
         "w": 892,
-        "h": 162
+        "h": 122
     },
     {
         "id": "c7a36f579ef38092",
@@ -332,7 +330,7 @@
         ],
         "x": 74,
         "y": 39,
-        "w": 372,
+        "w": 462,
         "h": 122
     },
     {
@@ -1204,7 +1202,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "JSON Shot Data",
-        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nlet userName = env.get('USER'); //get OS user name for Dropbox path\nlet projectName = global.get('projectName'); //set name of project for Dropbox\nlet upTime = global.get('computerUpTime');\nlet availSpace = global.get('availSpace');\nconst d = new Date();\nlet time = d.getTime();\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n    computer_uptime: upTime,\n    avail_Hd_Space: (availSpace/1024).toFixed(2),\n}\n\nmsg.payload = JSON.stringify(data);\nmsg.filename = `/Users/${userName}/Dropbox/${projectName}_Camera_Settings/Info_Last Shot_${cameraName}_Camera.json`;\nreturn msg;",
+        "func": "let cameraName = global.get('camName');\nlet interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = global.get('weekDays'); // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet currentCount = global.get('currentFrame'); //curent number of frames in shot\nlet currentDailyShot = global.get('dailyCounter'); //current daily frame shot\nlet userName = env.get('USER'); //get OS user name for Dropbox path\nlet projectName = global.get('projectName'); //set name of project for Dropbox\nlet upTime = global.get('computerUpTime');\nlet availSpace = global.get('availSpace');\nlet currentThumb = global.get('thumb');\nconst d = new Date();\nlet time = d.getTime();\n\nlet data = {\n    camera_name: cameraName,\n    interval_min: interval,\n    time_start_24: startHour,\n    time_end_24: endHour,\n    current_total_frames: currentCount,\n    current_daily_frame: currentDailyShot,\n    current_shot_size_Gb: (currentCount/1024).toFixed(2),\n    current_shot_time: time,\n    computer_uptime: upTime,\n    avail_Hd_Space: (availSpace/1024).toFixed(2),\n    last_Shot_Thumb: currentThumb,\n}\n\nmsg.payload = JSON.stringify(data);\nmsg.filename = `/Users/${userName}/Dropbox/${projectName}_Camera_Settings/Info_Last Shot_${cameraName}_Camera.json`;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1224,7 +1222,7 @@
         "z": "20ac8dd407885f5d",
         "g": "fc95a5364964861e",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2096,8 +2094,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1160,
-        "y": 340,
+        "x": 1140,
+        "y": 360,
         "wires": [
             [
                 "b8cfb59c1c31dde7"
@@ -2118,8 +2116,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1610,
-        "y": 340,
+        "x": 1590,
+        "y": 360,
         "wires": []
     },
     {
@@ -2140,13 +2138,12 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 970,
+        "x": 950,
         "y": 380,
         "wires": [
             [
                 "688f10d6edfb3084",
-                "32abb38f14b3ca0e",
-                "418ef16dd3aedbed"
+                "32abb38f14b3ca0e"
             ]
         ]
     },
@@ -2170,8 +2167,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1390,
-        "y": 340,
+        "x": 1370,
+        "y": 360,
         "wires": [
             [
                 "744fb39301e3cb89"
@@ -2190,8 +2187,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1160,
-        "y": 380,
+        "x": 1140,
+        "y": 400,
         "wires": [
             [
                 "b348c9ad8bdb872e"
@@ -2218,8 +2215,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1380,
-        "y": 380,
+        "x": 1360,
+        "y": 400,
         "wires": [
             [
                 "d06f29162b479201"
@@ -2240,46 +2237,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1620,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "418ef16dd3aedbed",
-        "type": "function",
-        "z": "20ac8dd407885f5d",
-        "g": "8ff9f23da2ccc134",
-        "name": "Data Calculations",
-        "func": "let interval = global.get('interval'); //time in minutes\nlet startHour = parseInt(global.get('startTime')); //military time integer\nlet endHour = parseInt(global.get('endTime'));//military time integer\nlet weekDays = 5; // 1-7\nlet frameSize = global.get('fileSize'); //Frame size in Mb\nlet dailyHours = endHour - startHour;\nlet cameras = 2; //number of cameras\n\nlet dailyFrames = (dailyHours*60)/interval;\nlet monthlyFrames = (dailyFrames*weekDays)*4\n\nlet dailyDownload = (dailyFrames*frameSize)/1024; //Size in Gb\nlet weeklyDownload = (dailyFrames*weekDays)*frameSize/1024; //Size in Gb\nlet monthlyDownload = (monthlyFrames*frameSize)/1024; //Size in Gb\n\nmsg.payload = {\n\n    DailyFrames: dailyFrames,\n    MonthlyFrames: monthlyFrames,\n    DailyDownload_Gb: parseFloat(dailyDownload.toFixed(1)),\n    WeeklyDownload_Gb: parseFloat(weeklyDownload.toFixed(1)),\n    MonthlyDownload_Gb: parseFloat(monthlyDownload.toFixed(1)),\n\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1170,
-        "y": 420,
-        "wires": [
-            [
-                "a8e7c705f5059430"
-            ]
-        ]
-    },
-    {
-        "id": "a8e7c705f5059430",
-        "type": "debug",
-        "z": "20ac8dd407885f5d",
-        "g": "8ff9f23da2ccc134",
-        "name": "Calculations",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1610,
-        "y": 420,
+        "x": 1600,
+        "y": 400,
         "wires": []
     },
     {
@@ -2433,7 +2392,7 @@
         "links": [
             "e3982fe56a8fbd8f"
         ],
-        "x": 405,
+        "x": 495,
         "y": 80,
         "wires": []
     },
@@ -2533,14 +2492,14 @@
         "type": "watch-directory",
         "z": "20ac8dd407885f5d",
         "g": "863b058e4531a951",
-        "folder": "/Users/pato/Dropbox/Test_002.dgn",
-        "recursive": "3",
+        "folder": "/Users/pato/Dropbox/Test_002.dgn/Test_002_Take_01/Test_002_01_feed",
+        "recursive": "0",
         "typeEvent": "create",
         "ignoreInitial": true,
-        "ignoredFiles": ".tiff",
+        "ignoredFiles": "",
         "ignoredFilesType": "re",
-        "name": "path to Dragon current take",
-        "x": 240,
+        "name": "path to Dragon current take feed",
+        "x": 250,
         "y": 120,
         "wires": [
             [
@@ -2556,9 +2515,9 @@
         "width": "320",
         "data": "payload",
         "dataType": "msg",
-        "active": true,
-        "x": 750,
-        "y": 60,
+        "active": false,
+        "x": 890,
+        "y": 80,
         "wires": [
             []
         ]
@@ -2573,7 +2532,7 @@
         "links": [
             "275e06f578f4ad0c"
         ],
-        "x": 405,
+        "x": 495,
         "y": 120,
         "wires": []
     },
@@ -2585,11 +2544,98 @@
         "links": [
             "64d7a895b635c5d7"
         ],
-        "x": 535,
-        "y": 80,
+        "x": 655,
+        "y": 100,
         "wires": [
             [
-                "eab8ee1c56a907a7"
+                "eab8ee1c56a907a7",
+                "95f8ae4589963084"
+            ]
+        ]
+    },
+    {
+        "id": "95f8ae4589963084",
+        "type": "jimp-image",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "ret": "b64",
+        "parameter1": "",
+        "parameter1Type": "msg",
+        "parameter2": "",
+        "parameter2Type": "msg",
+        "parameter3": "",
+        "parameter3Type": "msg",
+        "parameter4": "",
+        "parameter4Type": "msg",
+        "parameter5": "",
+        "parameter5Type": "msg",
+        "parameter6": "",
+        "parameter6Type": "msg",
+        "parameter7": "",
+        "parameter7Type": "msg",
+        "parameter8": "",
+        "parameter8Type": "msg",
+        "sendProperty": "payload",
+        "sendPropertyType": "msg",
+        "parameterCount": 0,
+        "jimpFunction": "none",
+        "selectedJimpFunction": {
+            "name": "none",
+            "fn": "none",
+            "description": "Just loads the image.",
+            "parameters": []
+        },
+        "x": 890,
+        "y": 40,
+        "wires": [
+            [
+                "ce87225cf46a2b09"
+            ]
+        ]
+    },
+    {
+        "id": "5c5811c531fd803d",
+        "type": "debug",
+        "z": "20ac8dd407885f5d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "ce87225cf46a2b09",
+        "type": "change",
+        "z": "20ac8dd407885f5d",
+        "name": "setting Thumbnail variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "thumb",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 40,
+        "wires": [
+            [
+                "5c5811c531fd803d"
             ]
         ]
     }
