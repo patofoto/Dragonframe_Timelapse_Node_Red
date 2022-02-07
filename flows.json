@@ -1188,7 +1188,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1270,
+        "x": 1250,
         "y": 640,
         "wires": [
             [
@@ -1229,7 +1229,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1490,
+        "x": 1430,
         "y": 640,
         "wires": []
     },
@@ -2608,7 +2608,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1510,
+        "x": 1550,
         "y": 40,
         "wires": []
     },
@@ -2631,7 +2631,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1300,
+        "x": 1320,
         "y": 40,
         "wires": [
             [
