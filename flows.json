@@ -2131,11 +2131,12 @@
                 "p": "payload"
             }
         ],
-        "repeat": "",
+        "repeat": "60",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
+        "payload": "",
         "payloadType": "date",
         "x": 650,
         "y": 1080,
